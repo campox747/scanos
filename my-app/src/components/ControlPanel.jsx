@@ -1,34 +1,16 @@
-import { useState, useEffect } from 'react'
-import { db } from '../../firebase/firebaseConfig'
-import { serverTimestamp, onSnapshot, updateDoc, doc } from 'firebase/firestore'
+// ControlPanel.jsx
+// Pure presentational + interaction layer.
+// App.jsx owns the Firestore listener and passes status + handlers as props.
 
-// Firestore path: robots/robot1
-const ROBOT_REF = doc(db, 'robots', 'robot1')
+export function ControlPanel({ onStartRound, onReturnHome, onEmergencyStop, robotStatus, searchTarget }) {
 
-export function ControlPanel() {
+  const isLoading   = robotStatus === null       // null = still connecting
+  const isIdle      = robotStatus === 'idle'
+  const isRunning   = robotStatus === 'running'
+  const isSearching = robotStatus === 'searching'
 
-  const sendCommand = async (fields, label) => {
-    try {
-      await updateDoc(ROBOT_REF, {
-        ...fields,
-        updatedAt: serverTimestamp(),
-      })
-    } catch (err) {
-      console.error(`Error during ${label}:`, err)
-      setError(`Failed to send command: ${label}`)
-    }
-  }
-
-  // Derive flags from live Firestore data
-  const robotStatus  = robotData?.status ?? null
-  const searchTarget = robotData?.searchTarget ?? null
-
-  const isLoading    = robotStatus === 'null'
-  const isRunning    = robotStatus === 'running'
-  const isSearching  = robotStatus === 'searching'
-
-  const canStart = isIdle
-  const canReturn = isRunning || isSearching   // recall from any active state
+  const canStart  = isIdle
+  const canReturn = isRunning || isSearching
   const canStop   = isRunning || isSearching
 
   const statusLabel = isLoading
@@ -60,14 +42,6 @@ export function ControlPanel() {
         >
           Status: <span style={{ color: statusColor }}>{statusLabel}</span>
         </span>
-        {error && (
-          <span
-            className="ml-auto text-xs text-[var(--red-alert)] uppercase tracking-wider"
-            style={{ fontFamily: 'var(--font-mono)' }}
-          >
-            ⚠ {error}
-          </span>
-        )}
       </div>
 
       <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
@@ -81,7 +55,7 @@ export function ControlPanel() {
             Automatic Inventory
           </label>
           <button
-            onClick= {onStartRound}
+            onClick={onStartRound}
             disabled={!canStart || isLoading}
             className="w-full h-40 bg-[var(--accent-orange)] text-[var(--background)] rounded transition-all duration-200 hover:brightness-110 disabled:opacity-40 disabled:cursor-not-allowed relative overflow-hidden border-4 border-[var(--accent-orange)]"
             style={{ fontFamily: 'var(--font-sans)' }}
@@ -107,16 +81,14 @@ export function ControlPanel() {
             Navigation
           </label>
           <button
-            onClick={onSearchItem}
+            onClick={onReturnHome}
             disabled={!canReturn || isLoading}
             className="w-full h-40 bg-[var(--secondary)] text-[var(--foreground)] rounded transition-all duration-200 hover:bg-[var(--accent-yellow)] hover:text-[var(--background)] disabled:opacity-40 disabled:cursor-not-allowed border-2 border-[var(--border)] relative overflow-hidden"
             style={{ fontFamily: 'var(--font-sans)' }}
           >
             <div className="relative z-10">
               <div className="text-5xl mb-2">⌂</div>
-              <div className="text-xl font-bold uppercase tracking-wider">
-                Return Home
-              </div>
+              <div className="text-xl font-bold uppercase tracking-wider">Return Home</div>
             </div>
           </button>
         </div>
@@ -127,11 +99,11 @@ export function ControlPanel() {
             className="block opacity-70 text-xs uppercase tracking-wider"
             style={{ fontFamily: 'var(--font-mono)' }}
           >
-            Stop
+            Emergency
           </label>
           <button
             onClick={onEmergencyStop}
-            disabled={isLoading}
+            disabled={!canStop || isLoading}
             className="w-full h-40 bg-[var(--red-alert)] text-white rounded transition-all duration-200 hover:brightness-110 disabled:opacity-40 disabled:cursor-not-allowed border-4 border-[var(--red-alert)] shadow-lg"
             style={{ fontFamily: 'var(--font-sans)' }}
           >
