@@ -7,19 +7,82 @@ export function InventoryList({ onSearchItem, isActive }) {
   const [inventory, setInventory] = useState([])
   const [sortBy, setSortBy] = useState('lastCheck')
   const [searchQuery, setSearchQuery] = useState('')
+  const [isLoading, setIsLoading] = useState(true)
+  const [error, setError] = useState(null)
 
   // Listen to inventory collection in real-time
   useEffect(() => {
-    const unsubscribe = onSnapshot(collection(db, 'inventory'), (snapshot) => {
-      const items = snapshot.docs.map(doc => ({
-        id: doc.id,
-        ...doc.data(),
-        lastCheck: doc.data().lastCheck?.toDate() || new Date()
-      }))
-      setInventory(items)
-    })
+    console.log('Setting up inventory listener...')
+    const unsubscribe = onSnapshot(
+      collection(db, 'inventory'),
+      (snapshot) => {
+        console.log('Inventory snapshot received:', snapshot.docs.length, 'documents')
+        try {
+          const items = snapshot.docs.map(doc => ({
+            id: doc.id,
+            ...doc.data(),
+            lastCheck: doc.data().lastCheck?.toDate() || new Date()
+          }))
+          console.log('Processed inventory items:', items.length)
+          setInventory(items)
+          setIsLoading(false)
+          setError(null)
+        } catch (err) {
+          console.error('Error processing inventory data:', err)
+          setError('Error processing inventory data')
+          setIsLoading(false)
+          // Fallback to mock data if processing fails
+          setInventory([
+            {
+              id: 'fallback-1',
+              sku: 'BTL-001',
+              name: 'Bottles',
+              count: 1850,
+              lastCheck: new Date(Date.now() - 1000 * 60 * 15),
+              location: 'A-12',
+            },
+            {
+              id: 'fallback-2',
+              sku: 'BK-001',
+              name: 'Books',
+              count: 456,
+              lastCheck: new Date(Date.now() - 1000 * 60 * 30),
+              location: 'C-15',
+            }
+          ])
+        }
+      },
+      (err) => {
+        console.error('Error listening to inventory:', err)
+        setError('Failed to connect to inventory database')
+        setIsLoading(false)
+        // Fallback to mock data if connection fails
+        setInventory([
+          {
+            id: 'fallback-1',
+            sku: 'BTL-001',
+            name: 'Bottles',
+            count: 1850,
+            lastCheck: new Date(Date.now() - 1000 * 60 * 15),
+            location: 'A-12',
+          },
+          {
+            id: 'fallback-2',
+            sku: 'BK-001',
+            name: 'Books',
+            count: 456,
+            lastCheck: new Date(Date.now() - 1000 * 60 * 30),
+            location: 'C-15',
+          }
+        ])
+        }
+      }
+    )
 
-    return () => unsubscribe()
+    return () => {
+      console.log('Cleaning up inventory listener')
+      unsubscribe()
+    }
   }, [])
 
   const filteredAndSorted = useMemo(() => {
@@ -72,9 +135,16 @@ export function InventoryList({ onSearchItem, isActive }) {
 
       {/* Header */}
       <div className="border-b-2 border-[var(--border)] p-5 space-y-4">
-        <h2 className="uppercase tracking-wider" style={{ fontFamily: 'var(--font-sans)' }}>
-          Inventory Database
-        </h2>
+        <div className="flex items-center justify-between">
+          <h2 className="uppercase tracking-wider" style={{ fontFamily: 'var(--font-sans)' }}>
+            Inventory Database
+          </h2>
+          {error && (
+            <span className="text-xs text-[var(--red-alert)] uppercase tracking-wider" style={{ fontFamily: 'var(--font-mono)' }}>
+              Offline Mode
+            </span>
+          )}
+        </div>
 
         {/* Search */}
         <div className="relative">
@@ -99,13 +169,21 @@ export function InventoryList({ onSearchItem, isActive }) {
 
       {/* List */}
       <div className="flex-1 overflow-y-auto">
-        {inventory.length === 0 ? (
+        {isLoading ? (
           <div className="p-8 text-center opacity-50 uppercase tracking-wider" style={{ fontFamily: 'var(--font-mono)' }}>
             Loading inventory...
           </div>
+        ) : error ? (
+          <div className="p-8 text-center opacity-50 uppercase tracking-wider text-[var(--red-alert)]" style={{ fontFamily: 'var(--font-mono)' }}>
+            {error}
+          </div>
+        ) : inventory.length === 0 ? (
+          <div className="p-8 text-center opacity-50 uppercase tracking-wider" style={{ fontFamily: 'var(--font-mono)' }}>
+            No inventory items found
+          </div>
         ) : filteredAndSorted.length === 0 ? (
           <div className="p-8 text-center opacity-50 uppercase tracking-wider" style={{ fontFamily: 'var(--font-mono)' }}>
-            No items found
+            No items match your search
           </div>
         ) : (
           <div className="divide-y divide-[var(--border)]">

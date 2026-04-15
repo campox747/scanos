@@ -9,7 +9,7 @@ import { serverTimestamp, onSnapshot, updateDoc, doc } from 'firebase/firestore'
 const ROBOT_DOC = doc(db, 'robots', 'robot1')
 
 export default function App() {
-  const [robotData, setRobotData] = useState(null) // null = connecting
+  const [robotData, setRobotData] = useState('idle') // null = connecting
 
   // Single Firestore listener — owned here, passed down as props
   useEffect(() => {
