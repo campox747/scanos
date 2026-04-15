@@ -32,25 +32,23 @@ export default function App() {
     }
   }
 
-  const handleReturnHome = async () => {
-    await updateDoc(ROBOT_DOC, {lastCommand: 'return_home'})
-  }
-
   const handleEmergencyStop = async () => {
     await updateDoc(ROBOT_DOC, {status: 'idle', lastCommand: 'emergency_stop'})
   }
 
   return (
     <div className="size-full flex flex-col bg-[var(--background)]" style={{ fontFamily: 'var(--font-sans)' }}>
-      <StatusBar status={robotStatus} />
+      <StatusBar status={robotStatus}
+      />
 
       <div className="flex-1 grid grid-cols-1 lg:grid-cols-[1fr_420px] gap-4 p-4 overflow-hidden">
         {/* Left: Video + Controls */}
         <div className="flex flex-col gap-4">
-          <VideoFeed status={robotStatus} />
+          <VideoFeed status={robotStatus}
+          />
           <ControlPanel
             onStartRound={handleStartRound}
-            onReturnHome={handleReturnHome}
+            onSearchItem={handleSearchItem}
             onEmergencyStop={handleEmergencyStop}
             isActive={robotStatus !== 'idle'}
           />
