@@ -75,7 +75,6 @@ export function InventoryList({ onSearchItem, isActive }) {
             location: 'C-15',
           }
         ])
-        }
       }
     )
 
