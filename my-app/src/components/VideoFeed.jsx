@@ -58,36 +58,11 @@ export function VideoFeed({ status }) {
           {time.toLocaleString()}
         </div>
       </div>
-
-      {/* Top right: Camera info */}
-      <div className="absolute top-4 right-4">
-        <div
-          className="px-4 py-2 bg-[var(--card)]/95 border border-[var(--border)] backdrop-blur-sm text-xs uppercase tracking-wider shadow-lg rounded"
-          style={{ fontFamily: 'var(--font-mono)' }}
-        >
-          CAM-01 | 1920x1080
-        </div>
-      </div>
-
-      {/* Bottom info bar */}
+      
       <div
         className="absolute bottom-0 left-0 right-0 bg-[var(--card)]/95 backdrop-blur-sm border-t-2 border-[var(--border)] px-5 py-3 flex items-center justify-between shadow-lg"
         style={{ fontFamily: 'var(--font-mono)' }}
       >
-        <div className="flex gap-6 text-xs uppercase tracking-wider">
-          <div>
-            <span className="opacity-60">Battery:</span>{' '}
-            <span className="text-[var(--green-status)] font-bold">87%</span>
-          </div>
-          <div>
-            <span className="opacity-60">Location:</span>{' '}
-            <span className="text-[var(--accent-orange)] font-bold">Sector A-12</span>
-          </div>
-          <div>
-            <span className="opacity-60">Signal:</span>{' '}
-            <span className="text-[var(--green-status)] font-bold">Strong</span>
-          </div>
-        </div>
         {status === 'running' && (
           <div className="text-[var(--yellow-caution)] animate-pulse text-xs uppercase tracking-wider font-bold">
             ⚠ Scanning...

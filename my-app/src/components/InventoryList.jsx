@@ -1,59 +1,49 @@
-import { useState, useMemo } from 'react'
+import { useState, useMemo, useEffect } from 'react'
 import { Search } from 'lucide-react'
-
-const MOCK_INVENTORY = [
-  {
-    id: '1',
-    sku: 'BTL-001',
-    name: 'Bottles',
-    count: 1850,
-    lastCheck: new Date(Date.now() - 1000 * 60 * 15),
-    location: 'A-12',
-  },
-  {
-    id: '2',
-    sku: 'BK-001',
-    name: 'Books',
-    count: 456,
-    lastCheck: new Date(Date.now() - 1000 * 60 * 30),
-    location: 'C-15',
-  },
-  {
-    id: '3',
-    sku: 'APL-001',
-    name: 'Apples',
-    count: 1560,
-    lastCheck: new Date(Date.now() - 1000 * 60 * 60),
-    location: 'D-08',
-  },
-]
+import { db } from '../../firebase/firebaseConfig'
+import { collection, onSnapshot } from 'firebase/firestore'
 
 export function InventoryList({ onSearchItem, isActive }) {
+  const [inventory, setInventory] = useState([])
   const [sortBy, setSortBy] = useState('lastCheck')
   const [searchQuery, setSearchQuery] = useState('')
 
+  // Listen to inventory collection in real-time
+  useEffect(() => {
+    const unsubscribe = onSnapshot(collection(db, 'inventory'), (snapshot) => {
+      const items = snapshot.docs.map(doc => ({
+        id: doc.id,
+        ...doc.data(),
+        lastCheck: doc.data().lastCheck?.toDate() || new Date()
+      }))
+      setInventory(items)
+    })
+
+    return () => unsubscribe()
+  }, [])
+
   const filteredAndSorted = useMemo(() => {
-    let filtered = MOCK_INVENTORY
+    let filtered = inventory
 
     if (searchQuery.trim()) {
       const query = searchQuery.toLowerCase()
       filtered = filtered.filter(
         (item) =>
-          item.sku.toLowerCase().includes(query) ||
-          item.name.toLowerCase().includes(query) ||
-          item.location.toLowerCase().includes(query)
+          item.sku?.toLowerCase().includes(query) ||
+          item.name?.toLowerCase().includes(query) ||
+          item.location?.toLowerCase().includes(query)
       )
     }
 
     return [...filtered].sort((a, b) => {
       switch (sortBy) {
-        case 'name':      return a.name.localeCompare(b.name)
-        case 'count':     return b.count - a.count
-        case 'lastCheck': return b.lastCheck.getTime() - a.lastCheck.getTime()
+        case 'name':      return a.name?.localeCompare(b.name) || 0
+        case 'count':     return (b.count || 0) - (a.count || 0)
+        case 'lastCheck': return (b.lastCheck?.getTime() || 0) - (a.lastCheck?.getTime() || 0)
         default:          return 0
       }
     })
-  }, [searchQuery, sortBy])
+  }, [inventory, searchQuery, sortBy])
 
   const formatTimeAgo = (date) => {
     const minutes = Math.floor((Date.now() - date.getTime()) / 1000 / 60)
@@ -109,7 +99,11 @@ export function InventoryList({ onSearchItem, isActive }) {
 
       {/* List */}
       <div className="flex-1 overflow-y-auto">
-        {filteredAndSorted.length === 0 ? (
+        {inventory.length === 0 ? (
+          <div className="p-8 text-center opacity-50 uppercase tracking-wider" style={{ fontFamily: 'var(--font-mono)' }}>
+            Loading inventory...
+          </div>
+        ) : filteredAndSorted.length === 0 ? (
           <div className="p-8 text-center opacity-50 uppercase tracking-wider" style={{ fontFamily: 'var(--font-mono)' }}>
             No items found
           </div>
@@ -120,14 +114,14 @@ export function InventoryList({ onSearchItem, isActive }) {
                 <div className="flex items-start justify-between gap-3 mb-3">
                   <div className="flex-1 min-w-0">
                     <div className="text-xs opacity-60 mb-1 uppercase tracking-wider" style={{ fontFamily: 'var(--font-mono)' }}>
-                      {item.sku}
+                      {item.sku || 'N/A'}
                     </div>
                     <div className="text-lg font-bold uppercase tracking-wide" style={{ fontFamily: 'var(--font-sans)' }}>
-                      {item.name}
+                      {item.name || 'Unknown Item'}
                     </div>
                   </div>
                   <div className="text-right shrink-0" style={{ fontFamily: 'var(--font-mono)' }}>
-                    <div className="text-2xl font-bold text-[var(--accent-orange)]">{item.count.toLocaleString()}</div>
+                    <div className="text-2xl font-bold text-[var(--accent-orange)]">{(item.count || 0).toLocaleString()}</div>
                     <div className="text-xs opacity-60 uppercase">units</div>
                   </div>
                 </div>
@@ -135,7 +129,7 @@ export function InventoryList({ onSearchItem, isActive }) {
                 <div className="flex items-center justify-between gap-3">
                   <div className="flex items-center gap-3">
                     <div className="opacity-60 text-xs uppercase tracking-wider" style={{ fontFamily: 'var(--font-mono)' }}>
-                      Location: {item.location}
+                      Location: {item.location || 'Unknown'}
                     </div>
                     <div className="flex items-center gap-2">
                       <div className="w-2 h-2 rounded-full" style={{ backgroundColor: getCheckStatus(item.lastCheck) }} />
@@ -146,7 +140,7 @@ export function InventoryList({ onSearchItem, isActive }) {
                   </div>
 
                   <button
-                    onClick={() => onSearchItem(item.name)}
+                    onClick={() => onSearchItem(item.name || 'Unknown Item')}
                     disabled={isActive}
                     className="px-4 py-2 bg-[var(--accent-orange)] text-[var(--background)] rounded text-xs uppercase tracking-wider font-bold hover:brightness-110 transition-all disabled:opacity-50 disabled:cursor-not-allowed border border-[var(--accent-orange)]"
                     style={{ fontFamily: 'var(--font-sans)' }}
@@ -170,7 +164,7 @@ export function InventoryList({ onSearchItem, isActive }) {
           <div>
             <span className="opacity-60">Total Units:</span>{' '}
             <span className="text-[var(--accent-orange)] font-bold">
-              {filteredAndSorted.reduce((sum, item) => sum + item.count, 0).toLocaleString()}
+              {filteredAndSorted.reduce((sum, item) => sum + (item.count || 0), 0).toLocaleString()}
             </span>
           </div>
         </div>
