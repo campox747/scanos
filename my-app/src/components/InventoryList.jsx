@@ -1,6 +1,6 @@
 import { useState, useMemo, useEffect } from 'react'
 import { Search } from 'lucide-react'
-import { db } from '../../firebase/firebaseConfig'
+import { db } from '../firebase/firebaseConfig'
 import { collection, onSnapshot } from 'firebase/firestore'
 
 export function InventoryList({ onSearchItem, isActive }) {
