@@ -1,79 +1,97 @@
-import { useState, useEffect } from 'react'
+import { useState, useEffect } from "react";
+function timeout(ms, promise) {
+  return new Promise((resolve, reject) => {
+    setTimeout(() => {
+      reject(new Error("Timeout after " + ms + " ms"));
+    }, ms);
+    promise.then(resolve, reject);
+  });
+}
 
 export function VideoFeed({ status }) {
-  const [time, setTime] = useState(new Date())
+  const imgUrl = "http://10.10.10.1/camera_stream";
+  //
+  // useEffect(() => {
+  //   const timer = setInterval(() => setTime(new Date()), 1000);
+  //   return () => clearInterval(timer);
+  // }, []);
+
+  async function updateImage() {
+    // Create image reader and canvas context
+    const imgReader = new FileReader();
+    let rawImageData = null;
+    const imgElt = document.getElementById("cam_canvas");
+    const ctx = imgElt.getContext("2d");
+
+    // Do this forever
+    let img = new Image();
+
+    // Reset variables
+
+    let imageBlob = null;
+
+    // Fetch image
+    try {
+      const fetchImageTimeout = 1000;
+      const imageResponse = await timeout(fetchImageTimeout, fetch(imgUrl));
+
+      imageBlob = await timeout(fetchImageTimeout, imageResponse.blob());
+
+      // const imageResponse = await fetch(imgUrl, {
+      //   signal: AbortSignal.timeout(2000),
+      // });
+      // imageBlob = await imageResponse.blob();
+
+      // Store raw image data
+      rawImageData = await imageBlob.arrayBuffer();
+    } catch (error) {
+      console.error("Error in fetching image: ", error);
+      setTimeout(() => {
+        updateImage();
+      }, 10);
+      return;
+    }
+
+    // Go to top of loop if we don't have image or bbox info
+    if (!imageBlob) {
+      console.error("Error fetching data");
+      setTimeout(() => {
+        updateImage();
+      }, 10);
+      return;
+    }
+
+    // Draw image
+    imgReader.readAsDataURL(imageBlob);
+    imgReader.onloadend = () => {
+      img.onload = () => {
+        // Get width and height of image
+        const width = img.width;
+        const height = img.height;
+        //
+        // // Clear canvas and set new size
+        // ctx.clearRect(0, 0, imgElt.width, imgElt.height);
+        imgElt.width = width;
+        imgElt.height = height;
+
+        // Draw image
+        ctx.drawImage(img, 0, 0);
+      };
+      img.src = imgReader.result;
+    };
+    setTimeout(() => {
+      updateImage();
+    }, 10);
+  }
 
   useEffect(() => {
-    const timer = setInterval(() => setTime(new Date()), 1000)
-    return () => clearInterval(timer)
-  }, [])
+    updateImage();
+  }, []);
 
   return (
-    <div className="relative bg-gradient-to-br from-[#1f2229] to-[#2a2e35] rounded border-2 border-[var(--border)] overflow-hidden aspect-video flex-1 shadow-lg">
-      {/* Grid pattern overlay */}
-      <div
-        className="absolute inset-0 opacity-10 pointer-events-none"
-        style={{
-          backgroundImage: `
-            linear-gradient(var(--grid-line) 1px, transparent 1px),
-            linear-gradient(90deg, var(--grid-line) 1px, transparent 1px)
-          `,
-          backgroundSize: '40px 40px',
-        }}
-      />
-
-      {/* Crosshair overlay */}
-      <div className="absolute inset-0 flex items-center justify-center pointer-events-none">
-        <div className="w-32 h-32 border border-[var(--accent-orange)]/30 rounded-full" />
-        <div className="absolute w-1 h-16 bg-[var(--accent-orange)]/30" />
-        <div className="absolute h-1 w-16 bg-[var(--accent-orange)]/30" />
-      </div>
-
-      {/* Camera feed placeholder */}
-      <div className="absolute inset-0 flex items-center justify-center">
-        <div className="text-center space-y-4">
-          <div className="text-6xl opacity-20" style={{ fontFamily: 'var(--font-sans)' }}>📹</div>
-          <div className="text-lg opacity-40 uppercase tracking-wider" style={{ fontFamily: 'var(--font-sans)', color: 'var(--accent-orange)' }}>
-            Robot Camera Feed
-          </div>
-          <div className="text-sm opacity-30 uppercase tracking-wider" style={{ fontFamily: 'var(--font-mono)' }}>
-            Waiting for stream...
-          </div>
-        </div>
-      </div>
-
-      {/* Top left: REC + timestamp */}
-      <div className="absolute top-4 left-4 space-y-2">
-        <div
-          className="px-4 py-2 bg-[var(--card)]/95 border-2 border-[var(--red-alert)] backdrop-blur-sm rounded flex items-center gap-2 shadow-lg"
-          style={{ fontFamily: 'var(--font-mono)' }}
-        >
-          <span className="opacity-80 text-xs uppercase tracking-wider">REC</span>{' '}
-          <span className="text-[var(--red-alert)] animate-pulse">●</span>
-        </div>
-        <div
-          className="px-4 py-2 bg-[var(--card)]/95 border border-[var(--border)] backdrop-blur-sm text-xs opacity-80 rounded tabular-nums shadow-lg"
-          style={{ fontFamily: 'var(--font-mono)' }}
-        >
-          {time.toLocaleString()}
-        </div>
-      </div>
-      
-      <div
-        className="absolute bottom-0 left-0 right-0 bg-[var(--card)]/95 backdrop-blur-sm border-t-2 border-[var(--border)] px-5 py-3 flex items-center justify-between shadow-lg"
-        style={{ fontFamily: 'var(--font-mono)' }}
-      >
-        {status === 'running' && (
-          <div className="text-[var(--yellow-caution)] animate-pulse text-xs uppercase tracking-wider font-bold">
-            ⚠ Scanning...
-          </div>
-        )}
-        {status === 'searching' && (
-          <div className="text-[var(--accent-orange)] animate-pulse text-xs uppercase tracking-wider font-bold">
-            🔍 Searching...
-          </div>
-        )}
-      </div>
-    </div>
-  )
+    <canvas
+      className="relative bg-gradient-to-br from-[#1f2229] to-[#2a2e35] rounded border-2 border-[var(--border)] overflow-hidden aspect-square flex-1 w-full shadow-lg"
+      id="cam_canvas"
+    ></canvas>
+  );
 }
