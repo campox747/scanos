@@ -4,7 +4,8 @@ import { VideoFeed } from './components/VideoFeed'
 import { InventoryList } from './components/InventoryList'
 import { StatusBar } from './components/StatusBar'
 import { db } from './firebase/firebaseConfig'
-import { serverTimestamp, onSnapshot, updateDoc, doc } from 'firebase/firestore'
+
+import { serverTimestamp, onSnapshot, updateDoc, doc, collection, getDocs } from 'firebase/firestore'
 
 const ROBOT_DOC = doc(db, 'robots', 'robot1')
 
