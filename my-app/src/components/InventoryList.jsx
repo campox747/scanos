@@ -30,51 +30,13 @@ export function InventoryList({ onSearchItem, isActive }) {
         } catch (err) {
           console.error('Error processing inventory data:', err)
           setError('Error processing inventory data')
-          setIsLoading(false)
-          // Fallback to mock data if processing fails
-          setInventory([
-            {
-              id: 'fallback-1',
-              sku: 'BTL-001',
-              name: 'Bottles',
-              count: 1850,
-              lastCheck: new Date(Date.now() - 1000 * 60 * 15),
-              location: 'A-12',
-            },
-            {
-              id: 'fallback-2',
-              sku: 'BK-001',
-              name: 'Books',
-              count: 456,
-              lastCheck: new Date(Date.now() - 1000 * 60 * 30),
-              location: 'C-15',
-            }
-          ])
+          setIsLoading(false)          
         }
       },
       (err) => {
         console.error('Error listening to inventory:', err)
         setError('Failed to connect to inventory database')
         setIsLoading(false)
-        // Fallback to mock data if connection fails
-        setInventory([
-          {
-            id: 'fallback-1',
-            sku: 'BTL-001',
-            name: 'Bottles',
-            count: 1850,
-            lastCheck: new Date(Date.now() - 1000 * 60 * 15),
-            location: 'A-12',
-          },
-          {
-            id: 'fallback-2',
-            sku: 'BK-001',
-            name: 'Books',
-            count: 456,
-            lastCheck: new Date(Date.now() - 1000 * 60 * 30),
-            location: 'C-15',
-          }
-        ])
       }
     )
 
@@ -91,9 +53,7 @@ export function InventoryList({ onSearchItem, isActive }) {
       const query = searchQuery.toLowerCase()
       filtered = filtered.filter(
         (item) =>
-          item.sku?.toLowerCase().includes(query) ||
-          item.name?.toLowerCase().includes(query) ||
-          item.location?.toLowerCase().includes(query)
+          item.name?.toLowerCase().includes(query)
       )
     }
 
@@ -190,9 +150,6 @@ export function InventoryList({ onSearchItem, isActive }) {
               <div key={item.id} className="p-4 hover:bg-[var(--accent)] transition-colors">
                 <div className="flex items-start justify-between gap-3 mb-3">
                   <div className="flex-1 min-w-0">
-                    <div className="text-xs opacity-60 mb-1 uppercase tracking-wider" style={{ fontFamily: 'var(--font-mono)' }}>
-                      {item.sku || 'N/A'}
-                    </div>
                     <div className="text-lg font-bold uppercase tracking-wide" style={{ fontFamily: 'var(--font-sans)' }}>
                       {item.name || 'Unknown Item'}
                     </div>
@@ -205,9 +162,6 @@ export function InventoryList({ onSearchItem, isActive }) {
 
                 <div className="flex items-center justify-between gap-3">
                   <div className="flex items-center gap-3">
-                    <div className="opacity-60 text-xs uppercase tracking-wider" style={{ fontFamily: 'var(--font-mono)' }}>
-                      Location: {item.location || 'Unknown'}
-                    </div>
                     <div className="flex items-center gap-2">
                       <div className="w-2 h-2 rounded-full" style={{ backgroundColor: getCheckStatus(item.lastCheck) }} />
                       <div className="text-xs uppercase tracking-wider" style={{ fontFamily: 'var(--font-mono)' }}>
