@@ -1,0 +1,64 @@
+@import "tailwindcss";
+
+:root {
+  /* Fonts */
+  --font-sans: 'Courier New', Courier, monospace;
+  --font-mono: 'Courier New', Courier, monospace;
+
+  /* Colors - dark industrial theme */
+  --background: #0d0e12;
+  --foreground: #e8e6e0;
+  --card: #16171d;
+  --secondary: #1f2028;
+  --border: #2e303a;
+  --input: #1a1b22;
+  --accent: #1f2028;
+
+  /* Status colors */
+  --green-status: #4ade80;
+  --yellow-caution: #facc15;
+  --red-alert: #ef4444;
+  --accent-orange: #f97316;
+  --accent-yellow: #eab308;
+
+  /* Grid line for video feed */
+  --grid-line: rgba(255, 255, 255, 0.8);
+
+  color-scheme: dark;
+  color: var(--foreground);
+  background-color: var(--background);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+}
+
+#root {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+h1 {
+  font-size: 1.25rem;
+  font-weight: 700;
+  margin: 0;
+  color: var(--foreground);
+}
+
+h2 {
+  font-size: 1rem;
+  font-weight: 600;
+  margin: 0;
+  color: var(--foreground);
+}
+
+p {
+  margin: 0;
+}
