@@ -36,9 +36,6 @@ export function StatusBar({ status }) {
           <h1 className="tracking-wide uppercase" style={{ fontFamily: 'var(--font-sans)' }}>
             Warehouse Robot Control
           </h1>
-          <div className="text-xs opacity-60 uppercase tracking-wider" style={{ fontFamily: 'var(--font-mono)' }}>
-            System v2.4.1
-          </div>
         </div>
       </div>
 

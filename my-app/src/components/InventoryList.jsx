@@ -152,7 +152,7 @@ export function InventoryList({ onSearchItem, isActive }) {
             type="text"
             value={searchQuery}
             onChange={(e) => setSearchQuery(e.target.value)}
-            placeholder="Search SKU, item name, or location..."
+            placeholder="Search item..."
             className="w-full pl-10 pr-4 py-2.5 bg-[var(--input)] border border-[var(--border)] rounded focus:border-[var(--accent-orange)] focus:outline-none transition-colors uppercase"
             style={{ fontFamily: 'var(--font-mono)' }}
           />

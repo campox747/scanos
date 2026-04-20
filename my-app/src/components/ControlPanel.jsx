@@ -2,7 +2,7 @@
 // Pure presentational + interaction layer.
 // App.jsx owns the Firestore listener and passes status + handlers as props.
 
-export function ControlPanel({ onStartRound, onReturnHome, onEmergencyStop, robotStatus, searchTarget }) {
+export function ControlPanel({ onStartRound, onEmergencyStop, robotStatus, searchTarget }) {
 
   const isLoading   = robotStatus === null       // null = still connecting
   const isIdle      = robotStatus === 'idle'
@@ -10,7 +10,6 @@ export function ControlPanel({ onStartRound, onReturnHome, onEmergencyStop, robo
   const isSearching = robotStatus === 'searching'
 
   const canStart  = isIdle
-  const canReturn = isRunning || isSearching
   const canStop   = isRunning || isSearching
 
   const statusLabel = isLoading
@@ -44,7 +43,7 @@ export function ControlPanel({ onStartRound, onReturnHome, onEmergencyStop, robo
         </span>
       </div>
 
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
 
         {/* START ROUND */}
         <div className="space-y-2">
@@ -72,34 +71,13 @@ export function ControlPanel({ onStartRound, onReturnHome, onEmergencyStop, robo
           </button>
         </div>
 
-        {/* RETURN HOME */}
-        <div className="space-y-2">
-          <label
-            className="block opacity-70 text-xs uppercase tracking-wider"
-            style={{ fontFamily: 'var(--font-mono)' }}
-          >
-            Navigation
-          </label>
-          <button
-            onClick={onReturnHome}
-            disabled={!canReturn || isLoading}
-            className="w-full h-40 bg-[var(--secondary)] text-[var(--foreground)] rounded transition-all duration-200 hover:bg-[var(--accent-yellow)] hover:text-[var(--background)] disabled:opacity-40 disabled:cursor-not-allowed border-2 border-[var(--border)] relative overflow-hidden"
-            style={{ fontFamily: 'var(--font-sans)' }}
-          >
-            <div className="relative z-10">
-              <div className="text-5xl mb-2">⌂</div>
-              <div className="text-xl font-bold uppercase tracking-wider">Return Home</div>
-            </div>
-          </button>
-        </div>
-
         {/* EMERGENCY STOP */}
         <div className="space-y-2">
           <label
             className="block opacity-70 text-xs uppercase tracking-wider"
             style={{ fontFamily: 'var(--font-mono)' }}
           >
-            Emergency
+            Stop round
           </label>
           <button
             onClick={onEmergencyStop}
@@ -108,8 +86,8 @@ export function ControlPanel({ onStartRound, onReturnHome, onEmergencyStop, robo
             style={{ fontFamily: 'var(--font-sans)' }}
           >
             <div className="relative z-10">
-              <div className="text-5xl mb-2">⬛</div>
-              <div className="text-xl font-bold uppercase tracking-wider">Emergency Stop</div>
+              <div className="text-5xl mb-2">■</div>
+              <div className="text-xl font-bold uppercase tracking-wider">Stop</div>
             </div>
           </button>
         </div>

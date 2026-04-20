@@ -33,15 +33,6 @@ export default function App() {
     })
   }
 
-  const handleReturnHome = async () => {
-    await updateDoc(ROBOT_DOC, {
-      status: 'idle',
-      lastCommand: 'return_home',
-      searchTarget: null,
-      updatedAt: serverTimestamp(),
-    })
-  }
-
   const handleSearchItem = async (itemName) => {
     if (itemName.trim()) {
       await updateDoc(ROBOT_DOC, {
@@ -74,7 +65,6 @@ export default function App() {
             robotStatus={robotStatus}
             searchTarget={searchTarget}
             onStartRound={handleStartRound}
-            onReturnHome={handleReturnHome}
             onEmergencyStop={handleEmergencyStop}
           />
         </div>
