@@ -22,8 +22,8 @@ export function ControlPanel({ onStartRound, onEmergencyStop, robotStatus, searc
 
   const statusColor = {
     idle:      'var(--accent-yellow)',
-    running:   'var(--accent-orange)',
-    searching: '#60a5fa',
+    running:   'var(--yellow-caution)',
+    searching: 'var(--accent-orange)',
   }[robotStatus] ?? 'var(--border)'
 
   return (
@@ -51,7 +51,7 @@ export function ControlPanel({ onStartRound, onEmergencyStop, robotStatus, searc
             className="block opacity-70 text-xs uppercase tracking-wider"
             style={{ fontFamily: 'var(--font-mono)' }}
           >
-            Automatic Inventory
+            Automatic Inventory Scan
           </label>
           <button
             onClick={onStartRound}
@@ -77,7 +77,7 @@ export function ControlPanel({ onStartRound, onEmergencyStop, robotStatus, searc
             className="block opacity-70 text-xs uppercase tracking-wider"
             style={{ fontFamily: 'var(--font-mono)' }}
           >
-            Stop round
+            Emergency Stop
           </label>
           <button
             onClick={onEmergencyStop}

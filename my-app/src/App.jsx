@@ -53,12 +53,13 @@ export default function App() {
     })
   }
 
-  return (
+return (
     <div className="size-full flex flex-col bg-[var(--background)]" style={{ fontFamily: 'var(--font-sans)' }}>
       <StatusBar status={robotStatus} />
 
-      <div className="flex-1 grid grid-cols-1 lg:grid-cols-[1fr_420px] gap-4 p-4 overflow-hidden">
-        {/* Left: Video + Controls */}
+      {/* EDIT THIS to make inventory wider/narrower */}
+      <div className="flex-1 grid grid-cols-1 lg:grid-cols-[800px_1fr] gap-4 p-4 overflow-hidden">
+        
         <div className="flex flex-col gap-4">
           <VideoFeed status={robotStatus} />
           <ControlPanel
@@ -69,7 +70,6 @@ export default function App() {
           />
         </div>
 
-        {/* Right: Inventory */}
         <InventoryList
           onSearchItem={handleSearchItem}
           isActive={robotStatus !== 'idle' && robotStatus !== null}

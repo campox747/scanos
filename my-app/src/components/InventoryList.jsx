@@ -95,8 +95,8 @@ export function InventoryList({ onSearchItem, isActive }) {
       {/* Header */}
       <div className="border-b-2 border-[var(--border)] p-5 space-y-4">
         <div className="flex items-center justify-between">
-          <h2 className="uppercase tracking-wider" style={{ fontFamily: 'var(--font-sans)' }}>
-            Inventory Database
+          <h2 className="!text-2xl uppercase tracking-wider" style={{ fontFamily: 'var(--font-sans)' }}>
+            Inventory
           </h2>
           {error && (
             <span className="text-xs text-[var(--red-alert)] uppercase tracking-wider" style={{ fontFamily: 'var(--font-mono)' }}>

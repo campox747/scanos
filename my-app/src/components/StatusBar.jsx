@@ -10,7 +10,7 @@ export function StatusBar({ status }) {
 
   const getStatusColor = () => {
     switch (status) {
-      case 'idle':      return 'var(--green-status)'
+      case 'idle':      return 'var(--accent-yellow)'
       case 'running':   return 'var(--yellow-caution)'
       case 'searching': return 'var(--accent-orange)'
     }
@@ -27,22 +27,18 @@ export function StatusBar({ status }) {
   const isActive = status !== 'idle'
 
   return (
-    <div className={`bg-[var(--card)] border-b-2 border-[var(--border)] flex items-center justify-between px-6 transition-all ${
-      isActive ? 'h-24 shadow-lg' : 'h-16 shadow-sm'
-    }`}>
-      {/* Logo/Title */}
-      <div className="flex items-center gap-4">
-        <div className="flex flex-col">
-          <h1 className="tracking-wide uppercase" style={{ fontFamily: 'var(--font-sans)' }}>
-            Warehouse Robot Control
-          </h1>
+    <div className="bg-[var(--card)] border-b-2 border-[var(--border)] flex items-center px-6 h-16 shadow-sm transition-all relative">
+      
+      {/* Left Side: Clock + Status */}
+      <div className="flex items-center gap-6">
+        {/* Clock */}
+        <div className="opacity-60 text-sm tabular-nums" style={{ fontFamily: 'var(--font-mono)' }}>
+          {time.toLocaleTimeString()}
         </div>
-      </div>
 
-      {/* Status */}
-      <div className="flex items-center gap-4">
+        {/* Status */}
         <div
-          className={`px-6 py-3 rounded flex items-center gap-3 transition-all ${isActive ? 'animate-pulse shadow-lg' : ''}`}
+          className={`px-4 py-2 rounded flex items-center gap-3 transition-all ${isActive ? 'animate-pulse shadow-lg' : ''}`}
           style={{
             fontFamily: 'var(--font-mono)',
             backgroundColor: `${getStatusColor()}20`,
@@ -58,10 +54,15 @@ export function StatusBar({ status }) {
             {getStatusText()}
           </span>
         </div>
-        <div className="opacity-60 text-sm tabular-nums" style={{ fontFamily: 'var(--font-mono)' }}>
-          {time.toLocaleTimeString()}
-        </div>
       </div>
+
+      {/* Center: Title */}
+      <div className="absolute left-1/2 -translate-x-1/2">
+        <h1 className="!text-2xl tracking-wide uppercase" style={{ fontFamily: 'var(--font-sans)' }}>
+          Scanos Control Panel
+        </h1>
+      </div>
+
     </div>
   )
 }

@@ -15,10 +15,10 @@
   --accent: #1f2028;
 
   /* Status colors */
-  --green-status: #4ade80;
-  --yellow-caution: #facc15;
-  --red-alert: #ef4444;
-  --accent-orange: #f97316;
+  --green-status: #53e100; /* old 4ade80 */
+  --yellow-caution: #53e100;
+  --red-alert: #bd4212; /* old ef4444 */
+  --accent-orange: #00b1c1; /* old f97316 */
   --accent-yellow: #eab308;
 
   /* Grid line for video feed */
