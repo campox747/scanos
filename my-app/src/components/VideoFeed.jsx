@@ -91,7 +91,7 @@ export function VideoFeed({ status }) {
   return (
     <div className="flex justify-center w-full mb-4">
       <canvas
-        className="relative bg-gradient-to-br from-[#1f2229] to-[#2a2e35] rounded border-2 border-[var(--border)] overflow-hidden aspect-square w-full max-w-sm shadow-lg"
+        className="relative bg-gradient-to-br from-[#1f2229] to-[#2a2e35] rounded border-2 border-[var(--border)] overflow-hidden aspect-square w-full max-w-md shadow-lg"
         id="cam_canvas"
       ></canvas>
     </div>
