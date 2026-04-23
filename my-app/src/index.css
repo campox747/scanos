@@ -17,8 +17,8 @@
   /* Status colors */
   --green-status: #53e100; /* old 4ade80 */
   --yellow-caution: #53e100;
-  --red-alert: #bd4212; /* old ef4444 */
-  --accent-orange: #00b1c1; /* old f97316 */
+  --red-alert: #ef4444; /* old ef4444 */
+  --accent-orange: #f97316; /* old f97316 00b1c1 */
   --accent-yellow: #eab308;
 
   /* Grid line for video feed */
