@@ -25,7 +25,7 @@ def on_robot_state_change(doc_snapshot, changes, read_time):
 
          # Look inside the data package (snapshot) that was pushed
         update = doc.to_dict().get('status')   
-        print(f"State changed: {update}") # Print status to terminal
+        print(f"Current State: {update}") # Print status to terminal
 
         # Publish new status via MQTT
         client.publish("robot/status", update, 0)
