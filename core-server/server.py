@@ -4,7 +4,39 @@ import time
 from paho.mqtt import client as mqtt_client
 import sys
 import json
+import numpy as np
+from sort import Sort
 
+# --------------------------------------------------------------
+# CONFIG
+# --------------------------------------------------------------
+# Class ID to item name mapping
+CLASS_MAP = {
+    1: "XRP-BOOK",
+    2: "XRP-APPLE",
+    3: "XRP-BOTTLE",
+}
+
+# The "Thick Line" Counting Zone
+ZONE_X_MIN = 130
+ZONE_X_MAX = 190
+
+# Dictionaries to hold the tracking state for each individual item type
+trackers = {}
+counted_ids = {}
+current_inventory = {}
+last_sync_frame = 0
+needs_sync = False
+
+# Initialize a tracker and memory set for each class
+for class_id, item_name in CLASS_MAP.items():
+    trackers[item_name] = Sort(max_age=15, min_hits=3, iou_threshold=0.3)
+    counted_ids[item_name] = set()
+    current_inventory[item_name] = 0
+
+# --------------------------------------------------------------
+# INITIALISATION MQTT and Firebase
+# --------------------------------------------------------------
 # Initialize MQTT client
 client = mqtt_client.Client(mqtt_client.CallbackAPIVersion.VERSION2)
 
@@ -24,10 +56,8 @@ db = firestore.client()
 # INVENTORY UPDATE FUNCTION
 # --------------------------------------------------------------
 
-# updates firebase inventory with item counts from robot
-
+# updates firebase inventory with item counts from system
 def update_inventory(item_counts):
-
     try:
         inventory_ref = db.collection("inventory")
         
@@ -47,37 +77,78 @@ def update_inventory(item_counts):
         return False
 
 
-
 # --------------------------------------------------------------
-# MQTT CALLBACK - recieves item counts from robot
+# VISION COUNTING LOGIC (MQTT detection)
 # --------------------------------------------------------------
-def on_item_count_received(client, userdata, msg):
-    
-    # Triggered when robot publishes item counts via MQTT.
-    # Expected message format: {"item_1": 5, "widget_A": 12, ...}
+def on_detections_received(client, userdata, msg):
+    global last_sync_frame, needs_sync
     
     try:
-        payload = msg.payload.decode('utf-8')
-        item_counts = json.loads(payload)
+        payload = json.loads(msg.payload.decode('utf-8'))
+        frame_id = payload.get("frame_id", 0)
+        raw_detections = payload.get("detections", [])
         
-        print(f"\n Received item counts from robot: {item_counts}")
+        # 1. Group detections by their class ID
+        # e.g., all books go in one list, all cans go in another
+        detections_by_class = {item_name: [] for item_name in CLASS_MAP.values()}
         
-        # Update Firebase inventory
-        if update_inventory(item_counts):
-            # Optionally publish success confirmation back to robot
-            client.publish("robot/inventory/ack", "inventory_updated", 0)
-        else:
-            client.publish("robot/inventory/ack", "update_failed", 0)
-    
+        for det in raw_detections:
+            class_id = det.get("class")
+            if class_id in CLASS_MAP:
+                item_name = CLASS_MAP[class_id]
+                x1 = det["left"]
+                y1 = det["top"]
+                x2 = det["left"] + det["width"]
+                y2 = det["top"] + det["height"]
+                score = det["score"]
+                detections_by_class[item_name].append([x1, y1, x2, y2, score])
+        
+        # 2. Update trackers and count
+        for item_name, boxes in detections_by_class.items():
+            boxes_np = np.array(boxes) if len(boxes) > 0 else np.empty((0, 5))
+            
+            # Update the specific tracker for this item type
+            tracked_objects = trackers[item_name].update(boxes_np)
+            
+            for track in tracked_objects:
+                x1, y1, x2, y2, track_id = track
+                track_id = int(track_id)
+                centroid_x = int((x1 + x2) / 2)
+                
+                # Check if it crosses the zone
+                if track_id not in counted_ids[item_name]:
+                    # Increment local count
+                    current_inventory[item_name] += 1
+                    counted_ids[item_name].add(track_id)
+                    needs_sync = True
+                        
+                    print(f"\nCOUNT TRIGGERED! {item_name} (ID: {track_id}) crossed at X:{centroid_x}")
+                        
+                    # Instantly push new count to Firebase
+                    update_inventory({item_name: current_inventory[item_name]})
+                        
+                    # Optionally tell the robot we successfully logged it
+                    client.publish("robot/inventory/ack", f"{item_name}_updated", 0)
+        
+        # Batch update Firebase every 30 frames
+        if needs_sync and (frame_id - last_sync_frame >= 30):
+            update_inventory(current_inventory)
+            last_sync_frame = frame_id
+            needs_sync = False
+
     except json.JSONDecodeError:
-        print(f"✗ Invalid JSON received: {msg.payload}")
+        print(f"✗ Invalid JSON received")
     except Exception as e:
-        print(f"✗ Error processing item counts: {e}")
+        print(f"✗ Error processing vision payload: {e}")
 
 
 
+# --------------------------------------------------------------
+# FIREBASE STATE LISTENER
+# --------------------------------------------------------------
 # this block triggers when a change happens in firebase
 def on_robot_state_change(doc_snapshot, changes, read_time):
+    # listens for status changes from robot
     for doc in doc_snapshot:
         # Look inside the data package (snapshot) that was pushed
         update = doc.to_dict().get('status')   
@@ -89,11 +160,11 @@ def on_robot_state_change(doc_snapshot, changes, read_time):
 
 
 # --------------------------------------------------------------
-# SETUP MQTT SUBSCRIPTIONS
+# SETUP MQTT SUBSCRIPTIONS and MAIN LOOP
 # --------------------------------------------------------------
-# Subscribe to item counts topic
-client.subscribe("robot/item_counts")
-client.on_message = on_item_count_received
+# Subscribe to detections topic
+client.subscribe("robot/detections")
+client.on_message = on_detections_received
 
 # Attach a permanent listener to "robot1", tells firebase to run function above when a change happens
 doc_watch = db.collection("robots").document("robot1").on_snapshot(on_robot_state_change)
@@ -102,7 +173,7 @@ print("✓ Server initialised")
 print("✓ Listening to Firebase robot status...")
 print("✓ Listening to MQTT robot/item_counts...")
 
-# Infinite loop 
+# MAIN infinite loop 
 try:
     while True:
         time.sleep(1)
