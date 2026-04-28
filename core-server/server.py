@@ -25,8 +25,6 @@ ZONE_X_MAX = 190
 trackers = {}
 counted_ids = {}
 current_inventory = {}
-last_sync_frame = 0
-needs_sync = False
 
 # Initialize a tracker and memory set for each class
 for class_id, item_name in CLASS_MAP.items():
@@ -81,7 +79,6 @@ def update_inventory(item_counts):
 # VISION COUNTING LOGIC (MQTT detection)
 # --------------------------------------------------------------
 def on_detections_received(client, userdata, msg):
-    global last_sync_frame, needs_sync
     
     try:
         payload = json.loads(msg.payload.decode('utf-8'))
@@ -104,6 +101,7 @@ def on_detections_received(client, userdata, msg):
                 detections_by_class[item_name].append([x1, y1, x2, y2, score])
         
         # 2. Update trackers and count
+        changes_this_frame = {}
         for item_name, boxes in detections_by_class.items():
             boxes_np = np.array(boxes) if len(boxes) > 0 else np.empty((0, 5))
             
@@ -116,25 +114,22 @@ def on_detections_received(client, userdata, msg):
                 centroid_x = int((x1 + x2) / 2)
                 
                 # Check if it crosses the zone
-                if track_id not in counted_ids[item_name]:
-                    # Increment local count
-                    current_inventory[item_name] += 1
-                    counted_ids[item_name].add(track_id)
-                    needs_sync = True
+                if ZONE_X_MIN <= centroid_x <= ZONE_X_MAX:
+                    if track_id not in counted_ids[item_name]:
+                        # Increment local count
+                        current_inventory[item_name] += 1
+                        counted_ids[item_name].add(track_id)
                         
-                    print(f"\nCOUNT TRIGGERED! {item_name} (ID: {track_id}) crossed at X:{centroid_x}")
-                        
-                    # Instantly push new count to Firebase
-                    update_inventory({item_name: current_inventory[item_name]})
-                        
-                    # Optionally tell the robot we successfully logged it
-                    client.publish("robot/inventory/ack", f"{item_name}_updated", 0)
+                        changes_this_frame[item_name] = current_inventory[item_name]
+                            
+                        print(f"\nCOUNT TRIGGERED! {item_name} (ID: {track_id}) crossed at X:{centroid_x}")
+                            
+                        # Optionally tell the robot we successfully logged it
+                        client.publish("robot/inventory/ack", f"{item_name}_updated", 0)
         
-        # Batch update Firebase every 30 frames
-        if needs_sync and (frame_id - last_sync_frame >= 30):
-            update_inventory(current_inventory)
-            last_sync_frame = frame_id
-            needs_sync = False
+        # Update Firebase if there were any changes in this frame
+        if changes_this_frame:
+            update_inventory(changes_this_frame)
 
     except json.JSONDecodeError:
         print(f"✗ Invalid JSON received")
@@ -173,12 +168,13 @@ print("✓ Server initialised")
 print("✓ Listening to Firebase robot status...")
 print("✓ Listening to MQTT robot/item_counts...")
 
-# MAIN infinite loop 
-try:
-    while True:
-        time.sleep(1)
-except KeyboardInterrupt:
-    # Clean shutdown
-    client.loop_stop()
-    print("Bridge closed.")
-    sys.exit(0)
+if __name__ == "__main__":
+    # MAIN infinite loop 
+    try:
+        while True:
+            time.sleep(1)
+    except KeyboardInterrupt:
+        # Clean shutdown
+        client.loop_stop()
+        print("Bridge closed.")
+        sys.exit(0)
