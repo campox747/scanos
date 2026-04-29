@@ -1,0 +1,11 @@
+firebase-admin
+paho-mqtt
+numpy
+matplotlib
+scikit-image
+filterpy
+scipy
+
+#pip install -r requirements.txt
+
+
