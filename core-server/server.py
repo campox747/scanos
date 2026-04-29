@@ -15,7 +15,6 @@ CLASS_MAP = {
     1: "XRP-BOOK",
     2: "XRP-COKE",
     3: "XRP-MONSTER",
-    4: "XRP-APPLE",
 }
 
 # The "Thick Line" Counting Zone
