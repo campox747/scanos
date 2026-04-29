@@ -28,7 +28,7 @@ current_inventory = {}
 
 # Initialize a tracker and memory set for each class
 for class_id, item_name in CLASS_MAP.items():
-    trackers[item_name] = Sort(max_age=15, min_hits=0, iou_threshold=0.3)
+    trackers[item_name] = Sort(max_age=15, min_hits=5, iou_threshold=0.3)
     counted_ids[item_name] = set()
     current_inventory[item_name] = 0
 
@@ -82,8 +82,8 @@ def on_detections_received(client, userdata, msg):
     
     try:
         payload = json.loads(msg.payload.decode('utf-8'))
-        frame_id = payload.get("frame_id", 0)
-        raw_detections = payload.get("detections", [])
+        frame_id = payload.get("frame", 0)
+        raw_detections = payload.get("bboxes", [])
 
         try:
             print(f"Received on {msg.topic}: {payload}")
@@ -99,10 +99,10 @@ def on_detections_received(client, userdata, msg):
             class_id = det.get("id")
             if class_id in CLASS_MAP:
                 item_name = CLASS_MAP[class_id]
-                x1 = det["left"]
-                y1 = det["top"]
-                x2 = det["left"] + det["width"]
-                y2 = det["top"] + det["height"]
+                x1 = det["xmin"] * 320
+                y1 = det["ymin"] * 320
+                x2 = det["xmax"] * 320
+                y2 = det["ymax"] * 320
                 score = det["score"]
                 detections_by_class[item_name].append([x1, y1, x2, y2, score])
         
@@ -164,7 +164,6 @@ def on_robot_state_change(doc_snapshot, changes, read_time):
 # SETUP MQTT SUBSCRIPTIONS and MAIN LOOP
 # --------------------------------------------------------------
 # Subscribe to detections topic
-client.subscribe("robot/detections")
 client.subscribe("robot/coral")
 client.on_message = on_detections_received
 
