@@ -29,7 +29,7 @@ current_inventory = {}
 
 # Initialize a tracker and memory set for each class
 for class_id, item_name in CLASS_MAP.items():
-    trackers[item_name] = Sort(max_age=15, min_hits=3, iou_threshold=0.3)
+    trackers[item_name] = Sort(max_age=15, min_hits=0, iou_threshold=0.3)
     counted_ids[item_name] = set()
     current_inventory[item_name] = 0
 
@@ -85,13 +85,19 @@ def on_detections_received(client, userdata, msg):
         payload = json.loads(msg.payload.decode('utf-8'))
         frame_id = payload.get("frame_id", 0)
         raw_detections = payload.get("detections", [])
+
+        try:
+            print(f"Received on {msg.topic}: {payload}")
+        except Exception as e:
+            print(f"✗ Error reading coral payload: {e}")
         
         # 1. Group detections by their class ID
         # e.g., all books go in one list, all cans go in another
         detections_by_class = {item_name: [] for item_name in CLASS_MAP.values()}
         
+        
         for det in raw_detections:
-            class_id = det.get("class")
+            class_id = det.get("id")
             if class_id in CLASS_MAP:
                 item_name = CLASS_MAP[class_id]
                 x1 = det["left"]
@@ -160,6 +166,7 @@ def on_robot_state_change(doc_snapshot, changes, read_time):
 # --------------------------------------------------------------
 # Subscribe to detections topic
 client.subscribe("robot/detections")
+client.subscribe("robot/coral")
 client.on_message = on_detections_received
 
 # Attach a permanent listener to "robot1", tells firebase to run function above when a change happens
