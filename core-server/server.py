@@ -13,8 +13,9 @@ from sort import Sort
 # Class ID to item name mapping
 CLASS_MAP = {
     1: "XRP-BOOK",
-    2: "XRP-APPLE",
-    3: "XRP-BOTTLE",
+    2: "XRP-COKE",
+    3: "XRP-MONSTER",
+    4: "XRP-APPLE",
 }
 
 # The "Thick Line" Counting Zone
