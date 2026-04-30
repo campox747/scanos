@@ -2,7 +2,7 @@ import network
 import time
 from simple import MQTTClient
 from lineFollowing import LineFollower
-import uasyncio as asyn
+import uasyncio as asyncio
 from machine import UART, Pin
 
 lf = LineFollower()
@@ -10,7 +10,7 @@ lf = LineFollower()
 # Initialize Coral Board connection
 coral_uart = UART(0, baudrate=115200, tx=Pin(0), rx=Pin(1))
 
-# Wi-Fi Setup
+# Wi-Fi Connection
 WIFI_SSID = "Campo"
 WIFI_PASSWORD = "francesco23"
 
@@ -59,7 +59,9 @@ print(f"Connected to Broker at {MQTT_BROKER} and subscribed.")
 async def read_coral_data():
     while True:
         if coral_uart.any():
+
             raw_data = coral_uart.readline()
+            
             if raw_data:
                 try:
                     text_data = raw_data.decode('utf-8').strip()
@@ -69,7 +71,7 @@ async def read_coral_data():
                     client.publish(b"robot/coral", text_data)
                 except Exception as e:
                     pass # Ignore decoding errors
-        await asyncio.sleep(0.05)
+        await asyncio.sleep(0.1)
         
 async def handle_server_commands():
     while True:
@@ -80,6 +82,15 @@ async def handle_server_commands():
             
         # Give the other task a turn to run for 50ms
         await asyncio.sleep(0.05)
+        
+async def drive_motors():
+    while True:
+        # Assuming lf.start() sets lf.following to True based on your old code
+        if lf.following:
+            lf.line_track()  # Read sensors and adjust motor speeds
+            
+        # 0.02 seconds = 20ms. 
+        await asyncio.sleep(0.02)
 
 async def main():
     print("Starting concurrent tasks...")
@@ -87,6 +98,7 @@ async def main():
     # Fire up both tasks
     asyncio.create_task(read_coral_data())
     asyncio.create_task(handle_server_commands())
+    asyncio.create_task(drive_motors())
     
     # Keep the main program alive infinitely
     while True:
