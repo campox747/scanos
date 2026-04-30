@@ -18,16 +18,14 @@ CLASS_MAP = {
     3: "XRP-MONSTER",
 }
 
-# The Line Crossing & Proximity Config
-COUNT_LINE_X = 160
-MIN_DISTANCE = 50
+# The "thick line" counting zone
+ZONE_X_MIN = 130
+ZONE_X_MAX = 190
 
 # Dictionaries to hold the tracking state for each individual item type
 trackers = {}
 counted_ids = {}
 current_inventory = {}
-previous_centroids = {}        # Memory of last frame's X position
-last_counted_positions = []    # Memory of recent (x, y) counts to prevent duplicates
 
 # Initialize a tracker and memory set for each class
 for class_id, item_name in CLASS_MAP.items():
@@ -121,39 +119,20 @@ def on_detections_received(client, userdata, msg):
                 x1, y1, x2, y2, track_id = track
                 track_id = int(track_id)
                 centroid_x = int((x1 + x2) / 2)
-                centroid_y = int((y1 + y2) / 2)
                 
-                # Get previous X position, default to current if it's new
-                prev_x = previous_centroids.get(track_id, centroid_x)
-                
-                # 1. Check for LINE CROSSING (moving left to right)
-                if prev_x < COUNT_LINE_X and centroid_x >= COUNT_LINE_X:
-                    
-                    # 2. PROXIMITY CHECK
-                    is_duplicate = False
-                    for (cx, cy) in last_counted_positions:
-                        distance = math.hypot(centroid_x - cx, centroid_y - cy)
-                        if distance < MIN_DISTANCE:
-                            is_duplicate = True
-                            break
-                    
-                    if not is_duplicate and track_id not in counted_ids[item_name]:
+                # Check if it crosses the zone
+                if ZONE_X_MIN <= centroid_x <= ZONE_X_MAX:
+                    if track_id not in counted_ids[item_name]:
                         # Increment local count
                         current_inventory[item_name] += 1
                         counted_ids[item_name].add(track_id)
-                        last_counted_positions.append((centroid_x, centroid_y))
-                        
-                        # Keep memory list capped
-                        if len(last_counted_positions) > 20:
-                            last_counted_positions.pop(0)
                         
                         changes_this_frame[item_name] = current_inventory[item_name]
+                            
                         print(f"\nCOUNT TRIGGERED! {item_name} (ID: {track_id}) crossed at X:{centroid_x}")
-                        
+                            
+                        # Optionally tell the robot we successfully logged it
                         client.publish("robot/inventory/ack", f"{item_name}_updated", 0)
-
-                # Update previous position for next frame
-                previous_centroids[track_id] = centroid_x
 
         # Update Firebase if there were any changes in this frame
         if changes_this_frame:
