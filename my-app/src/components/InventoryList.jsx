@@ -69,16 +69,16 @@ export function InventoryList({ onSearchItem, isActive }) {
 
   const formatTimeAgo = (date) => {
     const minutes = Math.floor((Date.now() - date.getTime()) / 1000 / 60)
-    if (minutes < 60) return `${minutes}m ago`
+    if (minutes < 60) return `last checked ${minutes}m ago`
     const hours = Math.floor(minutes / 60)
-    if (hours < 24) return `${hours}h ago`
-    return `${Math.floor(hours / 24)}d ago`
+    if (hours < 24) return `last checked ${hours}h ago`
+    return `last checked ${Math.floor(hours / 24)}d ago`
   }
 
   const getCheckStatus = (date) => {
     const minutes = Math.floor((Date.now() - date.getTime()) / 1000 / 60)
     if (minutes < 30) return 'var(--green-status)'
-    if (minutes < 90) return 'var(--yellow-caution)'
+    if (minutes < 1440) return 'var(--accent-yellow)'
     return 'var(--red-alert)'
   }
 
@@ -173,10 +173,10 @@ export function InventoryList({ onSearchItem, isActive }) {
                   <button
                     onClick={() => onSearchItem(item.name || 'Unknown Item')}
                     disabled={isActive}
-                    className="px-4 py-2 bg-[var(--accent-orange)] text-[var(--background)] rounded text-xs uppercase tracking-wider font-bold hover:brightness-110 transition-all disabled:opacity-50 disabled:cursor-not-allowed border border-[var(--accent-orange)]"
+                    className="px-5 py-2.5 bg-[var(--accent-blue)] text-[var(--background)] rounded text-sm uppercase tracking-wider font-bold hover:brightness-110 transition-all disabled:opacity-50 disabled:cursor-not-allowed border border-[var(--accent-blue)]"
                     style={{ fontFamily: 'var(--font-sans)' }}
                   >
-                    🔍 Find Item
+                    Find Item
                   </button>
                 </div>
               </div>

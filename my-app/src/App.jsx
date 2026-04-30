@@ -1,18 +1,16 @@
 import { useState, useEffect } from 'react'
 import { ControlPanel } from './components/ControlPanel'
-import { VideoFeed } from './components/VideoFeed'
 import { InventoryList } from './components/InventoryList'
 import { StatusBar } from './components/StatusBar'
 import { db } from './firebase/firebaseConfig'
 
-import { serverTimestamp, onSnapshot, updateDoc, doc, collection, getDocs } from 'firebase/firestore'
+import { serverTimestamp, onSnapshot, updateDoc, doc } from 'firebase/firestore'
 
 const ROBOT_DOC = doc(db, 'robots', 'robot1')
 
 export default function App() {
-  const [robotData, setRobotData] = useState('idle') // null = connecting
+  const [robotData, setRobotData] = useState('idle')
 
-  // Single Firestore listener — owned here, passed down as props
   useEffect(() => {
     const unsubscribe = onSnapshot(ROBOT_DOC, (snapshot) => {
       if (snapshot.exists()) setRobotData(snapshot.data())
@@ -23,7 +21,6 @@ export default function App() {
   const robotStatus  = robotData?.status      ?? null
   const searchTarget = robotData?.searchTarget ?? null
 
-  // Write handlers — all Firestore writes live here
   const handleStartRound = async () => {
     await updateDoc(ROBOT_DOC, {
       status: 'running',
@@ -57,18 +54,15 @@ return (
     <div className="size-full flex flex-col bg-[var(--background)]" style={{ fontFamily: 'var(--font-sans)' }}>
       <StatusBar status={robotStatus} />
 
-      {/* EDIT THIS to make inventory wider/narrower */}
-      <div className="flex-1 grid grid-cols-1 lg:grid-cols-[800px_1fr] gap-4 p-4 overflow-hidden">
+      {/* Changed grid layout to 50/50 split and removed VideoFeed container */}
+      <div className="flex-1 grid grid-cols-1 lg:grid-cols-2 gap-4 p-4 overflow-hidden">
         
-        <div className="flex flex-col gap-4">
-          <VideoFeed status={robotStatus} />
-          <ControlPanel
-            robotStatus={robotStatus}
-            searchTarget={searchTarget}
-            onStartRound={handleStartRound}
-            onEmergencyStop={handleEmergencyStop}
-          />
-        </div>
+        <ControlPanel
+          robotStatus={robotStatus}
+          searchTarget={searchTarget}
+          onStartRound={handleStartRound}
+          onEmergencyStop={handleEmergencyStop}
+        />
 
         <InventoryList
           onSearchItem={handleSearchItem}

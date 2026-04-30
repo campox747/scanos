@@ -16,10 +16,10 @@
 
   /* Status colors */
   --green-status: #53e100; /* old 4ade80 */
-  --yellow-caution: #53e100;
-  --red-alert: #ef4444; /* old ef4444 */
-  --accent-orange: #f97316; /* old f97316 00b1c1 */
+  --red-alert: #cf4d29; /* old ef4444 */
+  --accent-orange: #24a27a; /* old f97316 */
   --accent-yellow: #eab308;
+  --accent-blue: #0098b0;
 
   /* Grid line for video feed */
   --grid-line: rgba(255, 255, 255, 0.8);
