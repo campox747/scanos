@@ -4,7 +4,7 @@ from XRPLib.defaults import *
 class LineFollower:
     def __init__(self):
         self.following = False
-        self.base_effort = 0.3
+        self.base_effort = 0.2
         self.KP = 0.6
         self.KI = 0.01
         self.KD = 0.08
@@ -44,25 +44,32 @@ class LineFollower:
     
         
     def return_home(self):
-        left = reflectance.get_left()
-        right = reflectance.get_right()
         home_confidence = 0
         
         #turning 180 degrees
-        print("Turning 180...")
-        drivetrain.set_effort(0.5, -0.5)
-        time.sleep(1.1)
-        drivetrain.set_effort(0, 0)
-        print("Turn complete")
+        #print("Turning 180...")
+        #drivetrain.set_effort(0.5, -0.5)
+        #time.sleep(1.1)
+        #drivetrain.set_effort(0, 0)
+        #print("Turn complete")
         
         while home_confidence != 5:
-            lf.line_track()
-            if left < 0.738 and left > 0.710 and right < 0.738 and right > 0.710:
+            left = reflectance.get_left()
+            right = reflectance.get_right()
+            print(home_confidence)
+            self.line_track()
+            print(left, right)
+            if 0.710 < left < 0.755 and 0.710 < right < 0.755:
                 home_confidence = home_confidence + 1
+            else:
+                home_confidence = 0
+                
+            time.sleep(0.01)
         
+        home_confidence = 0
         print("Turning 180...")
         drivetrain.set_effort(0.5, -0.5)
-        time.sleep(1.2)
+        time.sleep(1.4)
         drivetrain.set_effort(0, 0)
         print("Turn complete")
         
