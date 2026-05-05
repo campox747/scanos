@@ -1,0 +1,616 @@
+[2026-05-04 10:31:01] Received on robot/coral: {'frame': 20870, 'bboxes': []}
+[2026-05-04 10:31:01] Received on robot/coral: {'frame': 20871, 'bboxes': []}
+[2026-05-04 10:31:01] Received on robot/coral: {'frame': 20872, 'bboxes': []}
+[2026-05-04 10:31:01] Received on robot/coral: {'frame': 20873, 'bboxes': []}
+[2026-05-04 10:31:01] Received on robot/coral: {'frame': 20874, 'bboxes': []}
+[2026-05-04 10:31:01] Received on robot/coral: {'frame': 20875, 'bboxes': []}
+[2026-05-04 10:31:01] Received on robot/coral: {'frame': 20876, 'bboxes': []}
+[2026-05-04 10:31:02] Received on robot/coral: {'frame': 20877, 'bboxes': []}
+[2026-05-04 10:31:02] Received on robot/coral: {'frame': 20878, 'bboxes': []}
+[2026-05-04 10:31:02] Received on robot/coral: {'frame': 20879, 'bboxes': []}
+[2026-05-04 10:31:02] Received on robot/coral: {'frame': 20880, 'bboxes': []}
+[2026-05-04 10:31:02] Received on robot/coral: {'frame': 20881, 'bboxes': []}
+[2026-05-04 10:31:02] Received on robot/coral: {'frame': 20882, 'bboxes': []}
+[2026-05-04 10:31:02] Received on robot/coral: {'frame': 20883, 'bboxes': []}
+[2026-05-04 10:31:02] Received on robot/coral: {'frame': 20884, 'bboxes': []}
+[2026-05-04 10:31:02] Received on robot/coral: {'frame': 20885, 'bboxes': []}
+[2026-05-04 10:31:02] Received on robot/coral: {'frame': 20886, 'bboxes': []}
+[2026-05-04 10:31:03] Received on robot/coral: {'frame': 20887, 'bboxes': []}
+[2026-05-04 10:31:03] Received on robot/coral: {'frame': 20888, 'bboxes': []}
+[2026-05-04 10:31:03] Received on robot/coral: {'frame': 20889, 'bboxes': []}
+[2026-05-04 10:31:03] Received on robot/coral: {'frame': 20890, 'bboxes': []}
+[2026-05-04 10:31:03] Received on robot/coral: {'frame': 20891, 'bboxes': []}
+[2026-05-04 10:31:03] Received on robot/coral: {'frame': 20892, 'bboxes': []}
+[2026-05-04 10:31:03] Received on robot/coral: {'frame': 20893, 'bboxes': []}
+[2026-05-04 10:31:05] Received on robot/coral: {'frame': 20894, 'bboxes': []}
+[2026-05-04 10:31:05] Received on robot/coral: {'frame': 20895, 'bboxes': []}
+[2026-05-04 10:31:05] Received on robot/coral: {'frame': 20896, 'bboxes': []}
+[2026-05-04 10:31:05] Received on robot/coral: {'frame': 20897, 'bboxes': []}
+[2026-05-04 10:31:05] Received on robot/coral: {'frame': 20898, 'bboxes': []}
+[2026-05-04 10:31:05] Received on robot/coral: {'frame': 20899, 'bboxes': []}
+[2026-05-04 10:31:05] Received on robot/coral: {'frame': 20900, 'bboxes': []}
+[2026-05-04 10:31:05] Received on robot/coral: {'frame': 20901, 'bboxes': []}
+[2026-05-04 10:31:05] Received on robot/coral: {'frame': 20902, 'bboxes': [{'id': 1, 'score': 0.675781, 'xmin': 0.43977, 'ymin': 0.093222, 'xmax': 0.636079, 'ymax': 0.40508}]}
+[2026-05-04 10:31:05] Received on robot/coral: {'frame': 20903, 'bboxes': []}
+[2026-05-04 10:31:05] Received on robot/coral: {'frame': 20904, 'bboxes': [{'id': 1, 'score': 0.8125, 'xmin': 0.43977, 'ymin': 0.067373, 'xmax': 0.636079, 'ymax': 0.379231}]}
+[2026-05-04 10:31:05] Received on robot/coral: {'frame': 20905, 'bboxes': []}
+[2026-05-04 10:31:05] Received on robot/coral: {'frame': 20906, 'bboxes': []}
+[2026-05-04 10:31:05] Received on robot/coral: {'frame': 20907, 'bboxes': []}
+[2026-05-04 10:31:05] Received on robot/coral: {'frame': 20908, 'bboxes': []}
+[2026-05-04 10:31:05] Received on robot/coral: {'frame': 20909, 'bboxes': []}
+[2026-05-04 10:31:05] Received on robot/coral: {'frame': 20910, 'bboxes': []}
+[2026-05-04 10:31:05] Received on robot/coral: {'frame': 20911, 'bboxes': []}
+[2026-05-04 10:31:05] Received on robot/coral: {'frame': 20912, 'bboxes': []}
+[2026-05-04 10:31:05] Received on robot/coral: {'frame': 20913, 'bboxes': []}
+[2026-05-04 10:31:05] Received on robot/coral: {'frame': 20914, 'bboxes': []}
+[2026-05-04 10:31:05] Received on robot/coral: {'frame': 20915, 'bboxes': []}
+[2026-05-04 10:31:05] Received on robot/coral: {'frame': 20916, 'bboxes': []}
+[2026-05-04 10:31:05] Received on robot/coral: {'frame': 20917, 'bboxes': []}
+[2026-05-04 10:31:05] Received on robot/coral: {'frame': 20918, 'bboxes': []}
+[2026-05-04 10:31:06] Received on robot/coral: {'frame': 20919, 'bboxes': []}
+[2026-05-04 10:31:06] Received on robot/coral: {'frame': 20920, 'bboxes': []}
+[2026-05-04 10:31:06] Received on robot/coral: {'frame': 20921, 'bboxes': []}
+[2026-05-04 10:31:06] Received on robot/coral: {'frame': 20922, 'bboxes': []}
+[2026-05-04 10:31:06] Received on robot/coral: {'frame': 20923, 'bboxes': []}
+[2026-05-04 10:31:06] Received on robot/coral: {'frame': 20924, 'bboxes': []}
+[2026-05-04 10:31:06] Received on robot/coral: {'frame': 20925, 'bboxes': []}
+[2026-05-04 10:31:06] Received on robot/coral: {'frame': 20926, 'bboxes': []}
+[2026-05-04 10:31:06] Received on robot/coral: {'frame': 20927, 'bboxes': []}
+[2026-05-04 10:31:07] Received on robot/coral: {'frame': 20928, 'bboxes': []}
+[2026-05-04 10:31:07] Received on robot/coral: {'frame': 20929, 'bboxes': []}
+[2026-05-04 10:31:07] Received on robot/coral: {'frame': 20930, 'bboxes': []}
+[2026-05-04 10:31:07] Received on robot/coral: {'frame': 20931, 'bboxes': []}
+[2026-05-04 10:31:07] Received on robot/coral: {'frame': 20932, 'bboxes': []}
+[2026-05-04 10:31:07] Received on robot/coral: {'frame': 20933, 'bboxes': []}
+[2026-05-04 10:31:07] Received on robot/coral: {'frame': 20934, 'bboxes': []}
+[2026-05-04 10:31:07] Received on robot/coral: {'frame': 20935, 'bboxes': []}
+[2026-05-04 10:31:07] Received on robot/coral: {'frame': 20936, 'bboxes': [{'id': 1, 'score': 0.675781, 'xmin': 0.174359, 'ymin': 0.642373, 'xmax': 1.0, 'ymax': 0.954231}]}
+[2026-05-04 10:31:07] Received on robot/coral: {'frame': 20937, 'bboxes': []}
+[2026-05-04 10:31:08] Received on robot/coral: {'frame': 20938, 'bboxes': []}
+[2026-05-04 10:31:08] Received on robot/coral: {'frame': 20939, 'bboxes': []}
+[2026-05-04 10:31:08] Received on robot/coral: {'frame': 20940, 'bboxes': []}
+[2026-05-04 10:31:08] Received on robot/coral: {'frame': 20941, 'bboxes': []}
+[2026-05-04 10:31:08] Received on robot/coral: {'frame': 20942, 'bboxes': []}
+[2026-05-04 10:31:08] Received on robot/coral: {'frame': 20944, 'bboxes': []}
+[2026-05-04 10:31:08] Received on robot/coral: {'frame': 20945, 'bboxes': []}
+[2026-05-04 10:31:08] Received on robot/coral: {'frame': 20946, 'bboxes': []}
+[2026-05-04 10:31:08] Received on robot/coral: {'frame': 20947, 'bboxes': []}
+[2026-05-04 10:31:09] Received on robot/coral: {'frame': 20948, 'bboxes': []}
+[2026-05-04 10:31:09] Received on robot/coral: {'frame': 20949, 'bboxes': []}
+[2026-05-04 10:31:09] Received on robot/coral: {'frame': 20950, 'bboxes': []}
+[2026-05-04 10:31:09] Received on robot/coral: {'frame': 20951, 'bboxes': []}
+[2026-05-04 10:31:09] Received on robot/coral: {'frame': 20952, 'bboxes': []}
+[2026-05-04 10:31:09] Received on robot/coral: {'frame': 20953, 'bboxes': []}
+[2026-05-04 10:31:09] Received on robot/coral: {'frame': 20954, 'bboxes': []}
+[2026-05-04 10:31:09] Received on robot/coral: {'frame': 20955, 'bboxes': []}
+[2026-05-04 10:31:09] Received on robot/coral: {'frame': 20956, 'bboxes': []}
+[2026-05-04 10:31:09] Received on robot/coral: {'frame': 20957, 'bboxes': []}
+[2026-05-04 10:31:10] Received on robot/coral: {'frame': 20958, 'bboxes': []}
+[2026-05-04 10:31:10] Received on robot/coral: {'frame': 20959, 'bboxes': []}
+[2026-05-04 10:31:10] Received on robot/coral: {'frame': 20960, 'bboxes': []}
+[2026-05-04 10:31:10] Received on robot/coral: {'frame': 20961, 'bboxes': []}
+[2026-05-04 10:31:10] Received on robot/coral: {'frame': 20962, 'bboxes': []}
+[2026-05-04 10:31:10] Received on robot/coral: {'frame': 20963, 'bboxes': []}
+[2026-05-04 10:31:10] Received on robot/coral: {'frame': 20964, 'bboxes': []}
+[2026-05-04 10:31:10] Received on robot/coral: {'frame': 20965, 'bboxes': []}
+[2026-05-04 10:31:10] Received on robot/coral: {'frame': 20966, 'bboxes': []}
+[2026-05-04 10:31:11] Received on robot/coral: {'frame': 20967, 'bboxes': []}
+[2026-05-04 10:31:11] Received on robot/coral: {'frame': 20968, 'bboxes': []}
+[2026-05-04 10:31:11] Received on robot/coral: {'frame': 20969, 'bboxes': []}
+[2026-05-04 10:31:11] Received on robot/coral: {'frame': 20970, 'bboxes': []}
+[2026-05-04 10:31:11] Received on robot/coral: {'frame': 20971, 'bboxes': []}
+[2026-05-04 10:31:11] Received on robot/coral: {'frame': 20972, 'bboxes': []}
+[2026-05-04 10:31:11] Received on robot/coral: {'frame': 20973, 'bboxes': []}
+[2026-05-04 10:31:11] Received on robot/coral: {'frame': 20974, 'bboxes': []}
+[2026-05-04 10:31:11] Received on robot/coral: {'frame': 20975, 'bboxes': []}
+[2026-05-04 10:31:11] Received on robot/coral: {'frame': 20976, 'bboxes': []}
+[2026-05-04 10:31:12] Received on robot/coral: {'frame': 20977, 'bboxes': []}
+[2026-05-04 10:31:12] Received on robot/coral: {'frame': 20978, 'bboxes': []}
+[2026-05-04 10:31:12] Received on robot/coral: {'frame': 20979, 'bboxes': []}
+[2026-05-04 10:31:12] Received on robot/coral: {'frame': 20980, 'bboxes': []}
+[2026-05-04 10:31:12] Received on robot/coral: {'frame': 20981, 'bboxes': []}
+[2026-05-04 10:31:12] Received on robot/coral: {'frame': 20982, 'bboxes': []}
+[2026-05-04 10:31:12] Received on robot/coral: {'frame': 20983, 'bboxes': []}
+[2026-05-04 10:31:12] Received on robot/coral: {'frame': 20984, 'bboxes': []}
+[2026-05-04 10:31:12] Received on robot/coral: {'frame': 20985, 'bboxes': []}
+[2026-05-04 10:31:12] Received on robot/coral: {'frame': 20986, 'bboxes': []}
+[2026-05-04 10:31:13] Received on robot/coral: {'frame': 20987, 'bboxes': []}
+[2026-05-04 10:31:13] Received on robot/coral: {'frame': 20988, 'bboxes': []}
+[2026-05-04 10:31:13] Received on robot/coral: {'frame': 20989, 'bboxes': []}
+[2026-05-04 10:31:13] Received on robot/coral: {'frame': 20990, 'bboxes': []}
+[2026-05-04 10:31:13] Received on robot/coral: {'frame': 20991, 'bboxes': []}
+[2026-05-04 10:31:13] Received on robot/coral: {'frame': 20992, 'bboxes': []}
+[2026-05-04 10:31:13] Received on robot/coral: {'frame': 20993, 'bboxes': []}
+[2026-05-04 10:31:13] Received on robot/coral: {'frame': 20994, 'bboxes': []}
+[2026-05-04 10:31:13] Received on robot/coral: {'frame': 20995, 'bboxes': []}
+[2026-05-04 10:31:14] Received on robot/coral: {'frame': 20996, 'bboxes': []}
+[2026-05-04 10:31:14] Received on robot/coral: {'frame': 20997, 'bboxes': []}
+[2026-05-04 10:31:14] Received on robot/coral: {'frame': 20998, 'bboxes': []}
+[2026-05-04 10:31:14] Received on robot/coral: {'frame': 20999, 'bboxes': []}
+[2026-05-04 10:31:14] Received on robot/coral: {'frame': 21000, 'bboxes': []}
+[2026-05-04 10:31:14] Received on robot/coral: {'frame': 21001, 'bboxes': []}
+[2026-05-04 10:31:14] Received on robot/coral: {'frame': 21002, 'bboxes': []}
+[2026-05-04 10:31:14] Received on robot/coral: {'frame': 21003, 'bboxes': []}
+[2026-05-04 10:31:14] Received on robot/coral: {'frame': 21004, 'bboxes': []}
+[2026-05-04 10:31:14] Received on robot/coral: {'frame': 21005, 'bboxes': []}
+[2026-05-04 10:31:15] Received on robot/coral: {'frame': 21006, 'bboxes': []}
+[2026-05-04 10:31:15] Received on robot/coral: {'frame': 21007, 'bboxes': []}
+[2026-05-04 10:31:15] Received on robot/coral: {'frame': 21008, 'bboxes': []}
+[2026-05-04 10:31:15] Received on robot/coral: {'frame': 21009, 'bboxes': []}
+[2026-05-04 10:31:15] Received on robot/coral: {'frame': 21010, 'bboxes': []}
+[2026-05-04 10:31:15] Received on robot/coral: {'frame': 21011, 'bboxes': []}
+[2026-05-04 10:31:15] Received on robot/coral: {'frame': 21012, 'bboxes': []}
+[2026-05-04 10:31:15] Received on robot/coral: {'frame': 21013, 'bboxes': []}
+[2026-05-04 10:31:15] Received on robot/coral: {'frame': 21014, 'bboxes': []}
+[2026-05-04 10:31:15] Received on robot/coral: {'frame': 21015, 'bboxes': []}
+[2026-05-04 10:31:16] Received on robot/coral: {'frame': 21016, 'bboxes': []}
+[2026-05-04 10:31:16] Received on robot/coral: {'frame': 21017, 'bboxes': []}
+[2026-05-04 10:31:16] Received on robot/coral: {'frame': 21018, 'bboxes': []}
+[2026-05-04 10:31:16] Received on robot/coral: {'frame': 21019, 'bboxes': []}
+[2026-05-04 10:31:16] Received on robot/coral: {'frame': 21020, 'bboxes': []}
+[2026-05-04 10:31:16] Received on robot/coral: {'frame': 21021, 'bboxes': []}
+[2026-05-04 10:31:16] Received on robot/coral: {'frame': 21022, 'bboxes': []}
+[2026-05-04 10:31:16] Received on robot/coral: {'frame': 21023, 'bboxes': []}
+[2026-05-04 10:31:16] Received on robot/coral: {'frame': 21024, 'bboxes': []}
+[2026-05-04 10:31:17] Received on robot/coral: {'frame': 21025, 'bboxes': []}
+[2026-05-04 10:31:17] Received on robot/coral: {'frame': 21026, 'bboxes': []}
+[2026-05-04 10:31:17] Received on robot/coral: {'frame': 21027, 'bboxes': [{'id': 1, 'score': 0.675781, 'xmin': 0.641365, 'ymin': 0.482332, 'xmax': 0.908635, 'ymax': 0.626634}]}
+[2026-05-04 10:31:17] Received on robot/coral: {'frame': 21028, 'bboxes': []}
+[2026-05-04 10:31:17] Received on robot/coral: {'frame': 21029, 'bboxes': [{'id': 1, 'score': 0.8125, 'xmin': 0.591365, 'ymin': 0.477868, 'xmax': 0.858635, 'ymax': 0.633684}]}
+[2026-05-04 10:31:17] Received on robot/coral: {'frame': 21030, 'bboxes': [{'id': 1, 'score': 0.8125, 'xmin': 0.570849, 'ymin': 0.476575, 'xmax': 0.838119, 'ymax': 0.632391}]}
+[2026-05-04 10:31:17] Received on robot/coral: {'frame': 21031, 'bboxes': []}
+[2026-05-04 10:31:17] Received on robot/coral: {'frame': 21032, 'bboxes': [{'id': 1, 'score': 0.675781, 'xmin': 0.0, 'ymin': 0.558952, 'xmax': 1.0, 'ymax': 0.923113}]}
+[2026-05-04 10:31:17] Received on robot/coral: {'frame': 21033, 'bboxes': [{'id': 1, 'score': 0.675781, 'xmin': 0.520849, 'ymin': 0.482332, 'xmax': 0.788119, 'ymax': 0.626634}]}
+[2026-05-04 10:31:17] Received on robot/coral: {'frame': 21034, 'bboxes': []}
+[2026-05-04 10:31:18] Received on robot/coral: {'frame': 21036, 'bboxes': [{'id': 1, 'score': 0.675781, 'xmin': 0.470849, 'ymin': 0.476575, 'xmax': 0.738119, 'ymax': 0.632391}]}
+[2026-05-04 10:31:18] Received on robot/coral: {'frame': 21037, 'bboxes': [{'id': 1, 'score': 0.675781, 'xmin': 0.470849, 'ymin': 0.482332, 'xmax': 0.738119, 'ymax': 0.626634}]}
+[2026-05-04 10:31:18] Received on robot/coral: {'frame': 21038, 'bboxes': [{'id': 1, 'score': 0.675781, 'xmin': 0.0, 'ymin': 0.558952, 'xmax': 1.0, 'ymax': 0.923113}]}
+[2026-05-04 10:31:18] Received on robot/coral: {'frame': 21039, 'bboxes': [{'id': 1, 'score': 0.675781, 'xmin': 0.441365, 'ymin': 0.476575, 'xmax': 0.708635, 'ymax': 0.632391}]}
+[2026-05-04 10:31:18] Received on robot/coral: {'frame': 21040, 'bboxes': [{'id': 1, 'score': 0.8125, 'xmin': 0.441365, 'ymin': 0.476575, 'xmax': 0.708635, 'ymax': 0.632391}]}
+[2026-05-04 10:31:18] Received on robot/coral: {'frame': 21041, 'bboxes': [{'id': 1, 'score': 0.675781, 'xmin': 0.430723, 'ymin': 0.482332, 'xmax': 0.678244, 'ymax': 0.626634}, {'id': 1, 'score': 0.675781, 'xmin': 0.0, 'ymin': 0.558952, 'xmax': 1.0, 'ymax': 0.923113}]}
+[2026-05-04 10:31:18] Received on robot/coral: {'frame': 21042, 'bboxes': [{'id': 1, 'score': 0.8125, 'xmin': 0.420849, 'ymin': 0.482332, 'xmax': 0.688119, 'ymax': 0.626634}]}
+[2026-05-04 10:31:18] Received on robot/coral: {'frame': 21043, 'bboxes': [{'id': 1, 'score': 0.8125, 'xmin': 0.421756, 'ymin': 0.476575, 'xmax': 0.669277, 'ymax': 0.632391}]}
+[2026-05-04 10:31:18] COUNT TRIGGERED! XRP-BOOK (ID: 15) crossed at X:173
+[2026-05-04 10:31:19] Received on robot/coral: {'frame': 21044, 'bboxes': [{'id': 1, 'score': 0.675781, 'xmin': 0.401239, 'ymin': 0.476575, 'xmax': 0.648761, 'ymax': 0.632391}]}
+[2026-05-04 10:31:19] Received on robot/coral: {'frame': 21045, 'bboxes': [{'id': 1, 'score': 0.8125, 'xmin': 0.401239, 'ymin': 0.482332, 'xmax': 0.648761, 'ymax': 0.626634}]}
+[2026-05-04 10:31:19] Received on robot/coral: {'frame': 21046, 'bboxes': [{'id': 1, 'score': 0.8125, 'xmin': 0.401239, 'ymin': 0.482332, 'xmax': 0.648761, 'ymax': 0.626634}]}
+[2026-05-04 10:31:19] Received on robot/coral: {'frame': 21047, 'bboxes': [{'id': 1, 'score': 0.902344, 'xmin': 0.380723, 'ymin': 0.476575, 'xmax': 0.628244, 'ymax': 0.632391}]}
+[2026-05-04 10:31:19] Received on robot/coral: {'frame': 21048, 'bboxes': [{'id': 1, 'score': 0.8125, 'xmin': 0.3809, 'ymin': 0.49259, 'xmax': 0.610132, 'ymax': 0.636893}]}
+[2026-05-04 10:31:19] Received on robot/coral: {'frame': 21049, 'bboxes': [{'id': 1, 'score': 0.902344, 'xmin': 0.371756, 'ymin': 0.486834, 'xmax': 0.619277, 'ymax': 0.642649}]}
+[2026-05-04 10:31:19] Received on robot/coral: {'frame': 21050, 'bboxes': [{'id': 1, 'score': 0.902344, 'xmin': 0.351239, 'ymin': 0.49259, 'xmax': 0.598761, 'ymax': 0.636893}]}
+[2026-05-04 10:31:19] Received on robot/coral: {'frame': 21051, 'bboxes': [{'id': 1, 'score': 0.8125, 'xmin': 0.360384, 'ymin': 0.486834, 'xmax': 0.589616, 'ymax': 0.642649}]}
+[2026-05-04 10:31:19] Received on robot/coral: {'frame': 21052, 'bboxes': [{'id': 1, 'score': 0.902344, 'xmin': 0.351239, 'ymin': 0.49259, 'xmax': 0.598761, 'ymax': 0.636893}]}
+[2026-05-04 10:31:19] Received on robot/coral: {'frame': 21053, 'bboxes': [{'id': 1, 'score': 0.902344, 'xmin': 0.330723, 'ymin': 0.49259, 'xmax': 0.578244, 'ymax': 0.636893}]}
+[2026-05-04 10:31:19] Received on robot/coral: {'frame': 21054, 'bboxes': [{'id': 1, 'score': 0.949219, 'xmin': 0.330723, 'ymin': 0.486834, 'xmax': 0.578244, 'ymax': 0.642649}]}
+[2026-05-04 10:31:20] Received on robot/coral: {'frame': 21055, 'bboxes': [{'id': 1, 'score': 0.8125, 'xmin': 0.3309, 'ymin': 0.49259, 'xmax': 0.560132, 'ymax': 0.636893}]}
+[2026-05-04 10:31:20] Received on robot/coral: {'frame': 21056, 'bboxes': [{'id': 1, 'score': 0.949219, 'xmin': 0.321756, 'ymin': 0.49259, 'xmax': 0.569277, 'ymax': 0.636893}]}
+[2026-05-04 10:31:20] Received on robot/coral: {'frame': 21057, 'bboxes': [{'id': 1, 'score': 0.902344, 'xmin': 0.301239, 'ymin': 0.486834, 'xmax': 0.548761, 'ymax': 0.642649}]}
+[2026-05-04 10:31:20] Received on robot/coral: {'frame': 21058, 'bboxes': [{'id': 1, 'score': 0.949219, 'xmin': 0.321756, 'ymin': 0.486834, 'xmax': 0.569277, 'ymax': 0.642649}]}
+[2026-05-04 10:31:20] Received on robot/coral: {'frame': 21059, 'bboxes': [{'id': 1, 'score': 0.902344, 'xmin': 0.310384, 'ymin': 0.486834, 'xmax': 0.539616, 'ymax': 0.642649}]}
+[2026-05-04 10:31:20] Received on robot/coral: {'frame': 21061, 'bboxes': [{'id': 1, 'score': 0.902344, 'xmin': 0.280723, 'ymin': 0.502849, 'xmax': 0.528244, 'ymax': 0.647151}, {'id': 1, 'score': 0.675781, 'xmin': 0.0, 'ymin': 0.558952, 'xmax': 1.0, 'ymax': 0.923113}]}
+[2026-05-04 10:31:20] Received on robot/coral: {'frame': 21062, 'bboxes': [{'id': 1, 'score': 0.8125, 'xmin': 0.289868, 'ymin': 0.502849, 'xmax': 0.5191, 'ymax': 0.647151}]}
+[2026-05-04 10:31:20] Received on robot/coral: {'frame': 21063, 'bboxes': [{'id': 1, 'score': 0.8125, 'xmin': 0.271756, 'ymin': 0.502849, 'xmax': 0.519277, 'ymax': 0.647151}]}
+[2026-05-04 10:31:21] Received on robot/coral: {'frame': 21064, 'bboxes': [{'id': 1, 'score': 0.8125, 'xmin': 0.2809, 'ymin': 0.486834, 'xmax': 0.510132, 'ymax': 0.642649}]}
+[2026-05-04 10:31:21] Received on robot/coral: {'frame': 21065, 'bboxes': [{'id': 1, 'score': 0.902344, 'xmin': 0.2809, 'ymin': 0.502849, 'xmax': 0.510132, 'ymax': 0.647151}]}
+[2026-05-04 10:31:21] Received on robot/coral: {'frame': 21066, 'bboxes': [{'id': 1, 'score': 0.8125, 'xmin': 0.2809, 'ymin': 0.497092, 'xmax': 0.510132, 'ymax': 0.652908}]}
+[2026-05-04 10:31:21] Received on robot/coral: {'frame': 21067, 'bboxes': [{'id': 1, 'score': 0.8125, 'xmin': 0.2809, 'ymin': 0.49259, 'xmax': 0.510132, 'ymax': 0.636893}]}
+[2026-05-04 10:31:21] Received on robot/coral: {'frame': 21068, 'bboxes': [{'id': 1, 'score': 0.8125, 'xmin': 0.271756, 'ymin': 0.486834, 'xmax': 0.519277, 'ymax': 0.642649}]}
+[2026-05-04 10:31:21] Received on robot/coral: {'frame': 21069, 'bboxes': [{'id': 1, 'score': 0.675781, 'xmin': 0.251239, 'ymin': 0.486834, 'xmax': 0.498761, 'ymax': 0.642649}]}
+[2026-05-04 10:31:21] Received on robot/coral: {'frame': 21070, 'bboxes': [{'id': 1, 'score': 0.8125, 'xmin': 0.251239, 'ymin': 0.502849, 'xmax': 0.498761, 'ymax': 0.647151}]}
+[2026-05-04 10:31:21] Received on robot/coral: {'frame': 21071, 'bboxes': [{'id': 1, 'score': 0.902344, 'xmin': 0.251239, 'ymin': 0.49259, 'xmax': 0.498761, 'ymax': 0.636893}]}
+[2026-05-04 10:31:21] Received on robot/coral: {'frame': 21072, 'bboxes': [{'id': 1, 'score': 0.902344, 'xmin': 0.251239, 'ymin': 0.486834, 'xmax': 0.498761, 'ymax': 0.642649}]}
+[2026-05-04 10:31:21] Received on robot/coral: {'frame': 21073, 'bboxes': [{'id': 1, 'score': 0.902344, 'xmin': 0.251239, 'ymin': 0.486834, 'xmax': 0.498761, 'ymax': 0.642649}]}
+[2026-05-04 10:31:22] Received on robot/coral: {'frame': 21074, 'bboxes': [{'id': 1, 'score': 0.8125, 'xmin': 0.251239, 'ymin': 0.497092, 'xmax': 0.498761, 'ymax': 0.652908}]}
+[2026-05-04 10:31:22] Received on robot/coral: {'frame': 21075, 'bboxes': [{'id': 1, 'score': 0.8125, 'xmin': 0.230723, 'ymin': 0.497092, 'xmax': 0.478244, 'ymax': 0.652908}]}
+[2026-05-04 10:31:22] Received on robot/coral: {'frame': 21076, 'bboxes': []}
+[2026-05-04 10:31:22] Received on robot/coral: {'frame': 21077, 'bboxes': [{'id': 1, 'score': 0.675781, 'xmin': 0.230723, 'ymin': 0.502849, 'xmax': 0.478244, 'ymax': 0.647151}]}
+[2026-05-04 10:31:22] Received on robot/coral: {'frame': 21078, 'bboxes': []}
+[2026-05-04 10:31:22] Received on robot/coral: {'frame': 21079, 'bboxes': [{'id': 1, 'score': 0.675781, 'xmin': 0.230723, 'ymin': 0.497092, 'xmax': 0.478244, 'ymax': 0.652908}]}
+[2026-05-04 10:31:22] Received on robot/coral: {'frame': 21080, 'bboxes': [{'id': 1, 'score': 0.675781, 'xmin': 0.251417, 'ymin': 0.502849, 'xmax': 0.480649, 'ymax': 0.647151}]}
+[2026-05-04 10:31:22] Received on robot/coral: {'frame': 21081, 'bboxes': [{'id': 1, 'score': 0.675781, 'xmin': 0.2309, 'ymin': 0.502849, 'xmax': 0.460132, 'ymax': 0.647151}]}
+[2026-05-04 10:31:23] Received on robot/coral: {'frame': 21083, 'bboxes': [{'id': 1, 'score': 0.675781, 'xmin': 0.2309, 'ymin': 0.502849, 'xmax': 0.460132, 'ymax': 0.647151}]}
+[2026-05-04 10:31:23] Received on robot/coral: {'frame': 21084, 'bboxes': [{'id': 1, 'score': 0.675781, 'xmin': 0.210384, 'ymin': 0.497092, 'xmax': 0.439616, 'ymax': 0.652908}]}
+[2026-05-04 10:31:23] Received on robot/coral: {'frame': 21085, 'bboxes': [{'id': 1, 'score': 0.675781, 'xmin': 0.210384, 'ymin': 0.497092, 'xmax': 0.439616, 'ymax': 0.652908}]}
+[2026-05-04 10:31:23] Received on robot/coral: {'frame': 21086, 'bboxes': [{'id': 1, 'score': 0.675781, 'xmin': 0.210384, 'ymin': 0.502849, 'xmax': 0.439616, 'ymax': 0.647151}]}
+[2026-05-04 10:31:23] Received on robot/coral: {'frame': 21087, 'bboxes': []}
+[2026-05-04 10:31:23] Received on robot/coral: {'frame': 21088, 'bboxes': []}
+[2026-05-04 10:31:23] Received on robot/coral: {'frame': 21089, 'bboxes': [{'id': 1, 'score': 0.675781, 'xmin': 0.171756, 'ymin': 0.50818, 'xmax': 0.419277, 'ymax': 0.64182}]}
+[2026-05-04 10:31:23] Received on robot/coral: {'frame': 21090, 'bboxes': [{'id': 1, 'score': 0.675781, 'xmin': 0.1809, 'ymin': 0.497092, 'xmax': 0.410132, 'ymax': 0.652908}]}
+[2026-05-04 10:31:23] Received on robot/coral: {'frame': 21091, 'bboxes': [{'id': 1, 'score': 0.8125, 'xmin': 0.151239, 'ymin': 0.497092, 'xmax': 0.398761, 'ymax': 0.652908}]}
+[2026-05-04 10:31:23] Received on robot/coral: {'frame': 21092, 'bboxes': [{'id': 1, 'score': 0.8125, 'xmin': 0.151239, 'ymin': 0.497092, 'xmax': 0.398761, 'ymax': 0.652908}]}
+[2026-05-04 10:31:24] Received on robot/coral: {'frame': 21093, 'bboxes': [{'id': 1, 'score': 0.675781, 'xmin': 0.130723, 'ymin': 0.497092, 'xmax': 0.378244, 'ymax': 0.652908}]}
+[2026-05-04 10:31:24] Received on robot/coral: {'frame': 21094, 'bboxes': []}
+[2026-05-04 10:31:24] Received on robot/coral: {'frame': 21095, 'bboxes': [{'id': 1, 'score': 0.675781, 'xmin': 0.151417, 'ymin': 0.507351, 'xmax': 0.380649, 'ymax': 0.663166}]}
+[2026-05-04 10:31:24] Received on robot/coral: {'frame': 21096, 'bboxes': []}
+[2026-05-04 10:31:24] Received on robot/coral: {'frame': 21097, 'bboxes': [{'id': 1, 'score': 0.8125, 'xmin': 0.101239, 'ymin': 0.513107, 'xmax': 0.348761, 'ymax': 0.65741}]}
+[2026-05-04 10:31:24] Received on robot/coral: {'frame': 21098, 'bboxes': [{'id': 1, 'score': 0.949219, 'xmin': 0.101239, 'ymin': 0.502849, 'xmax': 0.348761, 'ymax': 0.647151}]}
+[2026-05-04 10:31:24] Received on robot/coral: {'frame': 21099, 'bboxes': []}
+[2026-05-04 10:31:24] Received on robot/coral: {'frame': 21100, 'bboxes': [{'id': 1, 'score': 0.8125, 'xmin': 0.101239, 'ymin': 0.507351, 'xmax': 0.348761, 'ymax': 0.663166}]}
+[2026-05-04 10:31:24] Received on robot/coral: {'frame': 21101, 'bboxes': []}
+[2026-05-04 10:31:25] Received on robot/coral: {'frame': 21103, 'bboxes': [{'id': 1, 'score': 0.8125, 'xmin': 0.071756, 'ymin': 0.507351, 'xmax': 0.319277, 'ymax': 0.663166}]}
+[2026-05-04 10:31:25] Received on robot/coral: {'frame': 21104, 'bboxes': [{'id': 1, 'score': 0.675781, 'xmin': 0.061881, 'ymin': 0.507351, 'xmax': 0.329151, 'ymax': 0.663166}]}
+[2026-05-04 10:31:25] Received on robot/coral: {'frame': 21105, 'bboxes': [{'id': 1, 'score': 0.8125, 'xmin': 0.061881, 'ymin': 0.507351, 'xmax': 0.329151, 'ymax': 0.663166}]}
+[2026-05-04 10:31:25] Received on robot/coral: {'frame': 21106, 'bboxes': [{'id': 1, 'score': 0.675781, 'xmin': 0.061881, 'ymin': 0.507351, 'xmax': 0.329151, 'ymax': 0.663166}]}
+[2026-05-04 10:31:25] Received on robot/coral: {'frame': 21107, 'bboxes': [{'id': 1, 'score': 0.8125, 'xmin': 0.041365, 'ymin': 0.507351, 'xmax': 0.308635, 'ymax': 0.663166}]}
+[2026-05-04 10:31:25] Received on robot/coral: {'frame': 21108, 'bboxes': [{'id': 1, 'score': 0.8125, 'xmin': 0.041365, 'ymin': 0.507351, 'xmax': 0.308635, 'ymax': 0.663166}]}
+[2026-05-04 10:31:25] Received on robot/coral: {'frame': 21109, 'bboxes': [{'id': 1, 'score': 0.8125, 'xmin': 0.041365, 'ymin': 0.507351, 'xmax': 0.308635, 'ymax': 0.663166}]}
+[2026-05-04 10:31:25] Received on robot/coral: {'frame': 21110, 'bboxes': [{'id': 1, 'score': 0.8125, 'xmin': 0.020849, 'ymin': 0.511393, 'xmax': 0.288119, 'ymax': 0.679641}]}
+[2026-05-04 10:31:25] Received on robot/coral: {'frame': 21111, 'bboxes': [{'id': 1, 'score': 0.8125, 'xmin': 0.020849, 'ymin': 0.507351, 'xmax': 0.288119, 'ymax': 0.663166}]}
+[2026-05-04 10:31:25] Received on robot/coral: {'frame': 21112, 'bboxes': [{'id': 1, 'score': 0.675781, 'xmin': 0.020849, 'ymin': 0.501135, 'xmax': 0.288119, 'ymax': 0.669382}]}
+[2026-05-04 10:31:26] Received on robot/coral: {'frame': 21113, 'bboxes': []}
+[2026-05-04 10:31:26] Received on robot/coral: {'frame': 21114, 'bboxes': []}
+[2026-05-04 10:31:26] Received on robot/coral: {'frame': 21115, 'bboxes': []}
+[2026-05-04 10:31:26] Received on robot/coral: {'frame': 21116, 'bboxes': []}
+[2026-05-04 10:31:26] Received on robot/coral: {'frame': 21117, 'bboxes': []}
+[2026-05-04 10:31:26] Received on robot/coral: {'frame': 21118, 'bboxes': []}
+[2026-05-04 10:31:26] Received on robot/coral: {'frame': 21119, 'bboxes': []}
+[2026-05-04 10:31:26] Received on robot/coral: {'frame': 21120, 'bboxes': []}
+[2026-05-04 10:31:27] Received on robot/coral: {'frame': 21122, 'bboxes': []}
+[2026-05-04 10:31:27] Received on robot/coral: {'frame': 21123, 'bboxes': []}
+[2026-05-04 10:31:27] Received on robot/coral: {'frame': 21124, 'bboxes': []}
+[2026-05-04 10:31:27] Received on robot/coral: {'frame': 21125, 'bboxes': []}
+[2026-05-04 10:31:27] Received on robot/coral: {'frame': 21126, 'bboxes': []}
+[2026-05-04 10:31:27] Received on robot/coral: {'frame': 21127, 'bboxes': []}
+[2026-05-04 10:31:27] Received on robot/coral: {'frame': 21128, 'bboxes': [{'id': 1, 'score': 0.675781, 'xmin': 0.335237, 'ymin': 0.526463, 'xmax': 0.829897, 'ymax': 0.708403}]}
+[2026-05-04 10:31:27] Received on robot/coral: {'frame': 21129, 'bboxes': []}
+[2026-05-04 10:31:27] Received on robot/coral: {'frame': 21130, 'bboxes': []}
+[2026-05-04 10:31:27] Received on robot/coral: {'frame': 21131, 'bboxes': []}
+[2026-05-04 10:31:27] Received on robot/coral: {'frame': 21132, 'bboxes': [{'id': 1, 'score': 0.675781, 'xmin': 0.335237, 'ymin': 0.535489, 'xmax': 0.829897, 'ymax': 0.731944}]}
+[2026-05-04 10:31:28] Received on robot/coral: {'frame': 21133, 'bboxes': []}
+[2026-05-04 10:31:28] Received on robot/coral: {'frame': 21134, 'bboxes': []}
+[2026-05-04 10:31:28] Received on robot/coral: {'frame': 21135, 'bboxes': []}
+[2026-05-04 10:31:28] Received on robot/coral: {'frame': 21137, 'bboxes': []}
+[2026-05-04 10:31:28] Received on robot/coral: {'frame': 21138, 'bboxes': []}
+[2026-05-04 10:31:28] Received on robot/coral: {'frame': 21139, 'bboxes': []}
+[2026-05-04 10:31:28] Received on robot/coral: {'frame': 21140, 'bboxes': []}
+[2026-05-04 10:31:28] Received on robot/coral: {'frame': 21141, 'bboxes': []}
+[2026-05-04 10:31:29] Received on robot/coral: {'frame': 21142, 'bboxes': []}
+[2026-05-04 10:31:29] Received on robot/coral: {'frame': 21143, 'bboxes': []}
+[2026-05-04 10:31:29] Received on robot/coral: {'frame': 21144, 'bboxes': []}
+[2026-05-04 10:31:29] Received on robot/coral: {'frame': 21145, 'bboxes': []}
+[2026-05-04 10:31:29] Received on robot/coral: {'frame': 21146, 'bboxes': [{'id': 1, 'score': 0.675781, 'xmin': 0.241697, 'ymin': 0.53118, 'xmax': 0.776237, 'ymax': 0.727788}]}
+[2026-05-04 10:31:29] Received on robot/coral: {'frame': 21147, 'bboxes': []}
+[2026-05-04 10:31:29] Received on robot/coral: {'frame': 21148, 'bboxes': [{'id': 1, 'score': 0.675781, 'xmin': 0.248071, 'ymin': 0.527651, 'xmax': 0.782198, 'ymax': 0.739781}]}
+[2026-05-04 10:31:29] Received on robot/coral: {'frame': 21149, 'bboxes': []}
+[2026-05-04 10:31:29] Received on robot/coral: {'frame': 21150, 'bboxes': []}
+[2026-05-04 10:31:29] Received on robot/coral: {'frame': 21151, 'bboxes': [{'id': 1, 'score': 0.675781, 'xmin': 0.215504, 'ymin': 0.527651, 'xmax': 0.749631, 'ymax': 0.739781}]}
+[2026-05-04 10:31:30] Received on robot/coral: {'frame': 21152, 'bboxes': [{'id': 1, 'score': 0.675781, 'xmin': 0.215504, 'ymin': 0.519205, 'xmax': 0.749631, 'ymax': 0.715661}]}
+[2026-05-04 10:31:30] Received on robot/coral: {'frame': 21154, 'bboxes': [{'id': 1, 'score': 0.675781, 'xmin': 0.215504, 'ymin': 0.527651, 'xmax': 0.749631, 'ymax': 0.739781}]}
+[2026-05-04 10:31:30] Received on robot/coral: {'frame': 21155, 'bboxes': []}
+[2026-05-04 10:31:30] Received on robot/coral: {'frame': 21156, 'bboxes': [{'id': 1, 'score': 0.675781, 'xmin': 0.215504, 'ymin': 0.527651, 'xmax': 0.749631, 'ymax': 0.739781}]}
+[2026-05-04 10:31:30] Received on robot/coral: {'frame': 21157, 'bboxes': [{'id': 1, 'score': 0.902344, 'xmin': 0.18273, 'ymin': 0.53118, 'xmax': 0.71727, 'ymax': 0.727788}]}
+[2026-05-04 10:31:30] Received on robot/coral: {'frame': 21158, 'bboxes': [{'id': 1, 'score': 0.8125, 'xmin': 0.18273, 'ymin': 0.523337, 'xmax': 0.71727, 'ymax': 0.735631}]}
+[2026-05-04 10:31:30] Received on robot/coral: {'frame': 21159, 'bboxes': [{'id': 1, 'score': 0.8125, 'xmin': 0.18273, 'ymin': 0.523337, 'xmax': 0.71727, 'ymax': 0.735631}]}
+[2026-05-04 10:31:30] Received on robot/coral: {'frame': 21160, 'bboxes': [{'id': 1, 'score': 0.8125, 'xmin': 0.161406, 'ymin': 0.53118, 'xmax': 0.738594, 'ymax': 0.727788}]}
+[2026-05-04 10:31:30] COUNT TRIGGERED! XRP-BOOK (ID: 18) crossed at X:143
+[2026-05-04 10:31:31] Received on robot/coral: {'frame': 21161, 'bboxes': [{'id': 1, 'score': 0.675781, 'xmin': 0.161406, 'ymin': 0.53118, 'xmax': 0.738594, 'ymax': 0.727788}]}
+[2026-05-04 10:31:31] Received on robot/coral: {'frame': 21162, 'bboxes': [{'id': 1, 'score': 0.902344, 'xmin': 0.120373, 'ymin': 0.53118, 'xmax': 0.697562, 'ymax': 0.727788}]}
+[2026-05-04 10:31:31] Received on robot/coral: {'frame': 21163, 'bboxes': [{'id': 1, 'score': 0.902344, 'xmin': 0.161406, 'ymin': 0.53118, 'xmax': 0.738594, 'ymax': 0.727788}]}
+[2026-05-04 10:31:31] Received on robot/coral: {'frame': 21164, 'bboxes': []}
+[2026-05-04 10:31:31] Received on robot/coral: {'frame': 21165, 'bboxes': [{'id': 1, 'score': 0.902344, 'xmin': 0.120373, 'ymin': 0.53118, 'xmax': 0.697562, 'ymax': 0.727788}]}
+[2026-05-04 10:31:31] Received on robot/coral: {'frame': 21166, 'bboxes': [{'id': 1, 'score': 0.675781, 'xmin': 0.120373, 'ymin': 0.523337, 'xmax': 0.697562, 'ymax': 0.735631}]}
+[2026-05-04 10:31:31] Received on robot/coral: {'frame': 21167, 'bboxes': [{'id': 1, 'score': 0.675781, 'xmin': 0.120373, 'ymin': 0.523337, 'xmax': 0.697562, 'ymax': 0.735631}]}
+[2026-05-04 10:31:31] Received on robot/coral: {'frame': 21168, 'bboxes': [{'id': 1, 'score': 0.675781, 'xmin': 0.141697, 'ymin': 0.53118, 'xmax': 0.676237, 'ymax': 0.727788}]}
+[2026-05-04 10:31:31] Received on robot/coral: {'frame': 21169, 'bboxes': [{'id': 1, 'score': 0.8125, 'xmin': 0.123763, 'ymin': 0.523337, 'xmax': 0.658303, 'ymax': 0.735631}]}
+[2026-05-04 10:31:31] Received on robot/coral: {'frame': 21170, 'bboxes': [{'id': 1, 'score': 0.675781, 'xmin': 0.123763, 'ymin': 0.523337, 'xmax': 0.658303, 'ymax': 0.735631}]}
+[2026-05-04 10:31:31] Received on robot/coral: {'frame': 21171, 'bboxes': [{'id': 1, 'score': 0.902344, 'xmin': 0.102438, 'ymin': 0.523337, 'xmax': 0.679627, 'ymax': 0.735631}]}
+[2026-05-04 10:31:32] Received on robot/coral: {'frame': 21172, 'bboxes': [{'id': 1, 'score': 0.675781, 'xmin': 0.120373, 'ymin': 0.53118, 'xmax': 0.697562, 'ymax': 0.727788}]}
+[2026-05-04 10:31:32] Received on robot/coral: {'frame': 21173, 'bboxes': [{'id': 1, 'score': 0.675781, 'xmin': 0.102438, 'ymin': 0.53118, 'xmax': 0.679627, 'ymax': 0.727788}]}
+[2026-05-04 10:31:32] Received on robot/coral: {'frame': 21174, 'bboxes': [{'id': 1, 'score': 0.675781, 'xmin': 0.115504, 'ymin': 0.535489, 'xmax': 0.649631, 'ymax': 0.731944}]}
+[2026-05-04 10:31:32] Received on robot/coral: {'frame': 21175, 'bboxes': []}
+[2026-05-04 10:31:32] Received on robot/coral: {'frame': 21176, 'bboxes': []}
+[2026-05-04 10:31:32] Received on robot/coral: {'frame': 21178, 'bboxes': []}
+[2026-05-04 10:31:32] Received on robot/coral: {'frame': 21179, 'bboxes': []}
+[2026-05-04 10:31:32] Received on robot/coral: {'frame': 21180, 'bboxes': []}
+[2026-05-04 10:31:33] Received on robot/coral: {'frame': 21181, 'bboxes': []}
+[2026-05-04 10:31:33] Received on robot/coral: {'frame': 21182, 'bboxes': []}
+[2026-05-04 10:31:33] Received on robot/coral: {'frame': 21183, 'bboxes': [{'id': 1, 'score': 0.8125, 'xmin': 0.061406, 'ymin': 0.523337, 'xmax': 0.638594, 'ymax': 0.735631}, {'id': 1, 'score': 0.675781, 'xmin': 0.714724, 'ymin': 0.496464, 'xmax': 0.971832, 'ymax': 0.71698}]}
+[2026-05-04 10:31:33] Received on robot/coral: {'frame': 21184, 'bboxes': [{'id': 1, 'score': 0.675781, 'xmin': 0.704467, 'ymin': 0.496464, 'xmax': 0.982088, 'ymax': 0.71698}, {'id': 1, 'score': 0.675781, 'xmin': 0.020373, 'ymin': 0.523337, 'xmax': 0.597562, 'ymax': 0.735631}]}
+[2026-05-04 10:31:33] Received on robot/coral: {'frame': 21185, 'bboxes': [{'id': 1, 'score': 0.675781, 'xmin': 0.698319, 'ymin': 0.524782, 'xmax': 0.955623, 'ymax': 0.72916}]}
+[2026-05-04 10:31:33] Received on robot/coral: {'frame': 21186, 'bboxes': [{'id': 1, 'score': 0.902344, 'xmin': 0.693392, 'ymin': 0.522889, 'xmax': 0.993164, 'ymax': 0.727111}, {'id': 1, 'score': 0.8125, 'xmin': 0.020373, 'ymin': 0.523337, 'xmax': 0.597562, 'ymax': 0.735631}]}
+[2026-05-04 10:31:33] Received on robot/coral: {'frame': 21187, 'bboxes': [{'id': 1, 'score': 0.8125, 'xmin': 0.698319, 'ymin': 0.524782, 'xmax': 0.955623, 'ymax': 0.72916}]}
+[2026-05-04 10:31:33] Received on robot/coral: {'frame': 21188, 'bboxes': [{'id': 1, 'score': 0.902344, 'xmin': 0.693392, 'ymin': 0.514742, 'xmax': 0.993164, 'ymax': 0.735258}]}
+[2026-05-04 10:31:33] Received on robot/coral: {'frame': 21189, 'bboxes': [{'id': 1, 'score': 0.902344, 'xmin': 0.688055, 'ymin': 0.524782, 'xmax': 0.965888, 'ymax': 0.72916}]}
+[2026-05-04 10:31:33] Received on robot/coral: {'frame': 21190, 'bboxes': [{'id': 1, 'score': 0.902344, 'xmin': 0.663156, 'ymin': 0.514742, 'xmax': 0.986844, 'ymax': 0.735258}, {'id': 1, 'score': 0.675781, 'xmin': 0.0, 'ymin': 0.523337, 'xmax': 0.620587, 'ymax': 0.735631}]}
+[2026-05-04 10:31:34] Received on robot/coral: {'frame': 21191, 'bboxes': [{'id': 1, 'score': 0.902344, 'xmin': 0.663156, 'ymin': 0.514742, 'xmax': 0.986844, 'ymax': 0.735258}, {'id': 1, 'score': 0.675781, 'xmin': 0.0, 'ymin': 0.523337, 'xmax': 0.620587, 'ymax': 0.735631}]}
+[2026-05-04 10:31:34] Received on robot/coral: {'frame': 21192, 'bboxes': [{'id': 1, 'score': 0.949219, 'xmin': 0.688055, 'ymin': 0.516629, 'xmax': 0.965888, 'ymax': 0.737313}, {'id': 1, 'score': 0.8125, 'xmin': 0.020373, 'ymin': 0.523337, 'xmax': 0.597562, 'ymax': 0.735631}]}
+[2026-05-04 10:31:34] Received on robot/coral: {'frame': 21193, 'bboxes': [{'id': 1, 'score': 0.902344, 'xmin': 0.655076, 'ymin': 0.514742, 'xmax': 1.0, 'ymax': 0.735258}]}
+[2026-05-04 10:31:34] Received on robot/coral: {'frame': 21194, 'bboxes': [{'id': 1, 'score': 0.949219, 'xmin': 0.649711, 'ymin': 0.524223, 'xmax': 0.9734, 'ymax': 0.762333}]}
+[2026-05-04 10:31:34] Received on robot/coral: {'frame': 21195, 'bboxes': [{'id': 1, 'score': 0.949219, 'xmin': 0.636799, 'ymin': 0.505945, 'xmax': 0.986313, 'ymax': 0.744055}]}
+[2026-05-04 10:31:34] Received on robot/coral: {'frame': 21196, 'bboxes': [{'id': 1, 'score': 0.976562, 'xmin': 0.633195, 'ymin': 0.535489, 'xmax': 0.997074, 'ymax': 0.731944}]}
+[2026-05-04 10:31:34] Received on robot/coral: {'frame': 21198, 'bboxes': [{'id': 1, 'score': 0.988281, 'xmin': 0.586112, 'ymin': 0.527651, 'xmax': 0.979023, 'ymax': 0.739781}, {'id': 1, 'score': 0.675781, 'xmin': 0.0, 'ymin': 0.535489, 'xmax': 0.573237, 'ymax': 0.731944}]}
+[2026-05-04 10:31:34] Received on robot/coral: {'frame': 21199, 'bboxes': [{'id': 1, 'score': 0.988281, 'xmin': 0.586112, 'ymin': 0.535489, 'xmax': 0.979023, 'ymax': 0.731944}]}
+[2026-05-04 10:31:35] Received on robot/coral: {'frame': 21200, 'bboxes': [{'id': 1, 'score': 0.976562, 'xmin': 0.611061, 'ymin': 0.530854, 'xmax': 0.934997, 'ymax': 0.769146}]}
+[2026-05-04 10:31:35] Received on robot/coral: {'frame': 21201, 'bboxes': [{'id': 1, 'score': 0.988281, 'xmin': 0.586112, 'ymin': 0.527651, 'xmax': 0.979023, 'ymax': 0.739781}]}
+[2026-05-04 10:31:35] Received on robot/coral: {'frame': 21202, 'bboxes': [{'id': 1, 'score': 0.976562, 'xmin': 0.611061, 'ymin': 0.530854, 'xmax': 0.934997, 'ymax': 0.769146}]}
+[2026-05-04 10:31:35] Received on robot/coral: {'frame': 21203, 'bboxes': [{'id': 1, 'score': 0.988281, 'xmin': 0.598138, 'ymin': 0.516629, 'xmax': 0.947919, 'ymax': 0.737313}, {'id': 1, 'score': 0.675781, 'xmin': 0.017802, 'ymin': 0.535489, 'xmax': 0.551929, 'ymax': 0.731944}]}
+[2026-05-04 10:31:35] Received on robot/coral: {'frame': 21204, 'bboxes': [{'id': 1, 'score': 0.976562, 'xmin': 0.570437, 'ymin': 0.527651, 'xmax': 0.994697, 'ymax': 0.739781}]}
+[2026-05-04 10:31:35] Received on robot/coral: {'frame': 21205, 'bboxes': [{'id': 1, 'score': 0.976562, 'xmin': 0.598138, 'ymin': 0.516629, 'xmax': 0.947919, 'ymax': 0.737313}]}
+[2026-05-04 10:31:35] Received on robot/coral: {'frame': 21206, 'bboxes': [{'id': 1, 'score': 0.988281, 'xmin': 0.570437, 'ymin': 0.527651, 'xmax': 0.994697, 'ymax': 0.739781}]}
+[2026-05-04 10:31:35] Received on robot/coral: {'frame': 21207, 'bboxes': [{'id': 1, 'score': 0.976562, 'xmin': 0.598138, 'ymin': 0.507825, 'xmax': 0.947919, 'ymax': 0.746117}]}
+[2026-05-04 10:31:35] Received on robot/coral: {'frame': 21208, 'bboxes': [{'id': 1, 'score': 0.988281, 'xmin': 0.598138, 'ymin': 0.530854, 'xmax': 0.947919, 'ymax': 0.769146}]}
+[2026-05-04 10:31:35] Received on robot/coral: {'frame': 21209, 'bboxes': [{'id': 1, 'score': 0.988281, 'xmin': 0.598138, 'ymin': 0.507825, 'xmax': 0.947919, 'ymax': 0.746117}]}
+[2026-05-04 10:31:35] Received on robot/coral: {'frame': 21210, 'bboxes': [{'id': 1, 'score': 0.988281, 'xmin': 0.584184, 'ymin': 0.516629, 'xmax': 0.961873, 'ymax': 0.737313}]}
+[2026-05-04 10:31:36] Received on robot/coral: {'frame': 21211, 'bboxes': [{'id': 1, 'score': 0.988281, 'xmin': 0.553512, 'ymin': 0.527651, 'xmax': 1.0, 'ymax': 0.739781}]}
+[2026-05-04 10:31:36] Received on robot/coral: {'frame': 21212, 'bboxes': [{'id': 1, 'score': 0.988281, 'xmin': 0.553512, 'ymin': 0.535489, 'xmax': 1.0, 'ymax': 0.731944}]}
+[2026-05-04 10:31:36] Received on robot/coral: {'frame': 21213, 'bboxes': [{'id': 1, 'score': 0.996094, 'xmin': 0.553512, 'ymin': 0.535489, 'xmax': 1.0, 'ymax': 0.731944}]}
+[2026-05-04 10:31:36] Received on robot/coral: {'frame': 21214, 'bboxes': [{'id': 1, 'score': 0.988281, 'xmin': 0.584184, 'ymin': 0.530854, 'xmax': 0.961873, 'ymax': 0.769146}]}
+[2026-05-04 10:31:36] Received on robot/coral: {'frame': 21215, 'bboxes': [{'id': 1, 'score': 0.988281, 'xmin': 0.584184, 'ymin': 0.507825, 'xmax': 0.961873, 'ymax': 0.746117}]}
+[2026-05-04 10:31:36] Received on robot/coral: {'frame': 21216, 'bboxes': [{'id': 1, 'score': 0.988281, 'xmin': 0.584184, 'ymin': 0.507825, 'xmax': 0.961873, 'ymax': 0.746117}]}
+[2026-05-04 10:31:36] Received on robot/coral: {'frame': 21218, 'bboxes': [{'id': 1, 'score': 0.988281, 'xmin': 0.584184, 'ymin': 0.507825, 'xmax': 0.961873, 'ymax': 0.746117}]}
+[2026-05-04 10:31:36] Received on robot/coral: {'frame': 21219, 'bboxes': [{'id': 1, 'score': 0.988281, 'xmin': 0.584184, 'ymin': 0.507825, 'xmax': 0.961873, 'ymax': 0.746117}]}
+[2026-05-04 10:31:36] Received on robot/coral: {'frame': 21220, 'bboxes': [{'id': 1, 'score': 0.988281, 'xmin': 0.584184, 'ymin': 0.530854, 'xmax': 0.961873, 'ymax': 0.769146}]}
+[2026-05-04 10:31:37] Received on robot/coral: {'frame': 21221, 'bboxes': [{'id': 1, 'score': 0.988281, 'xmin': 0.584184, 'ymin': 0.507825, 'xmax': 0.961873, 'ymax': 0.746117}]}
+[2026-05-04 10:31:37] Received on robot/coral: {'frame': 21223, 'bboxes': [{'id': 1, 'score': 0.976562, 'xmin': 0.584184, 'ymin': 0.530854, 'xmax': 0.961873, 'ymax': 0.769146}, {'id': 1, 'score': 0.675781, 'xmin': 0.0, 'ymin': 0.535489, 'xmax': 0.54067, 'ymax': 0.731944}]}
+[2026-05-04 10:31:37] Received on robot/coral: {'frame': 21224, 'bboxes': [{'id': 1, 'score': 0.988281, 'xmin': 0.584184, 'ymin': 0.530854, 'xmax': 0.961873, 'ymax': 0.769146}]}
+[2026-05-04 10:31:37] Received on robot/coral: {'frame': 21225, 'bboxes': [{'id': 1, 'score': 0.988281, 'xmin': 0.584184, 'ymin': 0.507825, 'xmax': 0.961873, 'ymax': 0.746117}]}
+[2026-05-04 10:31:37] Received on robot/coral: {'frame': 21226, 'bboxes': [{'id': 1, 'score': 0.996094, 'xmin': 0.553512, 'ymin': 0.527651, 'xmax': 1.0, 'ymax': 0.739781}]}
+[2026-05-04 10:31:37] Received on robot/coral: {'frame': 21227, 'bboxes': [{'id': 1, 'score': 0.996094, 'xmin': 0.598138, 'ymin': 0.507825, 'xmax': 0.947919, 'ymax': 0.746117}]}
+[2026-05-04 10:31:37] Received on robot/coral: {'frame': 21228, 'bboxes': [{'id': 1, 'score': 0.988281, 'xmin': 0.584184, 'ymin': 0.530854, 'xmax': 0.961873, 'ymax': 0.769146}]}
+[2026-05-04 10:31:37] Received on robot/coral: {'frame': 21229, 'bboxes': [{'id': 1, 'score': 0.996094, 'xmin': 0.553512, 'ymin': 0.527651, 'xmax': 1.0, 'ymax': 0.739781}]}
+[2026-05-04 10:31:38] Received on robot/coral: {'frame': 21230, 'bboxes': [{'id': 1, 'score': 0.996094, 'xmin': 0.584184, 'ymin': 0.530854, 'xmax': 0.961873, 'ymax': 0.769146}]}
+[2026-05-04 10:31:38] Received on robot/coral: {'frame': 21231, 'bboxes': [{'id': 1, 'score': 0.996094, 'xmin': 0.598138, 'ymin': 0.530854, 'xmax': 0.947919, 'ymax': 0.769146}]}
+[2026-05-04 10:31:38] Received on robot/coral: {'frame': 21232, 'bboxes': [{'id': 1, 'score': 0.996094, 'xmin': 0.570437, 'ymin': 0.527651, 'xmax': 0.994697, 'ymax': 0.739781}]}
+[2026-05-04 10:31:38] Received on robot/coral: {'frame': 21233, 'bboxes': [{'id': 1, 'score': 0.996094, 'xmin': 0.553512, 'ymin': 0.527651, 'xmax': 1.0, 'ymax': 0.739781}]}
+[2026-05-04 10:31:38] Received on robot/coral: {'frame': 21234, 'bboxes': [{'id': 1, 'score': 0.988281, 'xmin': 0.570437, 'ymin': 0.527651, 'xmax': 0.994697, 'ymax': 0.739781}]}
+[2026-05-04 10:31:38] Received on robot/coral: {'frame': 21235, 'bboxes': [{'id': 1, 'score': 0.996094, 'xmin': 0.553512, 'ymin': 0.527651, 'xmax': 1.0, 'ymax': 0.739781}]}
+[2026-05-04 10:31:38] Received on robot/coral: {'frame': 21236, 'bboxes': [{'id': 1, 'score': 0.988281, 'xmin': 0.561156, 'ymin': 0.507825, 'xmax': 0.938844, 'ymax': 0.746117}]}
+[2026-05-04 10:31:38] Received on robot/coral: {'frame': 21237, 'bboxes': [{'id': 1, 'score': 0.996094, 'xmin': 0.520945, 'ymin': 0.527651, 'xmax': 0.979055, 'ymax': 0.739781}]}
+[2026-05-04 10:31:38] Received on robot/coral: {'frame': 21238, 'bboxes': [{'id': 1, 'score': 0.996094, 'xmin': 0.502479, 'ymin': 0.523337, 'xmax': 0.997521, 'ymax': 0.735631}]}
+[2026-05-04 10:31:38] Received on robot/coral: {'frame': 21239, 'bboxes': [{'id': 1, 'score': 0.996094, 'xmin': 0.561156, 'ymin': 0.530854, 'xmax': 0.938844, 'ymax': 0.769146}]}
+[2026-05-04 10:31:39] Received on robot/coral: {'frame': 21240, 'bboxes': [{'id': 1, 'score': 0.996094, 'xmin': 0.520945, 'ymin': 0.527651, 'xmax': 0.979055, 'ymax': 0.739781}]}
+[2026-05-04 10:31:39] Received on robot/coral: {'frame': 21241, 'bboxes': [{'id': 1, 'score': 0.996094, 'xmin': 0.50267, 'ymin': 0.527651, 'xmax': 0.99733, 'ymax': 0.739781}]}
+[2026-05-04 10:31:39] Received on robot/coral: {'frame': 21242, 'bboxes': [{'id': 1, 'score': 0.996094, 'xmin': 0.50267, 'ymin': 0.519189, 'xmax': 0.99733, 'ymax': 0.748244}]}
+[2026-05-04 10:31:39] Received on robot/coral: {'frame': 21243, 'bboxes': [{'id': 1, 'score': 0.996094, 'xmin': 0.502479, 'ymin': 0.514868, 'xmax': 0.997521, 'ymax': 0.7441}]}
+[2026-05-04 10:31:39] Received on robot/coral: {'frame': 21244, 'bboxes': [{'id': 1, 'score': 0.996094, 'xmin': 0.502479, 'ymin': 0.543853, 'xmax': 0.997521, 'ymax': 0.756147}]}
+[2026-05-04 10:31:39] Received on robot/coral: {'frame': 21245, 'bboxes': [{'id': 1, 'score': 0.996094, 'xmin': 0.48273, 'ymin': 0.543853, 'xmax': 1.0, 'ymax': 0.756147}]}
+[2026-05-04 10:31:39] Received on robot/coral: {'frame': 21247, 'bboxes': [{'id': 1, 'score': 0.996094, 'xmin': 0.441697, 'ymin': 0.526239, 'xmax': 0.976237, 'ymax': 0.773761}]}
+[2026-05-04 10:31:39] Received on robot/coral: {'frame': 21248, 'bboxes': [{'id': 1, 'score': 0.996094, 'xmin': 0.464795, 'ymin': 0.535384, 'xmax': 0.999335, 'ymax': 0.764616}]}
+[2026-05-04 10:31:40] Received on robot/coral: {'frame': 21249, 'bboxes': [{'id': 1, 'score': 0.996094, 'xmin': 0.443471, 'ymin': 0.535384, 'xmax': 1.0, 'ymax': 0.764616}]}
+[2026-05-04 10:31:40] Received on robot/coral: {'frame': 21250, 'bboxes': [{'id': 1, 'score': 0.996094, 'xmin': 0.443471, 'ymin': 0.535384, 'xmax': 1.0, 'ymax': 0.764616}]}
+[2026-05-04 10:31:40] Received on robot/coral: {'frame': 21251, 'bboxes': [{'id': 1, 'score': 0.996094, 'xmin': 0.443471, 'ymin': 0.535384, 'xmax': 1.0, 'ymax': 0.764616}]}
+[2026-05-04 10:31:40] Received on robot/coral: {'frame': 21252, 'bboxes': [{'id': 1, 'score': 0.996094, 'xmin': 0.443471, 'ymin': 0.535384, 'xmax': 1.0, 'ymax': 0.764616}]}
+[2026-05-04 10:31:40] Received on robot/coral: {'frame': 21253, 'bboxes': [{'id': 1, 'score': 0.996094, 'xmin': 0.402438, 'ymin': 0.535384, 'xmax': 0.979627, 'ymax': 0.764616}]}
+[2026-05-04 10:31:40] Received on robot/coral: {'frame': 21254, 'bboxes': [{'id': 1, 'score': 0.996094, 'xmin': 0.402438, 'ymin': 0.535384, 'xmax': 0.979627, 'ymax': 0.764616}]}
+[2026-05-04 10:31:40] Received on robot/coral: {'frame': 21255, 'bboxes': [{'id': 1, 'score': 0.996094, 'xmin': 0.379413, 'ymin': 0.535384, 'xmax': 1.0, 'ymax': 0.764616}]}
+[2026-05-04 10:31:40] Received on robot/coral: {'frame': 21256, 'bboxes': [{'id': 1, 'score': 0.996094, 'xmin': 0.402438, 'ymin': 0.526239, 'xmax': 0.979627, 'ymax': 0.773761}]}
+[2026-05-04 10:31:40] Received on robot/coral: {'frame': 21257, 'bboxes': [{'id': 1, 'score': 0.996094, 'xmin': 0.379413, 'ymin': 0.526239, 'xmax': 1.0, 'ymax': 0.773761}]}
+[2026-05-04 10:31:40] Received on robot/coral: {'frame': 21258, 'bboxes': [{'id': 1, 'score': 0.996094, 'xmin': 0.35455, 'ymin': 0.546756, 'xmax': 1.0, 'ymax': 0.794277}]}
+[2026-05-04 10:31:41] Received on robot/coral: {'frame': 21259, 'bboxes': [{'id': 1, 'score': 0.996094, 'xmin': 0.379413, 'ymin': 0.526239, 'xmax': 1.0, 'ymax': 0.773761}]}
+[2026-05-04 10:31:41] Received on robot/coral: {'frame': 21260, 'bboxes': [{'id': 1, 'score': 0.996094, 'xmin': 0.33838, 'ymin': 0.526239, 'xmax': 0.96162, 'ymax': 0.773761}]}
+[2026-05-04 10:31:41] Received on robot/coral: {'frame': 21261, 'bboxes': [{'id': 1, 'score': 0.996094, 'xmin': 0.313517, 'ymin': 0.526239, 'xmax': 0.986483, 'ymax': 0.773761}]}
+[2026-05-04 10:31:41] Received on robot/coral: {'frame': 21262, 'bboxes': [{'id': 1, 'score': 0.996094, 'xmin': 0.295583, 'ymin': 0.526239, 'xmax': 0.968548, 'ymax': 0.773761}]}
+[2026-05-04 10:31:41] Received on robot/coral: {'frame': 21263, 'bboxes': [{'id': 1, 'score': 0.996094, 'xmin': 0.336615, 'ymin': 0.526239, 'xmax': 1.0, 'ymax': 0.773761}]}
+[2026-05-04 10:31:41] Received on robot/coral: {'frame': 21264, 'bboxes': [{'id': 1, 'score': 0.996094, 'xmin': 0.295583, 'ymin': 0.546756, 'xmax': 0.968548, 'ymax': 0.794277}]}
+[2026-05-04 10:31:41] Received on robot/coral: {'frame': 21265, 'bboxes': [{'id': 1, 'score': 0.996094, 'xmin': 0.295583, 'ymin': 0.536881, 'xmax': 0.968548, 'ymax': 0.804151}]}
+[2026-05-04 10:31:41] Received on robot/coral: {'frame': 21267, 'bboxes': [{'id': 1, 'score': 0.996094, 'xmin': 0.295583, 'ymin': 0.536881, 'xmax': 0.968548, 'ymax': 0.804151}]}
+[2026-05-04 10:31:41] Received on robot/coral: {'frame': 21268, 'bboxes': [{'id': 1, 'score': 0.996094, 'xmin': 0.295583, 'ymin': 0.536881, 'xmax': 0.968548, 'ymax': 0.804151}]}
+[2026-05-04 10:31:42] Received on robot/coral: {'frame': 21269, 'bboxes': [{'id': 1, 'score': 0.996094, 'xmin': 0.257383, 'ymin': 0.542112, 'xmax': 1.0, 'ymax': 0.809586}]}
+[2026-05-04 10:31:42] Received on robot/coral: {'frame': 21270, 'bboxes': [{'id': 1, 'score': 0.996094, 'xmin': 0.268736, 'ymin': 0.536881, 'xmax': 0.995394, 'ymax': 0.804151}]}
+[2026-05-04 10:31:42] Received on robot/coral: {'frame': 21271, 'bboxes': [{'id': 1, 'score': 0.996094, 'xmin': 0.25455, 'ymin': 0.536881, 'xmax': 0.927515, 'ymax': 0.804151}]}
+[2026-05-04 10:31:42] Received on robot/coral: {'frame': 21272, 'bboxes': [{'id': 1, 'score': 0.996094, 'xmin': 0.25455, 'ymin': 0.536881, 'xmax': 0.927515, 'ymax': 0.804151}]}
+[2026-05-04 10:31:42] COUNT TRIGGERED! XRP-BOOK (ID: 19) crossed at X:189
+[2026-05-04 10:31:42] Received on robot/coral: {'frame': 21273, 'bboxes': [{'id': 1, 'score': 0.996094, 'xmin': 0.25455, 'ymin': 0.536881, 'xmax': 0.927515, 'ymax': 0.804151}]}
+[2026-05-04 10:31:42] Received on robot/coral: {'frame': 21274, 'bboxes': [{'id': 1, 'score': 0.996094, 'xmin': 0.25455, 'ymin': 0.536881, 'xmax': 0.927515, 'ymax': 0.804151}]}
+[2026-05-04 10:31:42] Received on robot/coral: {'frame': 21275, 'bboxes': [{'id': 1, 'score': 0.996094, 'xmin': 0.25455, 'ymin': 0.536881, 'xmax': 0.927515, 'ymax': 0.804151}]}
+[2026-05-04 10:31:42] Received on robot/coral: {'frame': 21276, 'bboxes': [{'id': 1, 'score': 0.996094, 'xmin': 0.186393, 'ymin': 0.531442, 'xmax': 0.913607, 'ymax': 0.820256}]}
+[2026-05-04 10:31:42] Received on robot/coral: {'frame': 21277, 'bboxes': [{'id': 1, 'score': 0.996094, 'xmin': 0.213517, 'ymin': 0.536881, 'xmax': 0.886483, 'ymax': 0.804151}]}
+[2026-05-04 10:31:42] Received on robot/coral: {'frame': 21278, 'bboxes': [{'id': 1, 'score': 0.996094, 'xmin': 0.189789, 'ymin': 0.531442, 'xmax': 0.917003, 'ymax': 0.820256}]}
+[2026-05-04 10:31:43] Received on robot/coral: {'frame': 21279, 'bboxes': [{'id': 1, 'score': 0.996094, 'xmin': 0.186393, 'ymin': 0.531442, 'xmax': 0.913607, 'ymax': 0.820256}]}
+[2026-05-04 10:31:43] Received on robot/coral: {'frame': 21280, 'bboxes': [{'id': 1, 'score': 0.996094, 'xmin': 0.186393, 'ymin': 0.531442, 'xmax': 0.913607, 'ymax': 0.820256}]}
+[2026-05-04 10:31:43] Received on robot/coral: {'frame': 21281, 'bboxes': [{'id': 1, 'score': 0.996094, 'xmin': 0.189789, 'ymin': 0.531442, 'xmax': 0.917003, 'ymax': 0.820256}]}
+[2026-05-04 10:31:43] Received on robot/coral: {'frame': 21282, 'bboxes': [{'id': 1, 'score': 0.996094, 'xmin': 0.189789, 'ymin': 0.531442, 'xmax': 0.917003, 'ymax': 0.820256}]}
+[2026-05-04 10:31:43] Received on robot/coral: {'frame': 21283, 'bboxes': [{'id': 1, 'score': 0.996094, 'xmin': 0.164958, 'ymin': 0.542112, 'xmax': 0.838438, 'ymax': 0.809586}]}
+[2026-05-04 10:31:43] Received on robot/coral: {'frame': 21284, 'bboxes': [{'id': 1, 'score': 0.996094, 'xmin': 0.216656, 'ymin': 0.531442, 'xmax': 0.890136, 'ymax': 0.820256}]}
+[2026-05-04 10:31:43] Received on robot/coral: {'frame': 21285, 'bboxes': [{'id': 1, 'score': 0.996094, 'xmin': 0.213517, 'ymin': 0.526219, 'xmax': 0.886483, 'ymax': 0.814813}]}
+[2026-05-04 10:31:43] Received on robot/coral: {'frame': 21286, 'bboxes': [{'id': 1, 'score': 0.996094, 'xmin': 0.157382, 'ymin': 0.531442, 'xmax': 0.942618, 'ymax': 0.820256}]}
+[2026-05-04 10:31:43] Received on robot/coral: {'frame': 21287, 'bboxes': [{'id': 1, 'score': 0.996094, 'xmin': 0.138091, 'ymin': 0.542112, 'xmax': 0.865305, 'ymax': 0.809586}]}
+[2026-05-04 10:31:44] Received on robot/coral: {'frame': 21289, 'bboxes': [{'id': 1, 'score': 0.996094, 'xmin': 0.134695, 'ymin': 0.531442, 'xmax': 0.861909, 'ymax': 0.820256}]}
+[2026-05-04 10:31:44] Received on robot/coral: {'frame': 21290, 'bboxes': [{'id': 1, 'score': 0.996094, 'xmin': 0.138091, 'ymin': 0.531442, 'xmax': 0.865305, 'ymax': 0.820256}]}
+[2026-05-04 10:31:44] Received on robot/coral: {'frame': 21291, 'bboxes': [{'id': 1, 'score': 0.996094, 'xmin': 0.138091, 'ymin': 0.531442, 'xmax': 0.865305, 'ymax': 0.820256}]}
+[2026-05-04 10:31:44] Received on robot/coral: {'frame': 21292, 'bboxes': [{'id': 1, 'score': 0.996094, 'xmin': 0.138091, 'ymin': 0.531442, 'xmax': 0.865305, 'ymax': 0.820256}]}
+[2026-05-04 10:31:44] Received on robot/coral: {'frame': 21293, 'bboxes': [{'id': 1, 'score': 0.996094, 'xmin': 0.138091, 'ymin': 0.531442, 'xmax': 0.865305, 'ymax': 0.820256}]}
+[2026-05-04 10:31:44] Received on robot/coral: {'frame': 21294, 'bboxes': [{'id': 1, 'score': 0.996094, 'xmin': 0.138091, 'ymin': 0.531442, 'xmax': 0.865305, 'ymax': 0.820256}]}
+[2026-05-04 10:31:44] Received on robot/coral: {'frame': 21295, 'bboxes': [{'id': 1, 'score': 0.988281, 'xmin': 0.15455, 'ymin': 0.546736, 'xmax': 0.827515, 'ymax': 0.83533}]}
+[2026-05-04 10:31:44] Received on robot/coral: {'frame': 21296, 'bboxes': [{'id': 1, 'score': 0.976562, 'xmin': 0.138091, 'ymin': 0.531442, 'xmax': 0.865305, 'ymax': 0.820256}]}
+[2026-05-04 10:31:44] Received on robot/coral: {'frame': 21297, 'bboxes': [{'id': 1, 'score': 0.996094, 'xmin': 0.138091, 'ymin': 0.542112, 'xmax': 0.865305, 'ymax': 0.809586}]}
+[2026-05-04 10:31:45] Received on robot/coral: {'frame': 21298, 'bboxes': [{'id': 1, 'score': 0.996094, 'xmin': 0.138091, 'ymin': 0.531442, 'xmax': 0.865305, 'ymax': 0.820256}]}
+[2026-05-04 10:31:45] Received on robot/coral: {'frame': 21299, 'bboxes': [{'id': 1, 'score': 0.996094, 'xmin': 0.138091, 'ymin': 0.531442, 'xmax': 0.865305, 'ymax': 0.820256}]}
+[2026-05-04 10:31:45] Received on robot/coral: {'frame': 21300, 'bboxes': [{'id': 1, 'score': 0.996094, 'xmin': 0.134695, 'ymin': 0.531442, 'xmax': 0.861909, 'ymax': 0.820256}]}
+[2026-05-04 10:31:45] Received on robot/coral: {'frame': 21301, 'bboxes': [{'id': 1, 'score': 0.996094, 'xmin': 0.138091, 'ymin': 0.531442, 'xmax': 0.865305, 'ymax': 0.820256}]}
+[2026-05-04 10:31:45] Received on robot/coral: {'frame': 21302, 'bboxes': [{'id': 1, 'score': 0.988281, 'xmin': 0.138091, 'ymin': 0.531442, 'xmax': 0.865305, 'ymax': 0.820256}]}
+[2026-05-04 10:31:45] Received on robot/coral: {'frame': 21303, 'bboxes': [{'id': 1, 'score': 0.996094, 'xmin': 0.138091, 'ymin': 0.531442, 'xmax': 0.865305, 'ymax': 0.820256}]}
+[2026-05-04 10:31:45] Received on robot/coral: {'frame': 21304, 'bboxes': [{'id': 1, 'score': 0.988281, 'xmin': 0.138091, 'ymin': 0.531442, 'xmax': 0.865305, 'ymax': 0.820256}]}
+[2026-05-04 10:31:45] Received on robot/coral: {'frame': 21305, 'bboxes': [{'id': 1, 'score': 0.988281, 'xmin': 0.15455, 'ymin': 0.546736, 'xmax': 0.827515, 'ymax': 0.83533}]}
+[2026-05-04 10:31:45] Received on robot/coral: {'frame': 21306, 'bboxes': [{'id': 1, 'score': 0.988281, 'xmin': 0.138091, 'ymin': 0.531442, 'xmax': 0.865305, 'ymax': 0.820256}]}
+[2026-05-04 10:31:45] Received on robot/coral: {'frame': 21307, 'bboxes': [{'id': 1, 'score': 0.976562, 'xmin': 0.138091, 'ymin': 0.531442, 'xmax': 0.865305, 'ymax': 0.820256}]}
+[2026-05-04 10:31:46] Received on robot/coral: {'frame': 21308, 'bboxes': [{'id': 1, 'score': 0.988281, 'xmin': 0.15455, 'ymin': 0.546736, 'xmax': 0.827515, 'ymax': 0.83533}]}
+[2026-05-04 10:31:46] Received on robot/coral: {'frame': 21309, 'bboxes': [{'id': 1, 'score': 0.988281, 'xmin': 0.138091, 'ymin': 0.531442, 'xmax': 0.865305, 'ymax': 0.820256}]}
+[2026-05-04 10:31:46] Received on robot/coral: {'frame': 21310, 'bboxes': [{'id': 1, 'score': 0.996094, 'xmin': 0.15455, 'ymin': 0.557398, 'xmax': 0.827515, 'ymax': 0.824668}]}
+[2026-05-04 10:31:46] Received on robot/coral: {'frame': 21311, 'bboxes': [{'id': 1, 'score': 0.996094, 'xmin': 0.164958, 'ymin': 0.531442, 'xmax': 0.838438, 'ymax': 0.820256}]}
+[2026-05-04 10:31:46] Received on robot/coral: {'frame': 21312, 'bboxes': [{'id': 1, 'score': 0.996094, 'xmin': 0.10908, 'ymin': 0.531442, 'xmax': 0.894315, 'ymax': 0.820256}]}
+[2026-05-04 10:31:46] Received on robot/coral: {'frame': 21314, 'bboxes': [{'id': 1, 'score': 0.996094, 'xmin': 0.138091, 'ymin': 0.531442, 'xmax': 0.865305, 'ymax': 0.820256}]}
+[2026-05-04 10:31:46] Received on robot/coral: {'frame': 21315, 'bboxes': [{'id': 1, 'score': 0.996094, 'xmin': 0.138091, 'ymin': 0.531442, 'xmax': 0.865305, 'ymax': 0.820256}]}
+[2026-05-04 10:31:46] Received on robot/coral: {'frame': 21316, 'bboxes': [{'id': 1, 'score': 0.988281, 'xmin': 0.138091, 'ymin': 0.531442, 'xmax': 0.865305, 'ymax': 0.820256}]}
+[2026-05-04 10:31:47] Received on robot/coral: {'frame': 21317, 'bboxes': [{'id': 1, 'score': 0.996094, 'xmin': 0.138091, 'ymin': 0.531442, 'xmax': 0.865305, 'ymax': 0.820256}]}
+[2026-05-04 10:31:47] Received on robot/coral: {'frame': 21318, 'bboxes': [{'id': 1, 'score': 0.988281, 'xmin': 0.10908, 'ymin': 0.531442, 'xmax': 0.894315, 'ymax': 0.820256}]}
+[2026-05-04 10:31:47] Received on robot/coral: {'frame': 21319, 'bboxes': [{'id': 1, 'score': 0.996094, 'xmin': 0.086393, 'ymin': 0.531442, 'xmax': 0.813607, 'ymax': 0.820256}]}
+[2026-05-04 10:31:47] Received on robot/coral: {'frame': 21320, 'bboxes': [{'id': 1, 'score': 0.996094, 'xmin': 0.10908, 'ymin': 0.531442, 'xmax': 0.894315, 'ymax': 0.820256}]}
+[2026-05-04 10:31:47] Received on robot/coral: {'frame': 21321, 'bboxes': [{'id': 1, 'score': 0.996094, 'xmin': 0.10908, 'ymin': 0.531442, 'xmax': 0.894315, 'ymax': 0.820256}]}
+[2026-05-04 10:31:47] Received on robot/coral: {'frame': 21322, 'bboxes': [{'id': 1, 'score': 0.996094, 'xmin': 0.086393, 'ymin': 0.531442, 'xmax': 0.813607, 'ymax': 0.820256}]}
+[2026-05-04 10:31:47] Received on robot/coral: {'frame': 21323, 'bboxes': [{'id': 1, 'score': 0.988281, 'xmin': 0.10908, 'ymin': 0.531442, 'xmax': 0.894315, 'ymax': 0.820256}]}
+[2026-05-04 10:31:47] Received on robot/coral: {'frame': 21324, 'bboxes': [{'id': 1, 'score': 0.988281, 'xmin': 0.10908, 'ymin': 0.531442, 'xmax': 0.894315, 'ymax': 0.820256}]}
+[2026-05-04 10:31:47] Received on robot/coral: {'frame': 21325, 'bboxes': [{'id': 1, 'score': 0.996094, 'xmin': 0.138091, 'ymin': 0.531442, 'xmax': 0.865305, 'ymax': 0.820256}]}
+[2026-05-04 10:31:47] Received on robot/coral: {'frame': 21326, 'bboxes': [{'id': 1, 'score': 0.996094, 'xmin': 0.10908, 'ymin': 0.531442, 'xmax': 0.894315, 'ymax': 0.820256}]}
+[2026-05-04 10:31:48] Received on robot/coral: {'frame': 21327, 'bboxes': [{'id': 1, 'score': 0.996094, 'xmin': 0.138091, 'ymin': 0.531442, 'xmax': 0.865305, 'ymax': 0.820256}]}
+[2026-05-04 10:31:48] Received on robot/coral: {'frame': 21328, 'bboxes': [{'id': 1, 'score': 0.996094, 'xmin': 0.086393, 'ymin': 0.531442, 'xmax': 0.813607, 'ymax': 0.820256}]}
+[2026-05-04 10:31:48] Received on robot/coral: {'frame': 21329, 'bboxes': [{'id': 1, 'score': 0.988281, 'xmin': 0.138091, 'ymin': 0.531442, 'xmax': 0.865305, 'ymax': 0.820256}]}
+[2026-05-04 10:31:48] Received on robot/coral: {'frame': 21330, 'bboxes': [{'id': 1, 'score': 0.996094, 'xmin': 0.138091, 'ymin': 0.531442, 'xmax': 0.865305, 'ymax': 0.820256}]}
+[2026-05-04 10:31:48] Received on robot/coral: {'frame': 21331, 'bboxes': [{'id': 1, 'score': 0.988281, 'xmin': 0.138091, 'ymin': 0.531442, 'xmax': 0.865305, 'ymax': 0.820256}]}
+[2026-05-04 10:31:48] Received on robot/coral: {'frame': 21332, 'bboxes': [{'id': 1, 'score': 0.988281, 'xmin': 0.10908, 'ymin': 0.531442, 'xmax': 0.894315, 'ymax': 0.820256}]}
+[2026-05-04 10:31:48] Received on robot/coral: {'frame': 21334, 'bboxes': [{'id': 1, 'score': 0.996094, 'xmin': 0.10908, 'ymin': 0.531442, 'xmax': 0.894315, 'ymax': 0.820256}]}
+[2026-05-04 10:31:48] Received on robot/coral: {'frame': 21335, 'bboxes': [{'id': 1, 'score': 0.996094, 'xmin': 0.086393, 'ymin': 0.531442, 'xmax': 0.813607, 'ymax': 0.820256}]}
+[2026-05-04 10:31:48] Received on robot/coral: {'frame': 21336, 'bboxes': [{'id': 1, 'score': 0.996094, 'xmin': 0.077755, 'ymin': 0.531442, 'xmax': 0.925641, 'ymax': 0.820256}]}
+[2026-05-04 10:31:49] Received on robot/coral: {'frame': 21337, 'bboxes': [{'id': 1, 'score': 0.996094, 'xmin': 0.086393, 'ymin': 0.531442, 'xmax': 0.813607, 'ymax': 0.820256}]}
+[2026-05-04 10:31:49] Received on robot/coral: {'frame': 21338, 'bboxes': [{'id': 1, 'score': 0.996094, 'xmin': 0.086393, 'ymin': 0.531442, 'xmax': 0.813607, 'ymax': 0.820256}]}
+[2026-05-04 10:31:49] Received on robot/coral: {'frame': 21339, 'bboxes': [{'id': 1, 'score': 0.996094, 'xmin': 0.086393, 'ymin': 0.531442, 'xmax': 0.813607, 'ymax': 0.820256}]}
+[2026-05-04 10:31:49] Received on robot/coral: {'frame': 21340, 'bboxes': [{'id': 1, 'score': 0.996094, 'xmin': 0.138091, 'ymin': 0.531442, 'xmax': 0.865305, 'ymax': 0.820256}]}
+[2026-05-04 10:31:49] Received on robot/coral: {'frame': 21341, 'bboxes': [{'id': 1, 'score': 0.996094, 'xmin': 0.138091, 'ymin': 0.531442, 'xmax': 0.865305, 'ymax': 0.820256}]}
+[2026-05-04 10:31:49] Received on robot/coral: {'frame': 21342, 'bboxes': [{'id': 1, 'score': 0.996094, 'xmin': 0.086393, 'ymin': 0.531442, 'xmax': 0.813607, 'ymax': 0.820256}]}
+[2026-05-04 10:31:49] Received on robot/coral: {'frame': 21343, 'bboxes': [{'id': 1, 'score': 0.976562, 'xmin': 0.077755, 'ymin': 0.51992, 'xmax': 0.925641, 'ymax': 0.831778}]}
+[2026-05-04 10:31:49] Received on robot/coral: {'frame': 21344, 'bboxes': [{'id': 1, 'score': 0.988281, 'xmin': 0.129453, 'ymin': 0.531442, 'xmax': 0.977339, 'ymax': 0.820256}]}
+[2026-05-04 10:31:49] Received on robot/coral: {'frame': 21345, 'bboxes': [{'id': 1, 'score': 0.988281, 'xmin': 0.138091, 'ymin': 0.531442, 'xmax': 0.865305, 'ymax': 0.820256}]}
+[2026-05-04 10:31:49] Received on robot/coral: {'frame': 21346, 'bboxes': [{'id': 1, 'score': 0.996094, 'xmin': 0.086393, 'ymin': 0.531442, 'xmax': 0.813607, 'ymax': 0.820256}]}
+[2026-05-04 10:31:50] Received on robot/coral: {'frame': 21347, 'bboxes': [{'id': 1, 'score': 0.996094, 'xmin': 0.10908, 'ymin': 0.531442, 'xmax': 0.894315, 'ymax': 0.820256}]}
+[2026-05-04 10:31:50] Received on robot/coral: {'frame': 21348, 'bboxes': [{'id': 1, 'score': 0.988281, 'xmin': 0.138091, 'ymin': 0.531442, 'xmax': 0.865305, 'ymax': 0.820256}]}
+[2026-05-04 10:31:50] Received on robot/coral: {'frame': 21349, 'bboxes': [{'id': 1, 'score': 0.996094, 'xmin': 0.086393, 'ymin': 0.531442, 'xmax': 0.813607, 'ymax': 0.820256}]}
+[2026-05-04 10:31:50] Received on robot/coral: {'frame': 21350, 'bboxes': [{'id': 1, 'score': 0.988281, 'xmin': 0.138091, 'ymin': 0.531442, 'xmax': 0.865305, 'ymax': 0.820256}]}
+[2026-05-04 10:31:50] Received on robot/coral: {'frame': 21351, 'bboxes': [{'id': 1, 'score': 0.996094, 'xmin': 0.138091, 'ymin': 0.51992, 'xmax': 0.865305, 'ymax': 0.831778}]}
+[2026-05-04 10:31:50] Received on robot/coral: {'frame': 21353, 'bboxes': [{'id': 1, 'score': 0.976562, 'xmin': 0.077755, 'ymin': 0.51992, 'xmax': 0.925641, 'ymax': 0.831778}]}
+[2026-05-04 10:31:50] Received on robot/coral: {'frame': 21354, 'bboxes': [{'id': 1, 'score': 0.988281, 'xmin': 0.077755, 'ymin': 0.531442, 'xmax': 0.925641, 'ymax': 0.820256}]}
+[2026-05-04 10:31:50] Received on robot/coral: {'frame': 21355, 'bboxes': [{'id': 1, 'score': 0.988281, 'xmin': 0.077755, 'ymin': 0.531442, 'xmax': 0.925641, 'ymax': 0.820256}]}
+[2026-05-04 10:31:51] Received on robot/coral: {'frame': 21356, 'bboxes': [{'id': 1, 'score': 0.988281, 'xmin': 0.138091, 'ymin': 0.545769, 'xmax': 0.865305, 'ymax': 0.857627}]}
+[2026-05-04 10:31:51] Received on robot/coral: {'frame': 21357, 'bboxes': [{'id': 1, 'score': 0.996094, 'xmin': 0.086393, 'ymin': 0.531442, 'xmax': 0.813607, 'ymax': 0.820256}]}
+[2026-05-04 10:31:51] Received on robot/coral: {'frame': 21358, 'bboxes': [{'id': 1, 'score': 0.996094, 'xmin': 0.138091, 'ymin': 0.531442, 'xmax': 0.865305, 'ymax': 0.820256}]}
+[2026-05-04 10:31:51] Received on robot/coral: {'frame': 21359, 'bboxes': [{'id': 1, 'score': 0.996094, 'xmin': 0.138091, 'ymin': 0.531442, 'xmax': 0.865305, 'ymax': 0.820256}]}
+[2026-05-04 10:31:51] Received on robot/coral: {'frame': 21360, 'bboxes': [{'id': 1, 'score': 0.996094, 'xmin': 0.138091, 'ymin': 0.531442, 'xmax': 0.865305, 'ymax': 0.820256}]}
+[2026-05-04 10:31:51] Received on robot/coral: {'frame': 21361, 'bboxes': [{'id': 1, 'score': 0.988281, 'xmin': 0.10908, 'ymin': 0.531442, 'xmax': 0.894315, 'ymax': 0.820256}]}
+[2026-05-04 10:31:51] Received on robot/coral: {'frame': 21362, 'bboxes': [{'id': 1, 'score': 0.988281, 'xmin': 0.086393, 'ymin': 0.51992, 'xmax': 0.813607, 'ymax': 0.831778}]}
+[2026-05-04 10:31:51] Received on robot/coral: {'frame': 21363, 'bboxes': [{'id': 1, 'score': 0.976562, 'xmin': 0.10908, 'ymin': 0.531442, 'xmax': 0.894315, 'ymax': 0.820256}]}
+[2026-05-04 10:31:51] Received on robot/coral: {'frame': 21364, 'bboxes': [{'id': 1, 'score': 0.996094, 'xmin': 0.138091, 'ymin': 0.531442, 'xmax': 0.865305, 'ymax': 0.820256}]}
+[2026-05-04 10:31:51] Received on robot/coral: {'frame': 21365, 'bboxes': [{'id': 1, 'score': 0.996094, 'xmin': 0.10908, 'ymin': 0.531442, 'xmax': 0.894315, 'ymax': 0.820256}]}
+[2026-05-04 10:31:52] Received on robot/coral: {'frame': 21366, 'bboxes': [{'id': 1, 'score': 0.996094, 'xmin': 0.086393, 'ymin': 0.531442, 'xmax': 0.813607, 'ymax': 0.820256}]}
+[2026-05-04 10:31:52] Received on robot/coral: {'frame': 21367, 'bboxes': [{'id': 1, 'score': 0.996094, 'xmin': 0.086393, 'ymin': 0.531442, 'xmax': 0.813607, 'ymax': 0.820256}]}
+[2026-05-04 10:31:52] Received on robot/coral: {'frame': 21368, 'bboxes': [{'id': 1, 'score': 0.988281, 'xmin': 0.138091, 'ymin': 0.531442, 'xmax': 0.865305, 'ymax': 0.820256}]}
+[2026-05-04 10:31:52] Received on robot/coral: {'frame': 21369, 'bboxes': [{'id': 1, 'score': 0.988281, 'xmin': 0.10908, 'ymin': 0.531442, 'xmax': 0.894315, 'ymax': 0.820256}]}
+[2026-05-04 10:31:52] Received on robot/coral: {'frame': 21370, 'bboxes': [{'id': 1, 'score': 0.996094, 'xmin': 0.086393, 'ymin': 0.531442, 'xmax': 0.813607, 'ymax': 0.820256}]}
+[2026-05-04 10:31:52] Received on robot/coral: {'frame': 21371, 'bboxes': [{'id': 1, 'score': 0.996094, 'xmin': 0.138091, 'ymin': 0.531442, 'xmax': 0.865305, 'ymax': 0.820256}]}
+[2026-05-04 10:31:52] Received on robot/coral: {'frame': 21372, 'bboxes': [{'id': 1, 'score': 0.988281, 'xmin': 0.086393, 'ymin': 0.557291, 'xmax': 0.813607, 'ymax': 0.846105}]}
+[2026-05-04 10:31:52] Received on robot/coral: {'frame': 21373, 'bboxes': [{'id': 1, 'score': 0.996094, 'xmin': 0.10908, 'ymin': 0.531442, 'xmax': 0.894315, 'ymax': 0.820256}]}
+[2026-05-04 10:31:52] Received on robot/coral: {'frame': 21374, 'bboxes': [{'id': 1, 'score': 0.996094, 'xmin': 0.077755, 'ymin': 0.531442, 'xmax': 0.925641, 'ymax': 0.820256}]}
+[2026-05-04 10:31:52] Received on robot/coral: {'frame': 21375, 'bboxes': [{'id': 1, 'score': 0.996094, 'xmin': 0.077755, 'ymin': 0.531442, 'xmax': 0.925641, 'ymax': 0.820256}]}
+[2026-05-04 10:31:53] Received on robot/coral: {'frame': 21377, 'bboxes': [{'id': 1, 'score': 0.996094, 'xmin': 0.10908, 'ymin': 0.51992, 'xmax': 0.894315, 'ymax': 0.831778}]}
+[2026-05-04 10:31:53] Received on robot/coral: {'frame': 21378, 'bboxes': [{'id': 1, 'score': 0.996094, 'xmin': 0.086393, 'ymin': 0.531442, 'xmax': 0.813607, 'ymax': 0.820256}]}
+[2026-05-04 10:31:53] Received on robot/coral: {'frame': 21379, 'bboxes': [{'id': 1, 'score': 0.988281, 'xmin': 0.077755, 'ymin': 0.51992, 'xmax': 0.925641, 'ymax': 0.831778}]}
+[2026-05-04 10:31:53] Received on robot/coral: {'frame': 21380, 'bboxes': [{'id': 1, 'score': 0.996094, 'xmin': 0.077755, 'ymin': 0.51992, 'xmax': 0.925641, 'ymax': 0.831778}]}
+[2026-05-04 10:31:53] Received on robot/coral: {'frame': 21381, 'bboxes': [{'id': 1, 'score': 0.996094, 'xmin': 0.10908, 'ymin': 0.51992, 'xmax': 0.894315, 'ymax': 0.831778}]}
+[2026-05-04 10:31:53] Received on robot/coral: {'frame': 21382, 'bboxes': [{'id': 1, 'score': 0.988281, 'xmin': 0.10908, 'ymin': 0.545769, 'xmax': 0.894315, 'ymax': 0.857627}]}
+[2026-05-04 10:31:53] Received on robot/coral: {'frame': 21383, 'bboxes': [{'id': 1, 'score': 0.976562, 'xmin': 0.095629, 'ymin': 0.545769, 'xmax': 1.0, 'ymax': 0.857627}]}
+[2026-05-04 10:31:53] Received on robot/coral: {'frame': 21384, 'bboxes': [{'id': 1, 'score': 0.988281, 'xmin': 0.086393, 'ymin': 0.557291, 'xmax': 0.813607, 'ymax': 0.846105}]}
+[2026-05-04 10:31:54] Received on robot/coral: {'frame': 21385, 'bboxes': [{'id': 1, 'score': 0.976562, 'xmin': 0.086393, 'ymin': 0.557291, 'xmax': 0.813607, 'ymax': 0.846105}]}
+[2026-05-04 10:31:54] Received on robot/coral: {'frame': 21386, 'bboxes': [{'id': 1, 'score': 0.976562, 'xmin': 0.043931, 'ymin': 0.545769, 'xmax': 0.959465, 'ymax': 0.857627}]}
+[2026-05-04 10:31:54] Received on robot/coral: {'frame': 21387, 'bboxes': [{'id': 1, 'score': 0.949219, 'xmin': 0.077755, 'ymin': 0.529932, 'xmax': 0.925641, 'ymax': 0.866672}]}
+[2026-05-04 10:31:54] Received on robot/coral: {'frame': 21388, 'bboxes': [{'id': 1, 'score': 0.949219, 'xmin': 0.10908, 'ymin': 0.545769, 'xmax': 0.894315, 'ymax': 0.857627}]}
+[2026-05-04 10:31:54] Received on robot/coral: {'frame': 21389, 'bboxes': [{'id': 1, 'score': 0.949219, 'xmin': 0.057382, 'ymin': 0.557291, 'xmax': 0.842618, 'ymax': 0.846105}]}
+[2026-05-04 10:31:54] Received on robot/coral: {'frame': 21390, 'bboxes': [{'id': 1, 'score': 0.949219, 'xmin': 0.086393, 'ymin': 0.553895, 'xmax': 0.813607, 'ymax': 0.84271}]}
+[2026-05-04 10:31:54] Received on robot/coral: {'frame': 21391, 'bboxes': [{'id': 1, 'score': 0.949219, 'xmin': 0.086393, 'ymin': 0.557291, 'xmax': 0.813607, 'ymax': 0.846105}]}
+[2026-05-04 10:31:54] Received on robot/coral: {'frame': 21392, 'bboxes': [{'id': 1, 'score': 0.949219, 'xmin': 0.061562, 'ymin': 0.553895, 'xmax': 0.735042, 'ymax': 0.84271}]}
+[2026-05-04 10:31:54] Received on robot/coral: {'frame': 21393, 'bboxes': [{'id': 1, 'score': 0.976562, 'xmin': 0.086393, 'ymin': 0.542373, 'xmax': 0.813607, 'ymax': 0.854231}]}
+[2026-05-04 10:31:54] Received on robot/coral: {'frame': 21394, 'bboxes': [{'id': 1, 'score': 0.949219, 'xmin': 0.061562, 'ymin': 0.553895, 'xmax': 0.735042, 'ymax': 0.84271}]}
+[2026-05-04 10:31:55] Received on robot/coral: {'frame': 21395, 'bboxes': [{'id': 1, 'score': 0.902344, 'xmin': 0.034695, 'ymin': 0.542373, 'xmax': 0.761909, 'ymax': 0.854231}]}
+[2026-05-04 10:31:55] Received on robot/coral: {'frame': 21396, 'bboxes': [{'id': 1, 'score': 0.902344, 'xmin': 0.034695, 'ymin': 0.542373, 'xmax': 0.761909, 'ymax': 0.854231}]}
+[2026-05-04 10:31:55] Received on robot/coral: {'frame': 21397, 'bboxes': [{'id': 1, 'score': 0.976562, 'xmin': 0.034695, 'ymin': 0.579744, 'xmax': 0.761909, 'ymax': 0.868559}]}
+[2026-05-04 10:31:55] Received on robot/coral: {'frame': 21398, 'bboxes': [{'id': 1, 'score': 0.902344, 'xmin': 0.034695, 'ymin': 0.542373, 'xmax': 0.761909, 'ymax': 0.854231}]}
+[2026-05-04 10:31:55] Received on robot/coral: {'frame': 21399, 'bboxes': [{'id': 1, 'score': 0.949219, 'xmin': 0.034695, 'ymin': 0.568222, 'xmax': 0.761909, 'ymax': 0.88008}]}
+[2026-05-04 10:31:55] Received on robot/coral: {'frame': 21401, 'bboxes': [{'id': 1, 'score': 0.976562, 'xmin': 0.057382, 'ymin': 0.542373, 'xmax': 0.842618, 'ymax': 0.854231}]}
+[2026-05-04 10:31:55] Received on robot/coral: {'frame': 21402, 'bboxes': [{'id': 1, 'score': 0.976562, 'xmin': 0.086393, 'ymin': 0.542373, 'xmax': 0.813607, 'ymax': 0.854231}]}
+[2026-05-04 10:31:55] Received on robot/coral: {'frame': 21403, 'bboxes': [{'id': 1, 'score': 0.988281, 'xmin': 0.086393, 'ymin': 0.568222, 'xmax': 0.813607, 'ymax': 0.88008}]}
+[2026-05-04 10:31:55] Received on robot/coral: {'frame': 21404, 'bboxes': [{'id': 1, 'score': 0.976562, 'xmin': 0.086393, 'ymin': 0.542373, 'xmax': 0.813607, 'ymax': 0.854231}]}
+[2026-05-04 10:31:56] Received on robot/coral: {'frame': 21405, 'bboxes': [{'id': 1, 'score': 0.988281, 'xmin': 0.086393, 'ymin': 0.568222, 'xmax': 0.813607, 'ymax': 0.88008}]}
+[2026-05-04 10:31:56] Received on robot/coral: {'frame': 21406, 'bboxes': [{'id': 1, 'score': 0.949219, 'xmin': 0.086393, 'ymin': 0.542373, 'xmax': 0.813607, 'ymax': 0.854231}]}
+[2026-05-04 10:31:56] Received on robot/coral: {'frame': 21407, 'bboxes': [{'id': 1, 'score': 0.949219, 'xmin': 0.057382, 'ymin': 0.542373, 'xmax': 0.842618, 'ymax': 0.854231}]}
+[2026-05-04 10:31:56] Received on robot/coral: {'frame': 21408, 'bboxes': [{'id': 1, 'score': 0.949219, 'xmin': 0.057382, 'ymin': 0.542373, 'xmax': 0.842618, 'ymax': 0.854231}]}
+[2026-05-04 10:31:56] Received on robot/coral: {'frame': 21409, 'bboxes': [{'id': 1, 'score': 0.976562, 'xmin': 0.057382, 'ymin': 0.542373, 'xmax': 0.842618, 'ymax': 0.854231}]}
+[2026-05-04 10:31:56] Received on robot/coral: {'frame': 21410, 'bboxes': [{'id': 1, 'score': 0.988281, 'xmin': 0.086393, 'ymin': 0.542373, 'xmax': 0.813607, 'ymax': 0.854231}]}
+[2026-05-04 10:31:56] Received on robot/coral: {'frame': 21411, 'bboxes': [{'id': 1, 'score': 0.949219, 'xmin': 0.086393, 'ymin': 0.542373, 'xmax': 0.813607, 'ymax': 0.854231}]}
+[2026-05-04 10:31:56] Received on robot/coral: {'frame': 21412, 'bboxes': [{'id': 1, 'score': 0.988281, 'xmin': 0.086393, 'ymin': 0.542373, 'xmax': 0.813607, 'ymax': 0.854231}]}
+[2026-05-04 10:31:56] Received on robot/coral: {'frame': 21413, 'bboxes': [{'id': 1, 'score': 0.976562, 'xmin': 0.086393, 'ymin': 0.542373, 'xmax': 0.813607, 'ymax': 0.854231}]}
+[2026-05-04 10:31:56] Received on robot/coral: {'frame': 21414, 'bboxes': [{'id': 1, 'score': 0.976562, 'xmin': 0.10908, 'ymin': 0.568222, 'xmax': 0.894315, 'ymax': 0.88008}]}
+[2026-05-04 10:31:57] Received on robot/coral: {'frame': 21415, 'bboxes': [{'id': 1, 'score': 0.976562, 'xmin': 0.057382, 'ymin': 0.553895, 'xmax': 0.842618, 'ymax': 0.84271}]}
+[2026-05-04 10:31:57] Received on robot/coral: {'frame': 21416, 'bboxes': [{'id': 1, 'score': 0.996094, 'xmin': 0.086393, 'ymin': 0.568222, 'xmax': 0.813607, 'ymax': 0.88008}]}
+[2026-05-04 10:31:57] Received on robot/coral: {'frame': 21417, 'bboxes': [{'id': 1, 'score': 0.949219, 'xmin': 0.077755, 'ymin': 0.529932, 'xmax': 0.925641, 'ymax': 0.866672}]}
+[2026-05-04 10:31:57] Received on robot/coral: {'frame': 21419, 'bboxes': [{'id': 1, 'score': 0.949219, 'xmin': 0.10908, 'ymin': 0.529932, 'xmax': 0.894315, 'ymax': 0.866672}]}
+[2026-05-04 10:31:57] Received on robot/coral: {'frame': 21420, 'bboxes': [{'id': 1, 'score': 0.976562, 'xmin': 0.138091, 'ymin': 0.542373, 'xmax': 0.865305, 'ymax': 0.854231}]}
+[2026-05-04 10:31:57] Received on robot/coral: {'frame': 21421, 'bboxes': [{'id': 1, 'score': 0.949219, 'xmin': 0.10908, 'ymin': 0.542373, 'xmax': 0.894315, 'ymax': 0.854231}]}
+[2026-05-04 10:31:57] Received on robot/coral: {'frame': 21422, 'bboxes': [{'id': 1, 'score': 0.988281, 'xmin': 0.086393, 'ymin': 0.568222, 'xmax': 0.813607, 'ymax': 0.88008}]}
+[2026-05-04 10:31:57] Received on robot/coral: {'frame': 21423, 'bboxes': [{'id': 1, 'score': 0.976562, 'xmin': 0.10908, 'ymin': 0.529932, 'xmax': 0.894315, 'ymax': 0.866672}]}
+[2026-05-04 10:31:58] Received on robot/coral: {'frame': 21424, 'bboxes': [{'id': 1, 'score': 0.902344, 'xmin': 0.074359, 'ymin': 0.542373, 'xmax': 0.922245, 'ymax': 0.854231}]}
+[2026-05-04 10:31:58] Received on robot/coral: {'frame': 21425, 'bboxes': [{'id': 1, 'score': 0.976562, 'xmin': 0.138091, 'ymin': 0.545769, 'xmax': 0.865305, 'ymax': 0.857627}]}
+[2026-05-04 10:31:58] Received on robot/coral: {'frame': 21426, 'bboxes': [{'id': 1, 'score': 0.976562, 'xmin': 0.086393, 'ymin': 0.568222, 'xmax': 0.813607, 'ymax': 0.88008}]}
+[2026-05-04 10:31:58] Received on robot/coral: {'frame': 21427, 'bboxes': [{'id': 1, 'score': 0.949219, 'xmin': 0.10908, 'ymin': 0.542373, 'xmax': 0.894315, 'ymax': 0.854231}]}
+[2026-05-04 10:31:58] Received on robot/coral: {'frame': 21428, 'bboxes': [{'id': 1, 'score': 0.949219, 'xmin': 0.077755, 'ymin': 0.533328, 'xmax': 0.925641, 'ymax': 0.870068}]}
+[2026-05-04 10:31:58] Received on robot/coral: {'frame': 21429, 'bboxes': [{'id': 1, 'score': 0.988281, 'xmin': 0.10908, 'ymin': 0.542373, 'xmax': 0.894315, 'ymax': 0.854231}]}
+[2026-05-04 10:31:58] Received on robot/coral: {'frame': 21431, 'bboxes': [{'id': 1, 'score': 0.988281, 'xmin': 0.10908, 'ymin': 0.533328, 'xmax': 0.894315, 'ymax': 0.870068}]}
+[2026-05-04 10:31:58] Received on robot/coral: {'frame': 21432, 'bboxes': [{'id': 1, 'score': 0.949219, 'xmin': 0.077755, 'ymin': 0.545769, 'xmax': 0.925641, 'ymax': 0.857627}]}
+[2026-05-04 10:31:58] Received on robot/coral: {'frame': 21433, 'bboxes': [{'id': 1, 'score': 0.976562, 'xmin': 0.092233, 'ymin': 0.529932, 'xmax': 1.0, 'ymax': 0.866672}]}
+[2026-05-04 10:31:58] Received on robot/coral: {'frame': 21434, 'bboxes': [{'id': 1, 'score': 0.949219, 'xmin': 0.095629, 'ymin': 0.533328, 'xmax': 1.0, 'ymax': 0.870068}]}
+[2026-05-04 10:31:59] Received on robot/coral: {'frame': 21435, 'bboxes': [{'id': 1, 'score': 0.976562, 'xmin': 0.10908, 'ymin': 0.545769, 'xmax': 0.894315, 'ymax': 0.857627}]}
+[2026-05-04 10:31:59] Received on robot/coral: {'frame': 21437, 'bboxes': [{'id': 1, 'score': 0.949219, 'xmin': 0.077755, 'ymin': 0.533328, 'xmax': 0.925641, 'ymax': 0.870068}]}
+[2026-05-04 10:31:59] Received on robot/coral: {'frame': 21438, 'bboxes': [{'id': 1, 'score': 0.949219, 'xmin': 0.10908, 'ymin': 0.542373, 'xmax': 0.894315, 'ymax': 0.854231}]}
+[2026-05-04 10:31:59] Received on robot/coral: {'frame': 21439, 'bboxes': [{'id': 1, 'score': 0.976562, 'xmin': 0.10908, 'ymin': 0.542373, 'xmax': 0.894315, 'ymax': 0.854231}]}
+[2026-05-04 10:31:59] Received on robot/coral: {'frame': 21440, 'bboxes': [{'id': 1, 'score': 0.976562, 'xmin': 0.10908, 'ymin': 0.555781, 'xmax': 0.894315, 'ymax': 0.892521}]}
+[2026-05-04 10:31:59] Received on robot/coral: {'frame': 21441, 'bboxes': [{'id': 1, 'score': 0.976562, 'xmin': 0.10908, 'ymin': 0.533328, 'xmax': 0.894315, 'ymax': 0.870068}]}
+[2026-05-04 10:31:59] Received on robot/coral: {'frame': 21442, 'bboxes': [{'id': 1, 'score': 0.976562, 'xmin': 0.10908, 'ymin': 0.545769, 'xmax': 0.894315, 'ymax': 0.857627}]}
+[2026-05-04 10:31:59] Received on robot/coral: {'frame': 21443, 'bboxes': [{'id': 1, 'score': 0.976562, 'xmin': 0.10908, 'ymin': 0.542373, 'xmax': 0.894315, 'ymax': 0.854231}]}
+[2026-05-04 10:32:00] Received on robot/coral: {'frame': 21444, 'bboxes': [{'id': 1, 'score': 0.976562, 'xmin': 0.10908, 'ymin': 0.555781, 'xmax': 0.894315, 'ymax': 0.892521}]}
+[2026-05-04 10:32:00] Received on robot/coral: {'frame': 21445, 'bboxes': [{'id': 1, 'score': 0.949219, 'xmin': 0.10908, 'ymin': 0.533328, 'xmax': 0.894315, 'ymax': 0.870068}]}
+[2026-05-04 10:32:00] Received on robot/coral: {'frame': 21446, 'bboxes': [{'id': 1, 'score': 0.976562, 'xmin': 0.086393, 'ymin': 0.542373, 'xmax': 0.813607, 'ymax': 0.854231}]}
+[2026-05-04 10:32:00] Received on robot/coral: {'frame': 21447, 'bboxes': [{'id': 1, 'score': 0.976562, 'xmin': 0.086393, 'ymin': 0.542373, 'xmax': 0.813607, 'ymax': 0.854231}]}
+[2026-05-04 10:32:00] Received on robot/coral: {'frame': 21448, 'bboxes': [{'id': 1, 'score': 0.949219, 'xmin': 0.138091, 'ymin': 0.542373, 'xmax': 0.865305, 'ymax': 0.854231}]}
+[2026-05-04 10:32:00] Received on robot/coral: {'frame': 21449, 'bboxes': [{'id': 1, 'score': 0.949219, 'xmin': 0.138091, 'ymin': 0.542373, 'xmax': 0.865305, 'ymax': 0.854231}]}
+[2026-05-04 10:32:00] Received on robot/coral: {'frame': 21450, 'bboxes': [{'id': 1, 'score': 0.949219, 'xmin': 0.10908, 'ymin': 0.542373, 'xmax': 0.894315, 'ymax': 0.854231}]}
+[2026-05-04 10:32:00] Received on robot/coral: {'frame': 21451, 'bboxes': [{'id': 1, 'score': 0.976562, 'xmin': 0.086393, 'ymin': 0.542373, 'xmax': 0.813607, 'ymax': 0.854231}]}
+[2026-05-04 10:32:00] Received on robot/coral: {'frame': 21452, 'bboxes': [{'id': 1, 'score': 0.976562, 'xmin': 0.138091, 'ymin': 0.542373, 'xmax': 0.865305, 'ymax': 0.854231}]}
+[2026-05-04 10:32:00] Received on robot/coral: {'frame': 21453, 'bboxes': [{'id': 1, 'score': 0.976562, 'xmin': 0.138091, 'ymin': 0.542373, 'xmax': 0.865305, 'ymax': 0.854231}]}
+[2026-05-04 10:32:01] Received on robot/coral: {'frame': 21454, 'bboxes': [{'id': 1, 'score': 0.902344, 'xmin': 0.077755, 'ymin': 0.533328, 'xmax': 0.925641, 'ymax': 0.870068}]}
+[2026-05-04 10:32:01] Received on robot/coral: {'frame': 21455, 'bboxes': [{'id': 1, 'score': 0.949219, 'xmin': 0.10908, 'ymin': 0.545769, 'xmax': 0.894315, 'ymax': 0.857627}]}
+[2026-05-04 10:32:01] Received on robot/coral: {'frame': 21457, 'bboxes': [{'id': 1, 'score': 0.949219, 'xmin': 0.074359, 'ymin': 0.568222, 'xmax': 0.922245, 'ymax': 0.88008}]}
+[2026-05-04 10:32:01] Received on robot/coral: {'frame': 21458, 'bboxes': [{'id': 1, 'score': 0.949219, 'xmin': 0.105685, 'ymin': 0.542373, 'xmax': 0.89092, 'ymax': 0.854231}]}
+[2026-05-04 10:32:01] Received on robot/coral: {'frame': 21459, 'bboxes': [{'id': 1, 'score': 0.976562, 'xmin': 0.10908, 'ymin': 0.542373, 'xmax': 0.894315, 'ymax': 0.854231}]}
+[2026-05-04 10:32:01] Received on robot/coral: {'frame': 21460, 'bboxes': [{'id': 1, 'score': 0.949219, 'xmin': 0.10908, 'ymin': 0.542373, 'xmax': 0.894315, 'ymax': 0.854231}]}
+[2026-05-04 10:32:01] Received on robot/coral: {'frame': 21461, 'bboxes': [{'id': 1, 'score': 0.902344, 'xmin': 0.10908, 'ymin': 0.542373, 'xmax': 0.894315, 'ymax': 0.854231}]}
+[2026-05-04 10:32:01] Received on robot/coral: {'frame': 21462, 'bboxes': [{'id': 1, 'score': 0.902344, 'xmin': 0.095629, 'ymin': 0.533328, 'xmax': 1.0, 'ymax': 0.870068}]}
+[2026-05-04 10:32:02] Received on robot/coral: {'frame': 21463, 'bboxes': [{'id': 1, 'score': 0.949219, 'xmin': 0.077755, 'ymin': 0.533328, 'xmax': 0.925641, 'ymax': 0.870068}]}
+[2026-05-04 10:32:02] Received on robot/coral: {'frame': 21464, 'bboxes': [{'id': 1, 'score': 0.949219, 'xmin': 0.095629, 'ymin': 0.533328, 'xmax': 1.0, 'ymax': 0.870068}]}
+[2026-05-04 10:32:02] Received on robot/coral: {'frame': 21465, 'bboxes': [{'id': 1, 'score': 0.976562, 'xmin': 0.138091, 'ymin': 0.542373, 'xmax': 0.865305, 'ymax': 0.854231}]}
+[2026-05-04 10:32:02] Received on robot/coral: {'frame': 21466, 'bboxes': [{'id': 1, 'score': 0.949219, 'xmin': 0.10908, 'ymin': 0.542373, 'xmax': 0.894315, 'ymax': 0.854231}]}
+[2026-05-04 10:32:02] Received on robot/coral: {'frame': 21467, 'bboxes': [{'id': 1, 'score': 0.949219, 'xmin': 0.138091, 'ymin': 0.542373, 'xmax': 0.865305, 'ymax': 0.854231}]}
+[2026-05-04 10:32:02] Received on robot/coral: {'frame': 21468, 'bboxes': [{'id': 1, 'score': 0.949219, 'xmin': 0.138091, 'ymin': 0.542373, 'xmax': 0.865305, 'ymax': 0.854231}]}
+[2026-05-04 10:32:02] Received on robot/coral: {'frame': 21469, 'bboxes': [{'id': 1, 'score': 0.902344, 'xmin': 0.10908, 'ymin': 0.542373, 'xmax': 0.894315, 'ymax': 0.854231}]}
+[2026-05-04 10:32:02] Received on robot/coral: {'frame': 21470, 'bboxes': [{'id': 1, 'score': 0.976562, 'xmin': 0.077755, 'ymin': 0.533328, 'xmax': 0.925641, 'ymax': 0.870068}]}
+[2026-05-04 10:32:02] Received on robot/coral: {'frame': 21471, 'bboxes': [{'id': 1, 'score': 0.902344, 'xmin': 0.129453, 'ymin': 0.533328, 'xmax': 0.977339, 'ymax': 0.870068}]}
+[2026-05-04 10:32:02] Received on robot/coral: {'frame': 21472, 'bboxes': [{'id': 1, 'score': 0.949219, 'xmin': 0.10908, 'ymin': 0.529932, 'xmax': 0.894315, 'ymax': 0.866672}]}
+[2026-05-04 10:32:02] Received on robot/coral: {'frame': 21473, 'bboxes': [{'id': 1, 'score': 0.949219, 'xmin': 0.138091, 'ymin': 0.542373, 'xmax': 0.865305, 'ymax': 0.854231}]}
+[2026-05-04 10:32:03] Received on robot/coral: {'frame': 21474, 'bboxes': [{'id': 1, 'score': 0.949219, 'xmin': 0.05571, 'ymin': 0.533328, 'xmax': 1.0, 'ymax': 0.870068}]}
+[2026-05-04 10:32:03] Received on robot/coral: {'frame': 21475, 'bboxes': [{'id': 1, 'score': 0.949219, 'xmin': 0.138091, 'ymin': 0.542373, 'xmax': 0.865305, 'ymax': 0.854231}]}
+[2026-05-04 10:32:03] Received on robot/coral: {'frame': 21476, 'bboxes': [{'id': 1, 'score': 0.976562, 'xmin': 0.086393, 'ymin': 0.542373, 'xmax': 0.813607, 'ymax': 0.854231}]}
+[2026-05-04 10:32:03] Received on robot/coral: {'frame': 21477, 'bboxes': [{'id': 1, 'score': 0.976562, 'xmin': 0.138091, 'ymin': 0.542373, 'xmax': 0.865305, 'ymax': 0.854231}]}
+[2026-05-04 10:32:03] Received on robot/coral: {'frame': 21479, 'bboxes': [{'id': 1, 'score': 0.988281, 'xmin': 0.086393, 'ymin': 0.542373, 'xmax': 0.813607, 'ymax': 0.854231}]}
+[2026-05-04 10:32:03] Received on robot/coral: {'frame': 21480, 'bboxes': [{'id': 1, 'score': 0.949219, 'xmin': 0.10908, 'ymin': 0.542373, 'xmax': 0.894315, 'ymax': 0.854231}]}
+[2026-05-04 10:32:03] Received on robot/coral: {'frame': 21481, 'bboxes': [{'id': 1, 'score': 0.949219, 'xmin': 0.10908, 'ymin': 0.545769, 'xmax': 0.894315, 'ymax': 0.857627}]}
+[2026-05-04 10:32:03] Received on robot/coral: {'frame': 21482, 'bboxes': [{'id': 1, 'score': 0.976562, 'xmin': 0.074359, 'ymin': 0.542373, 'xmax': 0.922245, 'ymax': 0.854231}]}
+[2026-05-04 10:32:04] Received on robot/coral: {'frame': 21483, 'bboxes': [{'id': 1, 'score': 0.949219, 'xmin': 0.138091, 'ymin': 0.542373, 'xmax': 0.865305, 'ymax': 0.854231}]}
+[2026-05-04 10:32:04] Received on robot/coral: {'frame': 21484, 'bboxes': [{'id': 1, 'score': 0.976562, 'xmin': 0.10908, 'ymin': 0.542373, 'xmax': 0.894315, 'ymax': 0.854231}]}
+[2026-05-04 10:32:04] Received on robot/coral: {'frame': 21485, 'bboxes': [{'id': 1, 'score': 0.976562, 'xmin': 0.086393, 'ymin': 0.542373, 'xmax': 0.813607, 'ymax': 0.854231}]}
+[2026-05-04 10:32:04] Received on robot/coral: {'frame': 21486, 'bboxes': [{'id': 1, 'score': 0.902344, 'xmin': 0.05571, 'ymin': 0.533328, 'xmax': 1.0, 'ymax': 0.870068}]}
+[2026-05-04 10:32:04] Received on robot/coral: {'frame': 21487, 'bboxes': [{'id': 1, 'score': 0.902344, 'xmin': 0.10908, 'ymin': 0.542373, 'xmax': 0.894315, 'ymax': 0.854231}]}
+[2026-05-04 10:32:04] Received on robot/coral: {'frame': 21488, 'bboxes': [{'id': 1, 'score': 0.976562, 'xmin': 0.138091, 'ymin': 0.542373, 'xmax': 0.865305, 'ymax': 0.854231}]}
+[2026-05-04 10:32:04] Received on robot/coral: {'frame': 21489, 'bboxes': [{'id': 1, 'score': 0.949219, 'xmin': 0.10908, 'ymin': 0.529932, 'xmax': 0.894315, 'ymax': 0.866672}]}
+[2026-05-04 10:32:04] Received on robot/coral: {'frame': 21490, 'bboxes': [{'id': 1, 'score': 0.949219, 'xmin': 0.138091, 'ymin': 0.542373, 'xmax': 0.865305, 'ymax': 0.854231}]}
+[2026-05-04 10:32:04] Received on robot/coral: {'frame': 21491, 'bboxes': [{'id': 1, 'score': 0.949219, 'xmin': 0.077755, 'ymin': 0.545769, 'xmax': 0.925641, 'ymax': 0.857627}]}
+[2026-05-04 10:32:04] Received on robot/coral: {'frame': 21492, 'bboxes': [{'id': 1, 'score': 0.949219, 'xmin': 0.077755, 'ymin': 0.533328, 'xmax': 0.925641, 'ymax': 0.870068}]}
+[2026-05-04 10:32:05] Received on robot/coral: {'frame': 21493, 'bboxes': [{'id': 1, 'score': 0.949219, 'xmin': 0.10908, 'ymin': 0.542373, 'xmax': 0.894315, 'ymax': 0.854231}]}
+[2026-05-04 10:32:05] Received on robot/coral: {'frame': 21494, 'bboxes': [{'id': 1, 'score': 0.976562, 'xmin': 0.086393, 'ymin': 0.542373, 'xmax': 0.813607, 'ymax': 0.854231}]}
+[2026-05-04 10:32:05] Received on robot/coral: {'frame': 21495, 'bboxes': [{'id': 1, 'score': 0.949219, 'xmin': 0.10908, 'ymin': 0.542373, 'xmax': 0.894315, 'ymax': 0.854231}]}
+[2026-05-04 10:32:05] Received on robot/coral: {'frame': 21496, 'bboxes': [{'id': 1, 'score': 0.949219, 'xmin': 0.077755, 'ymin': 0.533328, 'xmax': 0.925641, 'ymax': 0.870068}]}
+[2026-05-04 10:32:05] Received on robot/coral: {'frame': 21497, 'bboxes': [{'id': 1, 'score': 0.949219, 'xmin': 0.077755, 'ymin': 0.555781, 'xmax': 0.925641, 'ymax': 0.892521}]}
+[2026-05-04 10:32:05] Received on robot/coral: {'frame': 21498, 'bboxes': [{'id': 1, 'score': 0.976562, 'xmin': 0.086393, 'ymin': 0.542373, 'xmax': 0.813607, 'ymax': 0.854231}]}
+[2026-05-04 10:32:05] Received on robot/coral: {'frame': 21499, 'bboxes': [{'id': 1, 'score': 0.949219, 'xmin': 0.10908, 'ymin': 0.545769, 'xmax': 0.894315, 'ymax': 0.857627}]}
+[2026-05-04 10:32:05] Received on robot/coral: {'frame': 21501, 'bboxes': [{'id': 1, 'score': 0.976562, 'xmin': 0.10908, 'ymin': 0.542373, 'xmax': 0.894315, 'ymax': 0.854231}]}
+[2026-05-04 10:32:06] Received on robot/coral: {'frame': 21502, 'bboxes': [{'id': 1, 'score': 0.949219, 'xmin': 0.138091, 'ymin': 0.542373, 'xmax': 0.865305, 'ymax': 0.854231}]}
+[2026-05-04 10:32:06] Received on robot/coral: {'frame': 21503, 'bboxes': [{'id': 1, 'score': 0.949219, 'xmin': 0.10908, 'ymin': 0.542373, 'xmax': 0.894315, 'ymax': 0.854231}]}
+[2026-05-04 10:32:06] Received on robot/coral: {'frame': 21504, 'bboxes': [{'id': 1, 'score': 0.976562, 'xmin': 0.086393, 'ymin': 0.542373, 'xmax': 0.813607, 'ymax': 0.854231}]}
+[2026-05-04 10:32:06] Received on robot/coral: {'frame': 21505, 'bboxes': [{'id': 1, 'score': 0.949219, 'xmin': 0.10908, 'ymin': 0.542373, 'xmax': 0.894315, 'ymax': 0.854231}]}
+[2026-05-04 10:32:06] Received on robot/coral: {'frame': 21506, 'bboxes': [{'id': 1, 'score': 0.902344, 'xmin': 0.10908, 'ymin': 0.542373, 'xmax': 0.894315, 'ymax': 0.854231}]}
+[2026-05-04 10:32:06] Received on robot/coral: {'frame': 21507, 'bboxes': [{'id': 1, 'score': 0.902344, 'xmin': 0.077755, 'ymin': 0.533328, 'xmax': 0.925641, 'ymax': 0.870068}]}
+[2026-05-04 10:32:06] Received on robot/coral: {'frame': 21508, 'bboxes': [{'id': 1, 'score': 0.949219, 'xmin': 0.086393, 'ymin': 0.542373, 'xmax': 0.813607, 'ymax': 0.854231}]}
