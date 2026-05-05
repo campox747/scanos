@@ -1,7 +1,7 @@
 import { useState, useMemo, useEffect } from 'react'
 import { Search } from 'lucide-react'
 import { db } from '../firebase/firebaseConfig'
-import { collection, onSnapshot } from 'firebase/firestore'
+import { collection, onSnapshot, doc, updateDoc } from 'firebase/firestore'
 
 export function InventoryList({ onSearchItem, isActive }) {
   const [inventory, setInventory] = useState([])
@@ -171,7 +171,14 @@ export function InventoryList({ onSearchItem, isActive }) {
                   </div>
 
                   <button
-                    onClick={() => onSearchItem(item.name || 'Unknown Item')}
+                    onClick={() => {
+                      onSearchItem(item.id)
+                      // Update Firebase to start search
+                      const itemRef = doc(db, 'inventory', item.id)
+                      updateDoc(itemRef, {
+                        Search: true
+                      }).catch(err => console.error('Error updating search:', err))
+                    }}
                     disabled={isActive}
                     className="px-5 py-2.5 bg-[var(--accent-blue)] text-[var(--background)] rounded text-sm uppercase tracking-wider font-bold hover:brightness-110 transition-all disabled:opacity-50 disabled:cursor-not-allowed border border-[var(--accent-blue)]"
                     style={{ fontFamily: 'var(--font-sans)' }}
