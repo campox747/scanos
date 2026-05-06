@@ -8,7 +8,7 @@
   --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco,
   C onsolas, "Courier New", monospace; 
 
-  / Base colors – clean light grey system /
+  /* Base colors – clean light grey system */
   --background: #f4f6f8;
   --foreground: #343b45;
 
@@ -18,14 +18,14 @@
   --input: #f0f2f5;
   --accent: #e9edf2;
 
-  / Pastel + toned-down status colors /
+  /* Pastel + toned-down status colors */
   --green-status: #6fcf97;
   --red-alert: #e15252;
   --accent-orange: #56c1af;
   --accent-yellow: #d657cb;
   --accent-blue: #7aaed6;
 
-  / Subtle grid /
+  /* Subtle grid */
   --grid-line: rgba(0, 0, 0, 0.08);
 
   color-scheme: light;
@@ -34,8 +34,8 @@
 }
 
 /* Reset */
-{
-box-sizing: border-box;
+* {
+  box-sizing: border-box;
 }
 
 /* Body */
