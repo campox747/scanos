@@ -1,11 +1,11 @@
 import { useState, useMemo, useEffect } from 'react'
 import { Search } from 'lucide-react'
 import { db } from '../firebase/firebaseConfig'
-import { collection, onSnapshot, doc, updateDoc } from 'firebase/firestore'
+import { collection, onSnapshot } from 'firebase/firestore'
 
 export function InventoryList({ onSearchItem, isActive }) {
   const [inventory, setInventory] = useState([])
-  const [sortBy, setSortBy] = useState('lastCheck')
+  const [sortBy, setSortBy] = useState('lastUpdated')
   const [searchQuery, setSearchQuery] = useState('')
   const [isLoading, setIsLoading] = useState(true)
   const [error, setError] = useState(null)
@@ -21,7 +21,7 @@ export function InventoryList({ onSearchItem, isActive }) {
           const items = snapshot.docs.map(doc => ({
             id: doc.id,
             ...doc.data(),
-            lastCheck: doc.data().lastCheck?.toDate() || new Date()
+            lastUpdated: doc.data().lastUpdated?.toDate() || new Date()
           }))
           console.log('Processed inventory items:', items.length)
           setInventory(items)
@@ -61,7 +61,7 @@ export function InventoryList({ onSearchItem, isActive }) {
       switch (sortBy) {
         case 'name':      return a.name?.localeCompare(b.name) || 0
         case 'count':     return (b.count || 0) - (a.count || 0)
-        case 'lastCheck': return (b.lastCheck?.getTime() || 0) - (a.lastCheck?.getTime() || 0)
+        case 'lastUpdated': return (b.lastUpdated?.getTime() || 0) - (a.lastUpdated?.getTime() || 0)
         default:          return 0
       }
     })
@@ -120,7 +120,7 @@ export function InventoryList({ onSearchItem, isActive }) {
 
         {/* Sort buttons */}
         <div className="flex gap-2">
-          <button onClick={() => setSortBy('lastCheck')} className={sortButtonClass('lastCheck')} style={{ fontFamily: 'var(--font-mono)' }}>Recent</button>
+          <button onClick={() => setSortBy('lastUpdated')} className={sortButtonClass('lastUpdated')} style={{ fontFamily: 'var(--font-mono)' }}>Recent</button>
           <button onClick={() => setSortBy('name')}      className={sortButtonClass('name')}      style={{ fontFamily: 'var(--font-mono)' }}>A-Z</button>
           <button onClick={() => setSortBy('count')}     className={sortButtonClass('count')}     style={{ fontFamily: 'var(--font-mono)' }}>Count</button>
         </div>
@@ -163,22 +163,15 @@ export function InventoryList({ onSearchItem, isActive }) {
                 <div className="flex items-center justify-between gap-3">
                   <div className="flex items-center gap-3">
                     <div className="flex items-center gap-2">
-                      <div className="w-2 h-2 rounded-full" style={{ backgroundColor: getCheckStatus(item.lastCheck) }} />
+                      <div className="w-2 h-2 rounded-full" style={{ backgroundColor: getCheckStatus(item.lastUpdated) }} />
                       <div className="text-xs uppercase tracking-wider" style={{ fontFamily: 'var(--font-mono)' }}>
-                        {formatTimeAgo(item.lastCheck)}
+                        {formatTimeAgo(item.lastUpdated)}
                       </div>
                     </div>
                   </div>
 
                   <button
-                    onClick={() => {
-                      onSearchItem(item.id)
-                      // Update Firebase to start search
-                      const itemRef = doc(db, 'inventory', item.id)
-                      updateDoc(itemRef, {
-                        Search: true
-                      }).catch(err => console.error('Error updating search:', err))
-                    }}
+                    onClick={() => onSearchItem(item.name || 'Unknown Item')}
                     disabled={isActive}
                     className="px-5 py-2.5 bg-[var(--accent-blue)] text-[var(--background)] rounded text-sm uppercase tracking-wider font-bold hover:brightness-110 transition-all disabled:opacity-50 disabled:cursor-not-allowed border border-[var(--accent-blue)]"
                     style={{ fontFamily: 'var(--font-sans)' }}
