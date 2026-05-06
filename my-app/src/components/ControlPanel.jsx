@@ -1,13 +1,14 @@
-export function ControlPanel({ onStartRound, onEmergencyStop, onReturnHome, robotStatus, searchTarget }) {
+  export function ControlPanel({ onStartRound, onEmergencyStop, onReturnHome, robotStatus, searchTarget }) {
 
     const isLoading   = robotStatus === null
     const isIdle      = robotStatus === 'idle'
     const isRunning   = robotStatus === 'running'
     const isSearching = robotStatus === 'searching'
+    const isReturning = robotStatus === 'returning'
 
     const canStart  = isIdle
-    const canStop   = isRunning || isSearching
-    const canReturnHome = isRunning || isSearching // Only allow during activity
+    const canStop   = isRunning || isSearching || isReturning // Stop works while returning
+    const canReturnHome = isRunning || isSearching // Don't return home if already returning
 
     const statusLabel = isLoading
       ? 'Connecting…'
@@ -15,12 +16,14 @@ export function ControlPanel({ onStartRound, onEmergencyStop, onReturnHome, robo
           idle:      'Idle',
           running:   'Running Round',
           searching: `Searching${searchTarget ? `: ${searchTarget}` : ''}`,
+          returning: 'Returning Home',
         }[robotStatus] ?? robotStatus
 
     const statusColor = {
       idle:      'var(--accent-yellow)',
       running:   'var(--green-status)',
       searching: 'var(--accent-orange)',
+      returning: 'var(--accent-yellow)'
     }[robotStatus] ?? 'var(--border)'
 
     return (
