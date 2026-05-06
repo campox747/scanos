@@ -13,6 +13,8 @@ export function StatusBar({ status }) {
       case 'idle':      return 'var(--accent-yellow)'
       case 'running':   return 'var(--green-status)'
       case 'searching': return 'var(--accent-blue)'
+      case 'returning': return 'var(--accent-yellow)'
+
     }
   }
 
@@ -21,6 +23,7 @@ export function StatusBar({ status }) {
       case 'idle':      return 'STANDBY'
       case 'running':   return 'INVENTORY ROUND IN PROGRESS'
       case 'searching': return 'SEARCHING FOR ITEM'
+      case 'returning': return 'RETURNING HOME'
     }
   }
 
