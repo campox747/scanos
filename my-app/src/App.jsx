@@ -50,6 +50,15 @@ export default function App() {
     })
   }
 
+    const handleReturnHome = async () => {
+      await updateDoc(ROBOT_DOC, {
+        status: 'returning',
+        lastCommand: 'idle',
+        searchTarget: null,
+        updatedAt: serverTimestamp(),
+      })
+    }
+
 return (
     <div className="size-full flex flex-col bg-[var(--background)]" style={{ fontFamily: 'var(--font-sans)' }}>
       <StatusBar status={robotStatus} />
@@ -62,6 +71,8 @@ return (
           searchTarget={searchTarget}
           onStartRound={handleStartRound}
           onEmergencyStop={handleEmergencyStop}
+          onReturnHome= {handleReturnHome}
+
         />
 
         <InventoryList
