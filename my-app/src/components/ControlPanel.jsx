@@ -8,7 +8,7 @@
 
     const canStart  = isIdle
     const canStop   = isRunning || isSearching || isReturning // Stop works while returning
-    const canReturnHome = isRunning || isSearching // Don't return home if already returning
+    const canReturnHome = isRunning || isSearching || isIdle // Don't return home if already returning
 
     const statusLabel = isLoading
       ? 'Connecting…'
