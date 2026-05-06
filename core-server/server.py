@@ -7,6 +7,7 @@ import json
 import numpy as np
 from sort import Sort
 import math
+from datetime import datetime
 
 # --------------------------------------------------------------
 # CONFIG
@@ -22,14 +23,22 @@ CLASS_MAP = {
 ZONE_X_MIN = 130
 ZONE_X_MAX = 190
 
+# Minimum confidence score to accept a detection (filters out noise/flicker)
+MIN_CONFIDENCE_SCORE = 0.5
+
 # Dictionaries to hold the tracking state for each individual item type
 trackers = {}
 counted_ids = {}
 current_inventory = {}
+Search = False
+target_item = None
 
 # Initialize a tracker and memory set for each class
 for class_id, item_name in CLASS_MAP.items():
-    trackers[item_name] = Sort(max_age=15, min_hits=5, iou_threshold=0.3)
+    # max_age=30: Wait longer before forgetting an ID if detection drops
+    # min_hits=3: Require 3 consecutive frames to track (lowered from 5 for 10fps jitter)
+    # iou_threshold=0.01: Accept ANY overlap of the center boxes
+    trackers[item_name] = Sort(max_age=30, min_hits=3, iou_threshold=0.01)
     counted_ids[item_name] = set()
     current_inventory[item_name] = 0
 
@@ -50,6 +59,23 @@ client.loop_start()
 cred = credentials.Certificate("serviceAccountKey.json") 
 firebase_admin.initialize_app(cred) # Init firebase
 db = firestore.client()
+
+# Load initial inventory from Firebase on startup
+def load_initial_inventory():
+    try:
+        inventory_ref = db.collection("inventory")
+        docs = inventory_ref.stream()
+        for doc in docs:
+            item_id = doc.id
+            data = doc.to_dict()
+            count = data.get('count', 0)
+            if item_id in current_inventory:
+                current_inventory[item_id] = count
+                print(f"✓ Loaded {item_id}: {count} units")
+    except Exception as e:
+        print(f"✗ Error loading initial inventory: {e}")
+
+load_initial_inventory()
 
 # --------------------------------------------------------------
 # INVENTORY UPDATE FUNCTION
@@ -80,6 +106,7 @@ def update_inventory(item_counts):
 # VISION COUNTING LOGIC (MQTT detection)
 # --------------------------------------------------------------
 def on_detections_received(client, userdata, msg):
+    global Search, target_item
     
     try:
         payload = json.loads(msg.payload.decode('utf-8'))
@@ -99,6 +126,12 @@ def on_detections_received(client, userdata, msg):
         for det in raw_detections:
             class_id = det.get("id")
             if class_id in CLASS_MAP:
+                score = det.get("score", 0)
+                
+                # 1. Filter out low confidence "ghost" detections
+                if score < MIN_CONFIDENCE_SCORE:
+                    continue
+                    
                 item_name = CLASS_MAP[class_id]
                 x1 = det["xmin"] * 320
                 y1 = det["ymin"] * 320
@@ -110,7 +143,37 @@ def on_detections_received(client, userdata, msg):
         # 2. Update trackers and count
         changes_this_frame = {}
         for item_name, boxes in detections_by_class.items():
-            boxes_np = np.array(boxes) if len(boxes) > 0 else np.empty((0, 5))
+            
+            # --- Spatial Bounding Box Merging ---
+            # If the model fragments an object into left/right boxes, merge them if they are close
+            merged_boxes = []
+            if boxes:
+                # Sort boxes from left to right
+                boxes = sorted(boxes, key=lambda b: b[0])
+                MERGE_GAP_X = 64 # Max pixel distance between fragmented boxes (20% of 320px)
+                
+                for current in boxes:
+                    if not merged_boxes:
+                        merged_boxes.append(current)
+                    else:
+                        last = merged_boxes[-1]
+                        gap_x = current[0] - last[2] # gap between right edge of last and left edge of current
+                        
+                        last_cy = (last[1] + last[3]) / 2
+                        curr_cy = (current[1] + current[3]) / 2
+                        
+                        # Merge if they are horizontally close and vertically aligned (same physical object)
+                        if gap_x < MERGE_GAP_X and abs(last_cy - curr_cy) < 50:
+                            new_x1 = min(last[0], current[0])
+                            new_y1 = min(last[1], current[1])
+                            new_x2 = max(last[2], current[2])
+                            new_y2 = max(last[3], current[3])
+                            new_score = max(last[4], current[4])
+                            merged_boxes[-1] = [new_x1, new_y1, new_x2, new_y2, new_score]
+                        else:
+                            merged_boxes.append(current)
+
+            boxes_np = np.array(merged_boxes) if len(merged_boxes) > 0 else np.empty((0, 5))
             
             # Update the specific tracker for this item type
             tracked_objects = trackers[item_name].update(boxes_np)
@@ -127,12 +190,21 @@ def on_detections_received(client, userdata, msg):
                         current_inventory[item_name] += 1
                         counted_ids[item_name].add(track_id)
                         
+                        # Print to terminal
+                        print(f"[{datetime.now().strftime('%Y-%m-%d %H:%M:%S')}] COUNT TRIGGERED! {item_name} (Tracker ID: {track_id}) crossed at X:{int(centroid_x)}. Total Count: {current_inventory[item_name]}")
+                        
                         changes_this_frame[item_name] = current_inventory[item_name]
-                            
-                        print(f"\nCOUNT TRIGGERED! {item_name} (ID: {track_id}) crossed at X:{centroid_x}")
                             
                         # Optionally tell the robot we successfully logged it
                         client.publish("robot/inventory/ack", f"{item_name}_updated", 0)
+
+                        if Search and item_name == target_item:
+                            print(f"FOUND target: {item_name} (ID: {track_id})")
+                            client.publish("robot/status", 'idle', 0)
+                            time.sleep(1)
+                            client.publish("robot/status", 'running', 0)
+                            Search = False
+                            target_item = ''
 
         # Update Firebase if there were any changes in this frame
         if changes_this_frame:
@@ -159,6 +231,27 @@ def on_robot_state_change(doc_snapshot, changes, read_time):
         # Publish new status via MQTT
         client.publish("robot/status", update, 0)
 
+def on_inventory_change(doc_snapshot, changes, read_time):
+    global Search, target_item, current_inventory
+    for change in changes:
+        if change.type.name == 'MODIFIED':
+            doc = change.document
+            item_id = doc.id
+            data = doc.to_dict()
+            count = data.get('count', 0)
+            search_flag = data.get('Search', False)
+
+            if search_flag:
+                Search = True
+                target_item = item_id
+                print(f"✓ Search activated for: {item_id}")
+
+            print(f"✓ Manual inventory update: {item_id} = {count} units")
+
+            # Update local inventory to match Firebase
+            if item_id in current_inventory:
+                current_inventory[item_id] = count
+
 
 
 # --------------------------------------------------------------
@@ -170,6 +263,7 @@ client.on_message = on_detections_received
 
 # Attach a permanent listener to "robot1", tells firebase to run function above when a change happens
 doc_watch = db.collection("robots").document("robot1").on_snapshot(on_robot_state_change)
+inventory_watch = db.collection("inventory").on_snapshot(on_inventory_change)
 
 print("✓ Server initialised")
 print("✓ Listening to Firebase robot status...")
