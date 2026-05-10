@@ -8,6 +8,7 @@ import numpy as np
 from sort import Sort
 import math
 from datetime import datetime
+import cv2
 
 # --------------------------------------------------------------
 # CONFIG
@@ -49,7 +50,7 @@ for class_id, item_name in CLASS_MAP.items():
 client = mqtt_client.Client(mqtt_client.CallbackAPIVersion.VERSION2)
 
 # Establish connection to broker (mosquitto)
-if client.connect("localhost", 1883, 60) != 0:
+if client.connect("192.168.199.89", 1883, 60) != 0:
     print("Couldn't connect to broker")
     sys.exit
 
@@ -205,6 +206,25 @@ def on_detections_received(client, userdata, msg):
                             client.publish("robot/status", 'running', 0)
                             Search = False
                             target_item = ''
+                            
+        #DRAWING VISUALIZATION
+        canvas = np.zeros((320, 320, 3), dtype=np.uint8)
+
+        #Draw tracked objects
+        for item_name, tracker_instance in trackers.items():
+            for track in tracker_instance.trackers:
+                # Access internal SORT state
+                d = track.get_state()[0] 
+                x1, y1, x2, y2 = int(d[0]), int(d[1]), int(d[2]), int(d[3])
+
+        #Green box
+                cv2.rectangle(canvas, (x1, y1), (x2, y2), (0, 255, 0), 2)
+                # Label with ID
+                cv2.putText(canvas, f"{item_name} ID:{int(track.id)}", (x1, y1 - 5), 
+                            cv2.FONT_HERSHEY_SIMPLEX, 0.4, (255, 255, 255), 1)
+
+        cv2.imshow("Robot Vision Debug", canvas)
+        cv2.waitKey(1)
 
         # Update Firebase if there were any changes in this frame
         if changes_this_frame:

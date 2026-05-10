@@ -39,6 +39,9 @@ def sub_cb(topic, msg):
         lf.start()
     elif command == "idle":
         lf.stop()
+    elif command == "returning":
+        lf.return_home()
+        client.publish(b"robot/status", b"idle")
 
 # Initialize and Connect
 client = MQTTClient(CLIENT_ID, MQTT_BROKER)
