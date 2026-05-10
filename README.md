@@ -1,2 +1,2 @@
-# project-svanstein
+# Scanos - Warehouse inventory manager robot
 
