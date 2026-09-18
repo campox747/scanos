@@ -2,7 +2,7 @@
 
 **ScanOS** is an autonomous warehouse inventory system that combines robotics, edge computer vision, real-time messaging, and a web dashboard to detect, track, and count inventory items.
 
-The system was built around an **XRP robot** and **Coral Dev Board**. As the robot follows a warehouse route, object detections are sent to a Python server, tracked with **SORT**, and synchronized with **Firebase/Firestore**. A React dashboard provides live inventory data and robot controls.
+The system was built around an XRP robot and Coral Dev Board. As the robot follows a warehouse route, object detections are sent to a Python server, tracked with SORT, and synchronized with Firebase/Firestore. A React dashboard provides live inventory data and robot controls.
 
 ## How it works
 
@@ -31,7 +31,7 @@ Coral Dev Board
 
 ## Results
 
-During final testing, ScanOS recognized an average of **12 out of 13 objects across three runs**, corresponding to a **92% recognition rate**.
+During final testing, ScanOS recognized an average of 12 out of 13 objects across three runs, corresponding to a 92% recognition rate.
 
 ## Tech Stack
 
