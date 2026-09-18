@@ -29,19 +29,6 @@ Coral Dev Board
                                       React Dashboard
 ```
 
-## Features
-
-- Autonomous PID-based line following
-- Edge object detection with Coral hardware
-- SORT multi-object tracking
-- Confidence filtering and fragmented bounding-box merging
-- Duplicate-count prevention using persistent tracking IDs
-- MQTT communication between robot and server
-- Real-time inventory synchronization with Firebase/Firestore
-- React control panel with live robot status and inventory data
-- Start, emergency-stop, and return-home controls
-- Item search workflow
-
 ## Results
 
 During final testing, ScanOS recognized an average of **12 out of 13 objects across three runs**, corresponding to a **92% recognition rate**.
